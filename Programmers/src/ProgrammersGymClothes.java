@@ -1,5 +1,3 @@
-package Programmers;
-
 //왜  틀렸는지 다시 풀어보기
 public class ProgrammersGymClothes {
     public int solution(int n, int[] lost, int[] reserve) {

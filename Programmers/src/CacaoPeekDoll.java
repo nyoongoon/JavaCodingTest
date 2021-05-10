@@ -1,5 +1,3 @@
-package Programmers;
-
 import java.util.Stack;
 
 public class CacaoPeekDoll {
