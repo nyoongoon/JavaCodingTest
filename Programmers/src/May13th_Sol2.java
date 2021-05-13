@@ -1,4 +1,4 @@
-package ProgrammersChallenge;
+
 
 public class May13th_Sol2 {
 	//5.13 프로그래머스 다시보기

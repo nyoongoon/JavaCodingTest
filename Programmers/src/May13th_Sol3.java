@@ -1,4 +1,4 @@
-package ProgrammersChallenge;
+
 import java.util.LinkedList;
 import java.util.List;
 //5.13 프로그래머스 다시보기

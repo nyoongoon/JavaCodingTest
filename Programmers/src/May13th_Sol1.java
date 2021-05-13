@@ -1,4 +1,4 @@
-package ProgrammersChallenge;
+
 
 public class May13th_Sol1 {
 	
