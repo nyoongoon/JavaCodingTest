@@ -2,7 +2,7 @@ package ProgrammersChallenge;
 
 public class May13th_Sol1 {
 	
-	    //5.13 프로그래머스 다시보기
+	    //5.13 프로그래머스 다시보기!
 	        public int solution(int left, int right) {
 	            int answer = 0;
 
