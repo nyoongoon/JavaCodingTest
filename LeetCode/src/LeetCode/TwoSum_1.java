@@ -15,7 +15,7 @@ class TwoSum_1 {
 	   public int[] twoSum(int[] nums, int target) {
 	        int[] answer  = new int[2];
 	    	Map<Integer, Integer> map = new HashMap<Integer, Integer>();
-	    	for(int i= 0; i<nums.length;i++) {
+	    	for(int i= 0; i<nums.length;i++) { 
 	    		if(map.containsKey(target-nums[i])) {
 	    			answer[0] =	map.get(target-nums[i]);
 	                //내가 쓴 답.. --> 그냥 바로 넣어도 됨!!
