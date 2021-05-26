@@ -1,45 +1,45 @@
 package LeetCode;
 // 우수 답안 다시 풀어보기!!! 
 public class FindMedian_4 {
-	public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-		  
-		        // Deal with invalid corner case. 
-		        if (nums1 == null || nums2 == null || nums1.length == 0 || nums2.length == 0) return 0.0;
-		        
-		        int m = nums1.length, n = nums2.length;
-		        int l = (m + n + 1) / 2; //left half of the combined median
-		        int r = (m + n + 2) / 2; //right half of the combined median
-		        
-		        // If the nums1.length + nums2.length is odd, the 2 function will return the same number
-		        // Else if nums1.length + nums2.length is even, the 2 function will return the left number and right number that make up a median
-		        return (getKth(nums1, 0, nums2, 0, l) + getKth(nums1, 0, nums2, 0, r)) / 2.0;
-		    }
-		    
-		    private double getKth(int[] nums1, int start1, int[] nums2, int start2, int k) {
-		        // This function finds the Kth element in nums1 + nums2
-		        
-		        // If nums1 is exhausted, return kth number in nums2
-		        if (start1 > nums1.length - 1) return nums2[start2 + k - 1];
-		        
-		        // If nums2 is exhausted, return kth number in nums1
-		        if (start2 > nums2.length - 1) return nums1[start1 + k - 1];
-		        
-		        // If k == 1, return the first number
-		        // Since nums1 and nums2 is sorted, the smaller one among the start point of nums1 and nums2 is the first one
-		        if (k == 1) return Math.min(nums1[start1], nums2[start2]);
-		        
-		        int mid1 = Integer.MAX_VALUE;
-		        int mid2 = Integer.MAX_VALUE;
-		        if (start1 + k / 2 - 1 < nums1.length) mid1 = nums1[start1 + k / 2 - 1];
-		        if (start2 + k / 2 - 1 < nums2.length) mid2 = nums2[start2 + k / 2 - 1];
-		        
-		        // Throw away half of the array from nums1 or nums2. And cut k in half
-		        if (mid1 < mid2) {
-		            return getKth(nums1, start1 + k / 2, nums2, start2, k - k / 2); //nums1.right + nums2
-		        } else {
-		            return getKth(nums1, start1, nums2, start2 + k / 2, k - k / 2); //nums1 + nums2.right
-		        }
-		    }
+	public double findMedianSortedArrays(int[] nums1, int[] nums2) throws Exception {
+		if (nums1.length > nums2.length) {
+			return findMedianSortedArrays(nums2, nums1);
+		}
+		int x = nums1.length;
+		int y = nums2.length;
+
+		int low = 0;
+		int high = x;
+		while (low <= high) {
+			// 우선 절반으로 나눠서 탐색
+			int partitionX = (low + high) / 2;
+			// ※ 1을 더해놔 홀수나 짝수나 같은 결과가 나오게 할 수 있다!!※
+			int partitionY = (x + y + 1) / 2 - partitionX;
+
+			// 파티션X가 0 이라면 왼편엔 아무것도 없으므로 -INF 저장
+			int maxLeftX = (partitionX == 0) ? Integer.MIN_VALUE : nums1[partitionX - 1];
+			// 파티션X가 배열의 길이를 넘기면 오른편에 아무것도 없으므로 +INF저장
+			int minRightX = (partitionX == x) ? Integer.MAX_VALUE : nums1[partitionX];
+
+			int maxLeftY = (partitionY == 0) ? Integer.MIN_VALUE : nums2[partitionY - 1];
+			int minRightY = (partitionY == y) ? Integer.MAX_VALUE : nums2[partitionY];
+
+			// 파티션에 인접한 4개의 요소 비교
+			if (maxLeftX <= minRightY && maxLeftY <= minRightX) {//조건이 맞을 때
+				if ((x + y) % 2 == 0) {// 배열의 길이가 짝수일 때
+					return (double) (Math.max(maxLeftX, maxLeftY) + Math.min(minRightX, minRightY) / 2);
+				} else {// 배열의 길이가 홀수 일 때
+					return (double) (Math.max(maxLeftX, maxLeftY));
+				}
+			} else if (maxLeftX > minRightY) {//파티션을 더 왼쪽으로
+				high = partitionX - 1;
+			} else {// maxLeftY > minRightX --> //파티션을 더 오른쪽으로
+				low = partitionX + 1;
+			}
+		}
+		//배열이 정열되지 않은 경
+		throw new Exception();	
+	}
 		/*// 내 정답
 		// 병합정렬
 		// 데이터의 개수가 홀수라면 중앙값은 정렬된 결과의 가운데 수입니다
