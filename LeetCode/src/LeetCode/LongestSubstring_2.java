@@ -24,7 +24,8 @@ public class LongestSubstring_2 {
 		return max;
 	}
 }
-	/*public int lengthOfLongestSubstring(String s) {
+	/*public int lengthOfLongestSu
+	 * string(String s) {
         int max = 0;
         int temp = 0;
 		for(int i = 0; i<s.length(); i++) {
