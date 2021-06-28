@@ -2,6 +2,7 @@ package Simulation;
 
 import java.util.Scanner;
 //p.112
+// 시뮬레이션 유형 -> 문제에서 제시한 알고리즘을 한단계씩 차례대로 직접 수행
 public class UpDownLeftRight {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
