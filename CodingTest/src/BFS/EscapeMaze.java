@@ -2,6 +2,7 @@ package BFS;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
+//p.152
 //병렬적으로 최단거리 구하기 --> BFS! --> 큐 사용!
 public class EscapeMaze {
 	public static int n;
