@@ -56,15 +56,15 @@ class Node{
 }
 // DFS 메소드
 public void DFS (Node root) {
-		if(root == null) return;
-		else {
-			//System.out.print(root.data); <- 전위순회
-			DFS(root.lt); 
-			//System.out.print(root.data); <- 중위순회
-			DFS(root.rt);
-			//System.out.print(root.data); <- 후위순회
-		}
+	if(root == null) return;
+	else {
+		//System.out.print(root.data); <- 전위순회
+		DFS(root.lt); 
+		//System.out.print(root.data); <- 중위순회
+		DFS(root.rt);
+		//System.out.print(root.data); <- 후위순회
 	}
+}
 ```
 
 # 그래프
