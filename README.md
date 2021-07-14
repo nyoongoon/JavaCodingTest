@@ -32,6 +32,40 @@
               <스택 프레임>
 
 
+# 트리
+## 이진트리순회(깊이 우선 탐색-DFS : Depth-First Search)
+- 깊이 우선 탐색
+- 루트 노드에서 왼쪽 자식 노드 먼저 -> 오른쪽 자식 노드
+
+- 전위순회 : 부 -> 왼 -> 오 
+- 중위순회 : 왼 -> 부 -> 오
+- 후위순회 : 왼 -> 오 -> 부
+
+## 코드
+### 노드 클래스를 생성
+- 값과, 왼쪽 자식 노드 주소, 오른쪽 자식 노드 주소.
+
+``` java
+class Node{
+	int data;	//값
+	Node lt, rt;	// 왼쪽 자식 주소, 오른쪽 자식 주소
+	public Node(int val) {
+		data = val;
+		lt = rt = null;
+	}
+}
+// DFS 메소드
+public void DFS (Node root) {
+		if(root == null) return;
+		else {
+			//System.out.print(root.data); <- 전위순회
+			DFS(root.lt); 
+			//System.out.print(root.data); <- 중위순회
+			DFS(root.rt);
+			//System.out.print(root.data); <- 후위순회
+		}
+	}
+```
 
 # 그래프
 - 그래프 : 버텍스와 엣지로 이루어진 집합
