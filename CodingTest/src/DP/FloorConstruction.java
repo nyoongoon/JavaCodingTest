@@ -1,6 +1,7 @@
 package DP;
 import java.util.Scanner;
 //p.223
+//
 public class FloorConstruction {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
