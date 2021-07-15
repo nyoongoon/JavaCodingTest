@@ -72,6 +72,7 @@ public void DFS (Node root) {
 - 루트가 0레벨. 자식 노드들의 레벨은 +1 씩 오른다.
 - 레벨 탐색. -> 레벨 순으로 탐색. BFS —> 큐를 활용!!
 
+
 ## 코드 BFS 메소드 <- 큐 사용! 
 ``` java 
 public void bfs(Node root){
