@@ -1,7 +1,7 @@
 package String;
 import java.util.Scanner;
 
-public class ReverseString {
+public class ReverseString_inf_4 {
 	public static void main(String[] args) {
 		Scanner stdIn = new Scanner(System.in);
 		int n = stdIn.nextInt();
