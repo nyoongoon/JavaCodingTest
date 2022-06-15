@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N13_MergeTwoArr.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,13 +45,13 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.N13_MergeTwoArr">
-    <configuration name="N13_MergeTwoArr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Array.N13_MergeTwoArr" />
+  <component name="RunManager" selected="Application.Array.TwoPointers.N13_MergeTwoArr">
+    <configuration name="Array.TwoPointers.N13_MergeTwoArr" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Array.TwoPointers.N13_MergeTwoArr" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.*" />
+          <option name="PATTERN" value="Array.TwoPointers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,7 +70,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.N13_MergeTwoArr" />
+        <item itemvalue="Application.Array.TwoPointers.N13_MergeTwoArr" />
       </list>
     </recent_temporary>
   </component>
@@ -88,7 +85,7 @@
       <workItem from="1654833191070" duration="17000" />
       <workItem from="1655091066031" duration="1792000" />
       <workItem from="1655121493865" duration="26000" />
-      <workItem from="1655262434274" duration="1503000" />
+      <workItem from="1655262434274" duration="1836000" />
     </task>
     <servers />
   </component>

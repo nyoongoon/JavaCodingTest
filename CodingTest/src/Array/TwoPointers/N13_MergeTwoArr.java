@@ -1,9 +1,11 @@
-package Array;
+package Array.TwoPointers;
 
 import java.util.Scanner;
 
 public class N13_MergeTwoArr {
     public static void main(String[] args) {
+        // Two Pointer 알고리듬 !
+
         // 세가지 정렬 케이스
         // 1. 크기 비교
         // 2. 1이 비었을 때
