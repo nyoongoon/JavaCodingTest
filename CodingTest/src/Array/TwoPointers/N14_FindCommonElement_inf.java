@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class N15_FindCommonElement_inf {
+public class N14_FindCommonElement_inf {
     // 인프런 문제풀이
     // 먼저 정렬 하고
     // 투포인터로 비교. -> 셋 사용 안할 수 있음.
