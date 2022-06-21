@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales_inf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N16_MaxConsecutiveNumberSubSequence.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Array/TwoPointers/N15_FindCommonElement_inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Array/TwoPointers/N14_FindCommonElement_inf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales_inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales_inf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +85,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Array.TwoPointers.N13_MergeTwoArr" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +99,13 @@
       <workItem from="1655121493865" duration="26000" />
       <workItem from="1655262434274" duration="3699000" />
       <workItem from="1655284260256" duration="3168000" />
-      <workItem from="1655376872011" duration="1059000" />
+      <workItem from="1655376872011" duration="1451000" />
+      <workItem from="1655422725980" duration="886000" />
+      <workItem from="1655435548387" duration="1316000" />
+      <workItem from="1655439599459" duration="599000" />
+      <workItem from="1655464091085" duration="968000" />
+      <workItem from="1655768048904" duration="8000" />
+      <workItem from="1655779826443" duration="423000" />
     </task>
     <servers />
   </component>
