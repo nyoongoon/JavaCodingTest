@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N16_MaxConsecutiveNumberSubSequence.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/N16_MaxConsecutiveNumberSubSequence_inf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales_inf.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Array/N15_MaxSales_inf.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +54,7 @@
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.TwoPointers.*" />
+          <option name="PATTERN" value="Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,7 +67,7 @@
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Array.TwoPointers.*" />
+          <option name="PATTERN" value="Array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -105,7 +104,10 @@
       <workItem from="1655439599459" duration="599000" />
       <workItem from="1655464091085" duration="968000" />
       <workItem from="1655768048904" duration="8000" />
-      <workItem from="1655779826443" duration="423000" />
+      <workItem from="1655779826443" duration="1024000" />
+      <workItem from="1655812606647" duration="363000" />
+      <workItem from="1655854499856" duration="35000" />
+      <workItem from="1655890498399" duration="1047000" />
     </task>
     <servers />
   </component>
