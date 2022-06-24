@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Array/SlidingWindow/N18_MaxLenConsecutiveSubsequence_re.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -110,7 +109,7 @@
       <workItem from="1655890498399" duration="2046000" />
       <workItem from="1655975343262" duration="557000" />
       <workItem from="1655979784861" duration="11000" />
-      <workItem from="1656039809125" duration="446000" />
+      <workItem from="1656039809125" duration="1062000" />
     </task>
     <servers />
   </component>
