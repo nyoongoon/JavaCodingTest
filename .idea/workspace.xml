@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/DFS/MissingScaffolding_2022KakaoBlind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/DFS/MissingScaffolding_2022KakaoBlind.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/DFS/MissingScaffolding_2022KakaoBlind.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,9 @@
       <workItem from="1655979784861" duration="11000" />
       <workItem from="1656039809125" duration="1062000" />
       <workItem from="1656062194234" duration="2443000" />
-      <workItem from="1656135216220" duration="133000" />
+      <workItem from="1656135216220" duration="1280000" />
+      <workItem from="1656142028934" duration="15000" />
+      <workItem from="1656209240767" duration="526000" />
     </task>
     <servers />
   </component>
