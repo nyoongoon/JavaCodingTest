@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/AntWarrior_icote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/EfficentMoneySystem_icote_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/EfficientMoneySystem_icote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/GoldMine_icote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/IntegerTriangle_icote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/MakeOne_icote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/MakeOne_icote_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/QuitJob_icote.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/DFS/MissingScaffolding_2022KakaoBlind.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/DFS/MissingScaffolding_2022KakaoBlind.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +52,8 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.Unnamed">
@@ -114,7 +122,11 @@
       <workItem from="1656062194234" duration="2443000" />
       <workItem from="1656135216220" duration="1280000" />
       <workItem from="1656142028934" duration="15000" />
-      <workItem from="1656209240767" duration="526000" />
+      <workItem from="1656209240767" duration="1067000" />
+      <workItem from="1656285937773" duration="4364000" />
+      <workItem from="1656316728344" duration="110000" />
+      <workItem from="1656319250718" duration="653000" />
+      <workItem from="1656372498140" duration="3063000" />
     </task>
     <servers />
   </component>
@@ -131,5 +143,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/DP/IntegerTriangle_icote.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
