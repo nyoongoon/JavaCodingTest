@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/QuitJob_noMemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/DP/QuitJob_teacher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/DP/QuitJob_re.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/DP/QuitJob_re.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +144,8 @@
       <workItem from="1656562087222" duration="878000" />
       <workItem from="1656564023091" duration="38000" />
       <workItem from="1656581610888" duration="2113000" />
+      <workItem from="1656599359150" duration="93000" />
+      <workItem from="1656632936009" duration="4079000" />
     </task>
     <servers />
   </component>
