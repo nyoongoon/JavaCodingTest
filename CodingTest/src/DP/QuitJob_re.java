@@ -3,6 +3,14 @@ package DP;
 import java.util.HashMap;
 import java.util.Scanner;
 
+// 피드백
+// 동적 dp => 모든 케이스를 고려 -> dp 해시로 메모이제이션을 하게 되면
+//        -> 어레이와 해시와 차이 => 인덱스 순차적으로 증가 경우=>어레이 , 불연속적 => 해시.
+
+// memo값에 대해 업데이트가 제대로 되는지 ..
+// get 하는 시점에 저장된 값이 bestcase가 저장이 안되어있을거 같음.
+// n이 오름차순이기 떄문에 =>  최적의 값이 보장되지 않음.
+
 public class QuitJob_re {
     static int[] arrT;
     static int[] arrP;
