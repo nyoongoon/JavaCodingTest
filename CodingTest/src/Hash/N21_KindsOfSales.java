@@ -3,7 +3,7 @@ package Hash;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class KindsOfSales {
+public class N21_KindsOfSales {
     public static void main(String[] args){
         Scanner stdIn = new Scanner(System.in);
         int n = stdIn.nextInt();

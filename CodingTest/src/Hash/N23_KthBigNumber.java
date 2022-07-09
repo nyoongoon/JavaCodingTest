@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class N23_FifthBigNumber { // 런타임 초과 !!!
+public class N23_KthBigNumber { // 런타임 초과 !!!
     public static void main(String[] args){
 
         Scanner stdIn = new Scanner(System.in);

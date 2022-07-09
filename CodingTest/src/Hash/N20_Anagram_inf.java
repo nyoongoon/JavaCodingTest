@@ -3,7 +3,7 @@ package Hash;
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class N21_Anagram_inf {
+public class N20_Anagram_inf {
     public static void main(String[] args){
         HashMap<Character, Integer> map = new HashMap<>();
         String answer = "YES";

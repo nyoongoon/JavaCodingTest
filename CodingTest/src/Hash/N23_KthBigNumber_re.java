@@ -5,7 +5,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class N23_FifthBigNumber_re { // 틀림..
+public class N23_KthBigNumber_re { // 틀림..
     public static void main(String[] args){
         //HashMap<Integer, Integer> map
         HashSet<Integer> set = new HashSet<>();

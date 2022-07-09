@@ -4,7 +4,7 @@ import java.util.Collections;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class N23_FifthBigNumber_inf { //TreeSet 활용 !!! => set에 넣을때 정렬까지 !
+public class N23_KthBigNumber_inf { //TreeSet 활용 !!! => set에 넣을때 정렬까지 !
     public static void main(String[] args){
         // treeSet 메소드 예시
         // treeSet.remove();
