@@ -3,7 +3,7 @@ package Stack;
 import java.util.Scanner;
 import java.util.Stack;
 
-public class N27_PostfixExpression {
+public class N27_PostfixExpression { // 내풀이 !!!
     public static void main(String[] args){
         Stack <Integer> stk = new Stack<Integer>();
         Scanner stdIn = new Scanner(System.in);
