@@ -1,9 +1,9 @@
-package Stack;
+package Queue;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class N29_savePrincess {
+public class N29_savePrincess { // ㄴㅐ 풀이 !! => 연결 리스트 사용 => 해설은 큐 사용!!!
     public static void main(String[] args){
         //Stack<Character> stk = new Stack<>();
         Scanner stdIn = new Scanner(System.in);
