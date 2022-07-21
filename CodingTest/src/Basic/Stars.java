@@ -20,22 +20,20 @@ public class Stars { // 어려움 ;;;
     public static void type1(int n) {
         System.out.println("== Type1 ==");
 
+        System.out.println();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.print("*");
+                System.out.print('*');
             }
             System.out.println();
         }
-
-        System.out.println();
-
     }
 
     public static void type2(int n) {
         System.out.println("== Type2 ==");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j <= i; j++) {
-                System.out.print("*");
+                System.out.print('*');
             }
             System.out.println();
         }
@@ -46,11 +44,12 @@ public class Stars { // 어려움 ;;;
         System.out.println("== Type3 ==");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                if(n-i-1>j){
-                    System.out.print(" ");
-                }else{
-                    System.out.print("*");
+                if (n - i - 1 <= j) {
+                    System.out.print('*');
+                } else {
+                    System.out.print(' ');
                 }
+
             }
             System.out.println();
         }
@@ -59,23 +58,47 @@ public class Stars { // 어려움 ;;;
 
     public static void type4(int n) {
         System.out.println("== Type4 ==");
+
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n*2-1; j++) {
-                if((n*2-1)/2-i > j || (n*2-1)/2+i<j){
+            for (int j = 0; j < 2*n-1; j++) {
+                if (n - i - 1 <= j && n + i - 1 >= j) {
+                    System.out.print('*');
+                } else {
+                    System.out.print(' ');
+                }
+
+            }
+            System.out.println();
+        }
+        System.out.println();
+    }
+
+    public static void type5(int n) {
+        System.out.println("== Type5 ==");
+
+        for (int i = 0; i < n/2+1 + 1; i++) {
+            for (int j = 0; j < n*2; j++) {
+                //if(((2*n-1)/2+1 - (2*(i+1)-1)) >= j){
+                if(((2*n-1) - (2*(i+1)-1))/2 > j){
                     System.out.print(" ");
-                }else{
+                }else if(((2*n-1) - (2*(i+1)-1))/2 + 2*(i+1)-1 > j){
                     System.out.print("*");
                 }
             }
             System.out.println();
         }
 
+        for (int i =0; i < n/2 + 1; i++) {
+            for (int j = 0; j < n*2; j++) {
+                if(i+2 > j){
+                    System.out.print(" ");
+                }else if(i+2 + 2*n-1 - 2*(i+2) > j){
+                    System.out.print("*");
+                }
+            }
+            System.out.println();
+        }
 
-        System.out.println();
-    }
-
-    public static void type5(int n) {
-        System.out.println("== Type5 ==");
 
         System.out.println();
     }
