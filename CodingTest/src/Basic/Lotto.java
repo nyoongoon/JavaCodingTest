@@ -7,7 +7,7 @@ public class Lotto {
     public static void main(String[] args) {
         Scanner stdIn = new Scanner(System.in);
         System.out.println("[로또 당첨 프로그램]");
-        System.out.println("로또 개수를 입력해주세요. (숫자 1 ~ 10):");
+        System.out.print("로또 개수를 입력해주세요. (숫자 1 ~ 10):");
         int cnt = stdIn.nextInt();
 
 
@@ -16,11 +16,13 @@ public class Lotto {
             HashSet<Integer> myLotto = lottoNums();
             printLottoNums(myLotto);
         }
+        System.out.println();
 
         HashSet<Integer> announcement = lottoNums();
         System.out.println("[로또 발표]");
         System.out.print("    ");
         printLottoNums(announcement);
+        System.out.println();
 
         System.out.println("[내 로또 결과]");
         for (int i = 0; i < cnt; i++) {
