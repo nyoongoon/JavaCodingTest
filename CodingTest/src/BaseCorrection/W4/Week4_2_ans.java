@@ -1,7 +1,5 @@
 package BaseCorrection.W4;
 
-import java.util.Arrays;
-
 public class Week4_2_ans {
     public static void main(String[] args) {
         Week4_2_ans w = new Week4_2_ans();
