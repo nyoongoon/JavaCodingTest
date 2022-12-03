@@ -5,7 +5,7 @@ import java.util.HashMap;
 
 public class Week4_2_my_re {
     public static void main(String[] args) {
-        Week4_2_my w = new Week4_2_my();
+        Week4_2_my_re w = new Week4_2_my_re();
         String[] words = {"hello", "hell", "good", "goose", "children", "card", "teachable"};
         String[] queries = {"hell*", "goo*", "*able", "qua*"};
         int[] answer = w.solution(words, queries);
