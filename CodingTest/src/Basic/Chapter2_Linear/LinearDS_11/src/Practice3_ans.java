@@ -38,23 +38,24 @@ class MyDeque_my {
 
 
     public void addMiddle(int data) {
-        if (this.isFull()) {
-            System.out.println("Deque is full!");
+        if (isFull()) {
+            System.out.println("Deque is Full!");
             return;
         }
+
         int elements = this.rear - this.front;
         if (elements < 0) {
             elements = this.arr.length + elements;
         }
 
-        int mid = (this.rear - elements / 2 + this.arr.length) % this.arr.length + 1;
+        int mid = (this.rear - elements / 2 + this.arr.length) + this.arr.length + 1;
         int start = (this.rear + 1) % this.arr.length;
-        int end = (this.rear - elements / 2 + this.arr.length) % this.arr.length;
+        int end = (this.rear - elements / 2 + this.arr.length) + this.arr.length;
 
-        for (int i = start; i != end; i=(i - 1 + this.arr.length) % this.arr.length) {
-            this.arr[i] = this.arr[(i - 1 + this.arr.length) % this.arr.length];
+        for (int i = start; i != end ; i = (i - 1 + this.arr.length) % this.arr.length) {
+            arr[i] = arr[(i - 1 + this.arr.length) % this.arr.length];
         }
-        this.arr[mid] = data;
+        arr[mid] = data;
         this.rear = (this.rear + 1) % this.arr.length;
     }
 
@@ -108,7 +109,7 @@ class MyDeque_my {
 
 }
 
-public class Practice3_my {
+public class Practice3_ans {
     public static void main(String[] args) {
         // Test code
         MyDeque_my myDeque1 = new MyDeque_my(5);
