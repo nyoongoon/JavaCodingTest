@@ -2,9 +2,9 @@ package BaseCorrection.W9;
 
 import java.util.ArrayList;
 
-public class Week9_1_ans {
+public class Week9_1_my {
     public static void main(String[] args) { // 틀림 다시보기...
-        Week9_1_ans w = new Week9_1_ans();
+        Week9_1_my w = new Week9_1_my();
         int N = 5;
         int[][] friend = {{1, 2, 3, 4}, {2, 3, 4}, {0, 1, 3}, {4}, {1, 2, 3}};
         int[][] time = {{13, 14, 7, 3}, {14, 15, 10}, {7, 4, 20}, {11}, {9, 13, 13}};
