@@ -2,9 +2,9 @@ package BaseCorrection.W7;
 
 import java.util.ArrayList;
 
-public class Week7_4_ans {
+public class Week7_4_my {
     public static void main(String[] args) {
-        Week7_4_ans w = new Week7_4_ans();
+        Week7_4_my w = new Week7_4_my();
         String nums = "14152944";
         w.solution(nums);
     }
