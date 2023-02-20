@@ -2,8 +2,27 @@ package Base_Algorithm.Chapter1_Math.Math_06.src;// 기초 수학 - 점화식과
 
 public class Main {
 
+    public static int recur1(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return 3 * recur1(n - 1);
+    }
+
+    public static int recur2(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        return 1 + recur2(n - 1);
+    }
+
+    public static int recur3(int n) {
+        if (n == 1) return 1;
+        if (n == 2) return 1;
+        return recur3(n - 1) + recur3(n - 2);
+    }
+
     public static void main(String[] args) {
-        
 //      점화식 -> 반복문, 재귀함수
         System.out.println("== 점화식/재귀함수 연습1 ==");
 //      1, 3, 9, 27, ... 의 n번째 수
@@ -17,6 +36,7 @@ public class Main {
             }
         }
         System.out.println(result);
+        System.out.println(recur1(4));
 
 
         System.out.println("== 점화식/재귀함수 연습2 ==");
@@ -24,9 +44,10 @@ public class Main {
         n = 5;
         result = 0;
         for (int i = 1; i < n + 1; i++) {
-            result += i;
+            result += 1;
         }
         System.out.println(result);
+        System.out.println(recur2(5));
 
 
         System.out.println("== 점화식/재귀함수 연습3 ==");
@@ -36,7 +57,7 @@ public class Main {
         int a1 = 1;
         int a2 = 1;
         for (int i = 0; i < n; i++) {
-            if(i == 0 || i == 1) {
+            if (i == 0 || i == 1) {
                 result = 1;
                 continue;
             }
@@ -45,6 +66,6 @@ public class Main {
             a2 = result;
         }
         System.out.println(result);
-
+        System.out.println(recur3(6));
     }
 }
