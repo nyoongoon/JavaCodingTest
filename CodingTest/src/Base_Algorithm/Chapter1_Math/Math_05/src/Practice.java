@@ -11,26 +11,26 @@ public class Practice { //visited 배열이 true인 것들만 출력하는 개�
         p.combination(arr, visited, 0, 3);
     }
 
-    public void combination(int[] arr, boolean[] visited, int depth, int r) {
+    public static void combination(int[] arr, boolean[] visited, int depth, int r) {
         if (r == 0) {
-            // 출력
+            //출력
             for (int i = 0; i < arr.length; i++) {
-                if (visited[i]) {
-                    System.out.print(arr[i] + " ");
+                if(visited[i]){
+                    System.out.print(arr[i]);
                 }
             }
             System.out.println();
             return;
         }
-
         if (depth == arr.length) {
-            return; //범위 벗어남.
+            return; //배열 넘어가면 리턴
         }
 
         visited[depth] = true;
         combination(arr, visited, depth + 1, r - 1);
         visited[depth] = false;
         combination(arr, visited, depth + 1, r);
-
     }
+
+
 }
