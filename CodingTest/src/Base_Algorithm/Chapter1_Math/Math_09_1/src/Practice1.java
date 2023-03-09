@@ -8,21 +8,16 @@ public class Practice1 {
 
         for (int i = 0; i < numRows; i++) {
             ArrayList<Integer> al = new ArrayList<>();
-            if (i == 0) {
-                al.add(1);
-                resultList.add(al);
-                continue;
+            for (int j = 0; j < i + 1; j++) {
+                if (j == 0 || j == i) {
+                    al.add(1);
+                } else {
+                    int cur = resultList.get(i - 1).get(j - 1) + resultList.get(i - 1).get(j);
+                    al.add(cur);
+                }
             }
-
-            al.add(1);
-            for (int j = 0; j < i - 1; j++) {
-                ArrayList<Integer> preList = resultList.get(i - 1);
-                al.add(preList.get(j) + preList.get(j + 1));
-            }
-            al.add(1);
             resultList.add(al);
         }
-
         return resultList;
     }
 
