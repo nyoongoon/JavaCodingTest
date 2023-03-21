@@ -1,12 +1,11 @@
 package Base_Algorithm.Chapter1_Math.Math_09_1.src;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class Practice4 {
-    public static boolean solution(int n) {
 
-        return false;
-    }
+    // 다른 방식으로 풀어보기
 
     public static void main(String[] args) {
         // Test code

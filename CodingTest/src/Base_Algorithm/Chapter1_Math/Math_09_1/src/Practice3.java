@@ -24,9 +24,32 @@ public class Practice3 {
     }
 
 
-    // # 2 문제 규칙 찾아 해결
-    public static boolean solution2(String s1, String s2) {
+    // # 2 문제 규칙 찾아 해결 //슬라이딩 윈도우 + 순열의 개념 !!!
+    public static boolean solution2(String s1, String s2){
+        final int ALPHABET = 26;
+        int[] cnt = new int[ALPHABET];
+        for (int i = 0; i < s1.length(); i++) {
+            cnt[s1.charAt(i) - 'a']++;
+        }
 
+        for (int i = 0; i < s2.length(); i++) {
+            boolean result = true;
+            if(i >= s1.length()){
+                cnt[s2.charAt(i - s1.length()) - 'a']++;
+            }
+
+            cnt[s2.charAt(i) - 'a']++;
+
+            for (int j = 0; j < cnt.length; j++) {
+                if(cnt[i] != 0){
+                    result = false;
+                    break;
+                }
+            }
+            if(result){
+                return true;
+            }
+        }
         return false;
     }
 
