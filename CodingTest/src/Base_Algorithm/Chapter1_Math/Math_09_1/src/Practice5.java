@@ -1,11 +1,25 @@
 package Base_Algorithm.Chapter1_Math.Math_09_1.src;
 
-public class Practice5 {
-    public static int solution(int[][] grid) {
+public class Practice5 { // 재귀로 풀 수 있지 않을까.. visited배열하고 가티 해서...
+    static boolean[][] visited;
 
-        return 0;
+    public static int solution(int[][] grid) {
+        //-1,0 , 0,1  , 1,0  , 0,-1
+
+
+        visited = new boolean[grid.length][grid[0].length];
+        int[][] directions = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[i].length; j++) {
+                if (grid[i][j] == 1) {
+                    return recursion(grid, directions, i, j);
+                }
+            }
+        }
+
+        return -1;
     }
-    
+
     // 재귀 풀이
     public static int solution2(int[][] grid) {
 
@@ -13,8 +27,22 @@ public class Practice5 {
     }
 
     public static int recursion(int[][] grid, int[][] directions, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[i].length ||
+                grid[i][j] == 0) {
+            return 1;
+        }
+        if (visited[i][j]) {
+            return 0;
+        }
 
-        return 0;
+        int len = 0;
+        visited[i][j] = true;
+
+        for (int k = 0; k < directions.length; k++) {
+            len += recursion(grid, directions, i + directions[k][0], j + directions[k][1]);
+        }
+
+        return len;
     }
 
     public static void main(String[] args) {
