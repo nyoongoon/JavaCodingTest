@@ -1,71 +1,46 @@
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class Test {
 
-    static int[] valueMemo;
-    //static int[] kMemo;
-    static int[] arrA;
-    static int[] arrP;
-    static int n;
-    static int k;
-    public static void main(String[] args){
-        // 0, 1, ...n개의 마을
-        // 0, 1, ... n개의 도로
-        Scanner stdIn = new Scanner(System.in);
-        n = stdIn.nextInt();
-        k = stdIn.nextInt();
-        arrA = new int[n];
-        arrP = new int[n];
-        valueMemo = new int[n];
-        ArrayList<Integer> al = new ArrayList<>();
 
-
-        for(int i = 0; i<arrA.length; i++){
-            arrA[i] = stdIn.nextInt();
-        }
-
-        for(int i = 0; i<arrA.length; i++){
-            arrP[i] = stdIn.nextInt();
-        }
-
-        recursive(0, 0, al);
-
-       /* for(int i = 0; i<valueMemo.length; i++){
-            System.out.println(valueMemo[i]);
-        }*/
-
-        int max = Integer.MIN_VALUE;
-        for(int i = 0; i<n; i++){
-            max = Math.max(max, valueMemo[i]);
-        }
-        System.out.println(max);
+    public static void main(String[] args) {
+        String s1 = "baabaa";
+        System.out.println(solution(s1));
+        System.out.println();
+        String s2 = "cdcd";
+        System.out.println(solution(s2));
     }
 
-    public static void recursive(int target, int point, ArrayList<Integer> al){
-        /*System.out.println("recursive(int target, al)");
-        System.out.println("recursive(" + target +", al)");*/
-        int nowPoint = 0;
-        for(int p : al){
-            nowPoint += p;
+
+    public static int solution(String s) {
+        char[] chars = s.toCharArray();
+
+        while(chars.length > 0){
+            if(chars.length == 1) return 0;
+
+            for (int i = 0; i < chars.length - 1; i++) {
+                if (chars[i] == chars[i + 1]){
+                    chars = cut(chars, i);
+                    break;
+                }
+                if(i == chars.length-2){
+                    return 0;
+                }
+            }
         }
 
-        if(nowPoint > k || target > n){
-            return;
-        }
-
-
-
-        valueMemo[target] = Math.max(valueMemo[target], point+arrP[target]);
-        //System.out.println("valueMemo[target] == " + valueMemo[target]);
-
-
-        for(int i = target+1; i<n; i++){
-            al.add(arrA[target]);
-            recursive(i, valueMemo[target], al);
-            al.remove(al.size()-1);
-        }
-
-        //System.out.println();
+        return 1;
     }
+
+    public static char[] cut(char[] chars, int targetIdx){
+        char[] newChars = new char[chars.length-2];
+        int newCharsIdx = 0;
+        for (int i = 0; i < targetIdx; i++) {
+            newChars[newCharsIdx++] = chars[i];
+        }
+        for (int i = targetIdx+2; i < chars.length; i++) {
+            newChars[newCharsIdx++] = chars[i];
+        }
+        return newChars;
+    }
+
+
 }

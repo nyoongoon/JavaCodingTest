@@ -45,7 +45,7 @@ public class Practice {
 
         for (int a : (ArrayList<Integer>) aDivisor) {
             for (int b : (ArrayList<Integer>) bDivisor) {
-                if (a == b && gcd < a) {
+                if (a == b && gcd < a) { //? 부등호
                     gcd = a;
                 }
             }

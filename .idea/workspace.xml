@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Math/GCDByRecursion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Math/PascalTriangle_09_1_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Math/PascalTriangle_ans_09_1_1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Math/PowAndSqrt.java" afterDir="false" />
+    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Math/PermutationByRecur_ans_04.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Math/PermutationByRecur_ans_04.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/.project" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/.project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_03/src/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_03/src/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice1_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice1_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice2_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_04/src/Practice2_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_1/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_1/src/Practice5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice1_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice1_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice2_my.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice2_my.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/수학이론.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/수학이론.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Test2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Test2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Test3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Test3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/알고리즘_이론.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/알고리즘_이론.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +51,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/Basic/Chapter4_Algorithm&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -51,16 +60,28 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TotalAmountOfWater_re_18_3_5">
-    <configuration name="AbsoluteDifference_ans_18_3_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.AbsoluteDifference_ans_18_3_3" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CodingTest/src/Basic/Chapter4_Algorithm" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/Basic/Chapter2_Linear" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math" />
+      <recent name="$PROJECT_DIR$/CodingTest/src" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Practice2">
+    <configuration name="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice3_my" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice3_my" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -68,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AbsoluteDifference_re_18_3_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.AbsoluteDifference_re_18_3_3" />
+    <configuration name="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralPrint_ans_18_3_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.SpiralPrint_ans_18_3_4" />
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.Practice1" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpiralPrint_re_18_3_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.SpiralPrint_re_18_3_4" />
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.Practice2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -107,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TotalAmountOfWater_re_18_3_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.TotalAmountOfWater_re_18_3_5" />
+    <configuration name="Practice5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice5" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.*" />
+          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -131,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TotalAmountOfWater_re_18_3_5" />
-        <item itemvalue="Application.SpiralPrint_re_18_3_4" />
-        <item itemvalue="Application.SpiralPrint_ans_18_3_4" />
-        <item itemvalue="Application.AbsoluteDifference_re_18_3_3" />
-        <item itemvalue="Application.AbsoluteDifference_ans_18_3_3" />
+        <item itemvalue="Application.Practice2" />
+        <item itemvalue="Application.Practice1" />
+        <item itemvalue="Application.Practice5" />
+        <item itemvalue="Application.Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" />
+        <item itemvalue="Application.Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice3_my" />
       </list>
     </recent_temporary>
   </component>
@@ -235,6 +256,97 @@
       <workItem from="1658812792499" duration="12000" />
       <workItem from="1658826965418" duration="2938000" />
       <workItem from="1658891574158" duration="2016000" />
+      <workItem from="1668483187393" duration="1555000" />
+      <workItem from="1668568714269" duration="1921000" />
+      <workItem from="1668910282798" duration="1194000" />
+      <workItem from="1668918946430" duration="16571000" />
+      <workItem from="1668988864734" duration="17000" />
+      <workItem from="1669086609124" duration="3344000" />
+      <workItem from="1669098374721" duration="2362000" />
+      <workItem from="1669109299386" duration="11385000" />
+      <workItem from="1669179105033" duration="33000" />
+      <workItem from="1669692519110" duration="1602000" />
+      <workItem from="1669778746984" duration="1171000" />
+      <workItem from="1669790677696" duration="36000" />
+      <workItem from="1669903478875" duration="104000" />
+      <workItem from="1669956038361" duration="210000" />
+      <workItem from="1669964467322" duration="612000" />
+      <workItem from="1670076235782" duration="41000" />
+      <workItem from="1670139910781" duration="9503000" />
+      <workItem from="1670197094510" duration="140000" />
+      <workItem from="1670210988441" duration="1600000" />
+      <workItem from="1670335382972" duration="39000" />
+      <workItem from="1670370352265" duration="63000" />
+      <workItem from="1670555946088" duration="2915000" />
+      <workItem from="1670561651881" duration="1188000" />
+      <workItem from="1670645775792" duration="16331000" />
+      <workItem from="1670724269388" duration="13831000" />
+      <workItem from="1670767364439" duration="37000" />
+      <workItem from="1670806434732" duration="771000" />
+      <workItem from="1670940244793" duration="44000" />
+      <workItem from="1671003265279" duration="13000" />
+      <workItem from="1671025378251" duration="30000" />
+      <workItem from="1671061865472" duration="15000" />
+      <workItem from="1671100253800" duration="655000" />
+      <workItem from="1671199450062" duration="89000" />
+      <workItem from="1671286775175" duration="56000" />
+      <workItem from="1671329196579" duration="16000" />
+      <workItem from="1671354890398" duration="121000" />
+      <workItem from="1671458554593" duration="31000" />
+      <workItem from="1671543741125" duration="105000" />
+      <workItem from="1671628299891" duration="118000" />
+      <workItem from="1671716511443" duration="124000" />
+      <workItem from="1671804327845" duration="88000" />
+      <workItem from="1672063440485" duration="175000" />
+      <workItem from="1672150792099" duration="135000" />
+      <workItem from="1672204471555" duration="79000" />
+      <workItem from="1672700786362" duration="148000" />
+      <workItem from="1673696397031" duration="82000" />
+      <workItem from="1673770290951" duration="105000" />
+      <workItem from="1675481796815" duration="1254000" />
+      <workItem from="1675504749931" duration="769000" />
+      <workItem from="1675593953008" duration="20000" />
+      <workItem from="1675632843694" duration="1924000" />
+      <workItem from="1675636713322" duration="39000" />
+      <workItem from="1675675288721" duration="2267000" />
+      <workItem from="1675718628616" duration="1722000" />
+      <workItem from="1675761568038" duration="2022000" />
+      <workItem from="1675858094060" duration="297000" />
+      <workItem from="1675934603753" duration="1811000" />
+      <workItem from="1676019602438" duration="370000" />
+      <workItem from="1676020673364" duration="1908000" />
+      <workItem from="1676087795293" duration="88000" />
+      <workItem from="1676699410416" duration="1291000" />
+      <workItem from="1676700774627" duration="2879000" />
+      <workItem from="1676711344457" duration="2051000" />
+      <workItem from="1676714515333" duration="7000" />
+      <workItem from="1676887706983" duration="2315000" />
+      <workItem from="1676891649680" duration="421000" />
+      <workItem from="1677068579851" duration="17000" />
+      <workItem from="1677234256833" duration="2054000" />
+      <workItem from="1677393497051" duration="140000" />
+      <workItem from="1677492694774" duration="1122000" />
+      <workItem from="1677578648049" duration="2466000" />
+      <workItem from="1677661800677" duration="174000" />
+      <workItem from="1678097419862" duration="2223000" />
+      <workItem from="1678099820030" duration="120000" />
+      <workItem from="1678183425886" duration="212000" />
+      <workItem from="1678356793714" duration="2115000" />
+      <workItem from="1678439729830" duration="3123000" />
+      <workItem from="1678524076652" duration="364000" />
+      <workItem from="1678962209632" duration="572000" />
+      <workItem from="1679045314066" duration="1231000" />
+      <workItem from="1679307416618" duration="3257000" />
+      <workItem from="1679393621757" duration="2253000" />
+      <workItem from="1679480423809" duration="1797000" />
+      <workItem from="1679910658404" duration="1536000" />
+      <workItem from="1679996972247" duration="877000" />
+      <workItem from="1679998616904" duration="977000" />
+      <workItem from="1680081731757" duration="2638000" />
+      <workItem from="1680085274277" duration="458000" />
+      <workItem from="1680171164521" duration="1928000" />
+      <workItem from="1680420299981" duration="31000" />
+      <workItem from="1680600449366" duration="1418000" />
     </task>
     <servers />
   </component>
@@ -256,16 +368,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CodingTest/src/Basic/ReplaceWords_re.java</url>
+          <url>file://$PROJECT_DIR$/CodingTest/src/Base_Algorithm/ReplaceWords_re.java</url>
           <line>37</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/CodingTest/src/Basic/KeyLoging_18_2_4.java</url>
+          <url>file://$PROJECT_DIR$/CodingTest/src/Base_Algorithm/KeyLoging_18_2_4.java</url>
           <line>78</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="4" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
