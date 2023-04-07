@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3_my.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,7 +340,11 @@
       <workItem from="1680690263576" duration="1675000" />
       <workItem from="1680692683266" duration="1043000" />
       <workItem from="1680733876432" duration="50000" />
-      <workItem from="1680775873919" duration="1307000" />
+      <workItem from="1680775873919" duration="1679000" />
+      <workItem from="1680779137920" duration="1064000" />
+      <workItem from="1680780525444" duration="487000" />
+      <workItem from="1680819845079" duration="19000" />
+      <workItem from="1680859578529" duration="964000" />
     </task>
     <servers />
   </component>
