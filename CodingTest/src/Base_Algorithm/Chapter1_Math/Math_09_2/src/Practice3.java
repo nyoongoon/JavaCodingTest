@@ -16,25 +16,22 @@ public class Practice3 {
 
     public static int[] evaluate(String str) {
         int[] result = new int[2];
-        char[] chars = str.toCharArray();
         boolean isMinus = false;
 
-        for (int i = 0; i < chars.length; i++) {
-            if (chars[i] == '-') {
-                isMinus = true;
-            } else if (chars[i] == '+') {
+        for (int i = 0; i < str.length(); i++) {
+            int tmpStp = str.charAt(i);
+
+            if(tmpStp == '+'){
                 isMinus = false;
-            } else if (chars[i] == 'x') {
-                int tmp = (isMinus) ? -1 : 1;
-                result[0] += tmp;
-            } else {
-                int tmp = 0;
-                if (i < chars.length - 1 && chars[i + 1] == 'x') {
-                    tmp = (isMinus) ? -1 * (chars[i] - '0' -1) : (chars[i] - '0' -1);
-                    result[0] += tmp;
-                } else {
-                    tmp = (isMinus) ? -1 * (chars[i] - '0') : (chars[i] - '0');
-                    result[1] += tmp;
+            }else if (tmpStp == '-'){
+                isMinus = true;
+            }else if(tmpStp == 'x'){
+                result[0] += (isMinus) ? -1 : 1;
+            }else{
+                if(i < str.length()-1 && str.charAt(i+1) == 'x'){
+                    result[0] += (isMinus) ? -1 * (tmpStp-1) : (tmpStp-1);
+                }else{
+                    result[1] += (isMinus) ? -1 * tmpStp : tmpStp;
                 }
             }
         }
@@ -44,7 +41,19 @@ public class Practice3 {
 
     // # 2 정규표현식 사용
     public static int[] evaluate2(String str) {
-        return null;
+        int[] result = new int [2];
+        for(String s : str.split("(?=[+-])")){
+            if(s.equals("+x") || s.equals("x")){
+                result[0]++;
+            }else if (s.equals("-x")){
+                result[0]--;
+            }else if(s.contains("x")){
+                result[0] += Integer.parseInt(s.substring(0, s.length()-1));
+            }else{
+                result[1] += Integer.parseInt(s);
+            }
+        }
+        return result;
     }
 
     public static void main(String[] args) {

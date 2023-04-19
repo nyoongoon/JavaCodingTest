@@ -8,24 +8,20 @@ public class Practice2 {
 
 
     public static int recur(char[] chars, int left, int right, int dept) {
-
-        while (left < right) {
-
-            if (chars[left] != chars[right]) {
-                if (dept == 0) {
-                    if (recur(chars, left + 1, right, 1) == 0 ||
-                            recur(chars, left, right - 1, 1) == 0) {
+        while(left < right){
+            if(chars[left] != chars[right]){
+                if(dept == 0){
+                    if(recur(chars, left+1, right, dept+1) == 0 ||
+                        recur(chars, left, right-1, dept+1) == 0){
                         return 1;
                     }
                 }
-
                 return 2;
-            } else {
+            }else{
                 left++;
                 right--;
             }
         }
-
         return 0;
     }
 
