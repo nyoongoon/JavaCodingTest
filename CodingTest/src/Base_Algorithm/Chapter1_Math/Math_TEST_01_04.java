@@ -61,8 +61,9 @@ public class Math_TEST_01_04 {
 
 
     public static void main(String[] args) {
-        System.out.println(solution(4, 1, 3));
-        System.out.println(solution(8, 1, 3));
+//        System.out.println(solution(4, 1, 3));
+//        System.out.println(solution(8, 1, 3));
+        System.out.println(solution(16, 1, 3));
     }
 
 }
