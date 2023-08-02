@@ -27,7 +27,7 @@ class MyArray {
     //  배열에 데이터 삽입
 
     public void insertData(int idx, int value) {
-        if(idx < 0){
+        if(idx < 0 || idx >= this.arr.length){
             System.out.println("Index Error");
             return;
         }
