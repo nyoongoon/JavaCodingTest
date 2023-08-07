@@ -3,9 +3,9 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_03.src;// Practice7
 
 // 입출력 예시:
 // arr:
-// 1 2 3 4 5
+// 1 2 3 4 5       1 -> (0,0) => (0, 2)  2-> (0,1) => (1, 2)  3-> (0,2) =? (2, 2)
 // 6 7 8 9 10
-// 11 12 13 14 15
+// 11 12 13 14 15   11 -> (2,0) =>  (0,0)
 // 결과:
 // 11 6 1
 // 12 7 2
@@ -14,26 +14,31 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_03.src;// Practice7
 // 15 10 5
 
 
-public class Practice7 {
+import java.util.Arrays;
+
+public class Practice7_re {
     public static void main(String[] args) {
-        int[][] arr = new int[3][5];
-        int[][] reversed = new int[5][3];
-        int n = 1;
+        // arr:
+// 1 2 3 4 5
+// 6 7 8 9 10
+// 11 12 13 14 15
+        int[][] arr = new int[][]{
+                {1, 2, 3, 4, 5},
+                {6, 7, 8, 9, 10},
+                {11, 12, 13, 14, 15}
+        };
+
+        int[][] newArr = new int[arr[0].length][arr.length];
+
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr[i].length; j++) {
-                arr[i][j] = n++;
+            for (int j = 0; j < arr[0].length; j++) {
+                newArr[j][arr.length - 1 - i] = arr[i][j];
             }
         }
 
-        for (int i = 0; i < reversed.length; i++) {
-            for (int j = 0; j < reversed[i].length; j++) {
-                reversed[i][reversed[i].length-1-j] = arr[j][i];
-            }
-        }
-
-        for (int i = 0; i < reversed.length; i++) {
-            for (int j = 0; j < reversed[i].length; j++) {
-                System.out.print(reversed[i][j] + " ");
+        for (int i = 0; i < newArr.length; i++) {
+            for (int j = 0; j < newArr[0].length; j++) {
+                System.out.print(newArr[i][j] + " ");
             }
             System.out.println();
         }

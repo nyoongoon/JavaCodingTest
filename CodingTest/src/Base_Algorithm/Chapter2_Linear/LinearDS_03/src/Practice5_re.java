@@ -7,40 +7,13 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_03.src;// Practice5
 
 import java.util.Arrays;
 
-public class Practice5 {
+public class Practice5_re {
     public static void main(String[] args) {
-        int[] arr = {5, 3, 1, 4, 6, 1};
-        int[] arr1 = {0, 100, 4, 17, 22, 23, 44, 11, 9, 133, 24, 55, 62, 51, 24 ,7, 5, 28};
+        int[] arr = new int[]{5, 3, 1, 4, 6, 1};
+        int[] sorted = Arrays.stream(arr).sorted().toArray();
 
-
-        int[] visited = new int[arr.length];
-        int visitCnt = 0;
-        int minVal = Integer.MAX_VALUE;
-        int minIdx = -1;
-
-        while(visitCnt < arr.length){
-            for (int i = 0; i < arr.length; i++) {
-                if(arr[i] < minVal && visited[i] == 0){
-                    minVal = arr[i];
-                    minIdx = i;
-                }
-            }
-
-            if(minIdx != -1){
-                System.out.println(minVal + " ");
-                visited[minIdx] = 1;
-                visitCnt++;
-            }
-            minVal = Integer.MIN_VALUE;
-            minIdx = -1;
-        }
-
-
-        System.out.println(Arrays.toString(arr));
-        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(sorted));
     }
-
-
 
 
 }

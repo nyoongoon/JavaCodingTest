@@ -5,20 +5,13 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_03.src;// Practice6
 // arr: 1, 5, 3, 2, 2, 3, 1, 4, 1, 2, 3, 5
 // 결과: 1, 5, 3, 2, 4
 
-public class Practice6 {
+import java.util.Arrays;
+
+public class Practice6_re {
     public static void main(String[] args) {
-        int[] arr = {1, 5, 3, 2, 2, 3, 1, 4, 1, 2, 3, 5};
-        int[] arr2 = new int[arr.length];
-        for (int i = 0; i < arr.length; i++) {
-            arr2[arr[i]-1] = 1;
-        }
-
-        for (int i = 0; i < arr2.length; i++) {
-            if(arr2[i] == 1){
-                System.out.print(i+1);
-            }
-        }
-
+        int[] arr = new int[] {1, 5, 3, 2, 2, 3, 1, 4, 1, 2, 3, 5};
+        int[] distinctArr = Arrays.stream(arr).distinct().toArray();
+        System.out.println(Arrays.toString(distinctArr));
 
     }
 }
