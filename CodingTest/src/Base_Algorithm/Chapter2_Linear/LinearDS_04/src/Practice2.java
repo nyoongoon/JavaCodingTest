@@ -2,7 +2,15 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_04.src;// Practice2
 // 양방향 연결 리스트 (Doubly Linked List) 구현
 
 class NodeBi {
+    int data;
+    NodeBi next;
+    NodeBi prev;
 
+    NodeBi(int data, NodeBi next, NodeBi prev){
+        this.data = data;
+        this.next = next;
+        this.prev = prev;
+    }
 }
 
 

@@ -60,7 +60,7 @@ class LinkedList2 {
         }
 
         Node cur = this.head;
-        while (cur.nextNode != null) {
+        while (cur != null) {
             System.out.print(cur.data + " ");
             cur = cur.nextNode;
         }
@@ -80,28 +80,25 @@ class LinkedList2 {
     }
 
     public void addData(int data, int idx) {
-        if(isEmpty()){
+        if (isEmpty()) {
             System.out.println("addData Error - Empty List");
             return;
         }
         Node prev = this.head;
         Node cur = this.head;
 
-        while(cur.nextNode != null){
+        while (cur != null) {
+            if (idx == cur.data)
             prev = cur;
             cur = cur.nextNode;
-
-            if(idx == cur.data){
-                break;
-            }
         }
 
-        if(cur.nextNode == null){
+        if (cur == null) {
             System.out.println("Error - Not Found Idx !");
             return;
         }
 
-        if(cur == head){
+        if (cur == head) {
             this.head = new Node(data, cur);
             return;
         }
@@ -109,12 +106,34 @@ class LinkedList2 {
         prev.nextNode = new Node(data, cur);
     }
 
-    public void removeData(int idx){
-        if(isEmpty()){
+    public void removeData(int idx) {
+        if (isEmpty()) {
             System.out.println("Error - List is Empty !");
             return;
         }
 
-        // Not Found Error
+        Node prev = this.head;
+        Node cur = this.head;
+
+        while (cur != null) {
+            if (cur == this.head && cur.data == idx && cur.nextNode == null) {
+                this.head = null;
+                return;
+            }
+            if (cur == this.head && cur.data == idx) {
+                this.head = cur.nextNode;
+                return;
+            }
+            if (cur.data == idx) {
+                prev.nextNode = cur.nextNode;
+                return;
+            }
+            prev = cur;
+            cur = cur.nextNode;
+        }
+
+
+        System.out.println("Error - Not Found Error");
+        return;
     }
 }
