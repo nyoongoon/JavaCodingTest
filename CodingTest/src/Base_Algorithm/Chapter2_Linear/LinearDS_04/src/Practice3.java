@@ -71,7 +71,7 @@ class CircularLinkedList {
                 NodeBi nodeBi = new NodeBi(data, head, tail);
                 head.prev = nodeBi;
                 tail.next = nodeBi;
-
+                head = nodeBi;
                 break;
             }
 //            if (cur.data == beforeData && cur == tail) {

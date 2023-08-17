@@ -16,33 +16,33 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_05.src;// Practice2
 
 public class Practice2 {
     public static boolean checkPalindrome(LinkedList list) {
-        Node cur = list.head;
-        Node left = list.head;
-        Node right = null;
+        // head 부터 while문 순회로 마지막 노드 비교 후 삭제 !!!
 
-        int cnt = 0;
-        while (cur != null) {
-            cnt++;
-            right = cur;
-            cur = cur.next;
-        }
+        while(true){
+            if(list.head.next == null){
+                return true;
+            }
 
-        Node prevRight = right;
-        for (int i = 0; i < cnt / 2; i++) {
+            Node cur = list.head;
+            Node prev = list.head;
+            int headData = cur.data;
 
-            if (left.data != right.data) {
+            while(cur.next != null){
+                prev = cur;
+                cur = cur.next;
+            }
+
+            if(headData == cur.data){
+                prev.next = null;
+                if(list.head.next == null){
+                    return true;
+                }
+                list.head = list.head.next;
+            }else{
                 return false;
             }
-
-            left = left.next;
-            right = left;
-            while (right.next != prevRight) {
-                right = right.next;
-            }
         }
 
-
-        return true;
     }
 
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_05.src;// Practice1
 
 
 import java.util.HashSet;
+import java.util.Set;
 
 class Node {
     int data;
@@ -104,39 +105,24 @@ class LinkedList {
 
 
 public class Practice1 {
-    public static LinkedList my_removeDup(LinkedList listBefore) {
-        HashSet<Integer> set = new HashSet<>();
 
-        Node cur = listBefore.head;
-        Node pre = cur;
-
-        while (cur != null) {
-            if (set.add(cur.data)) {
-                 pre = cur;
-                 cur = cur.next;
-            } else {
-                // 중복 -> 삭제
-                // cur가 head일 수 없음
-                pre.next = cur.next;
-                cur = cur.next;
-            }
-
-        }
-
-        return listBefore;
-    }
     public static LinkedList removeDup(LinkedList listBefore) {
-        LinkedList listAfter = new LinkedList();
+        Set<Integer> set = new HashSet<>();
+
         Node cur = listBefore.head;
-        while(cur!=null){
-            if(listAfter.findData(cur.data) == false){
-                listAfter.addData(cur.data);
+        Node prev = cur;
+        while(cur != null){
+            if(!set.add(cur.data)){
+                 prev.next = cur.next;
+                 cur = cur.next;
+                 continue;
             }
+            prev = cur;
             cur = cur.next;
         }
-
-        return listAfter;
+        return listBefore;
     }
+
     public static void main(String[] args) {
         // Test code
         LinkedList linkedList = new LinkedList();
