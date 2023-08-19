@@ -7,59 +7,61 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_05.src;// Practice3
 // 시작 위치: 2
 // 끝 위치: 4
 // (처음 위치는 1부터라고 가정)
-// 결과 연결 리스트: 1, 4, 3, 2, 5
+// 결과 연결 리스트: 1, 4, 3, 2, 5 //팰린드롬이랑 같은 논리로 cnt/2번 순회하면 될듯 !
 
 
 public class Practice3 {
     public static LinkedList reverseList(LinkedList list, int left, int right) {
-        LinkedList reversed = new LinkedList();
-        int idx = 1;
-        Node cur = list.head;
-
-        Node leftNodePrev = list.head;
-        Node rightNodeNext = list.head;
+        int cnt = right - left + 1;
         Node leftNode = list.head;
-        //Node rightNode = list.head;
-        while(cur != null){
+        Node prevLeftNode = list.head;
 
-            if(idx < left){
-                leftNodePrev = cur;
-            }
-
-            if(idx == left){
-                Node node = new Node(cur.data, reversed.head);
-                reversed.head = node;
-                leftNode = node;
-            }
-
-            if(idx>left && idx <right){
-                Node node = new Node(cur.data, reversed.head);
-                reversed.head = node;
-            }
-
-
-            if(idx == right){
-                Node node = new Node(cur.data, reversed.head);
-                reversed.head = node;
-                leftNodePrev.next = node;
-                //rightNodeNext = node.next;
-                rightNodeNext = cur.next;
-                break;
-            }
-
-            cur = cur.next;
-            idx++;
+        for (int i = 1; i < left; i++) {
+            prevLeftNode = leftNode;
+            leftNode = leftNode.next;
         }
 
-        leftNode.next = rightNodeNext;
+        Node rightNode = leftNode;
+        Node prevRightNode = leftNode;
+
+        for (int i = 0; i < right- left; i++) {
+            prevRightNode = rightNode;
+            rightNode = rightNode.next;
+        }
+
+        for (int i = 0; i < cnt / 2; i++) {
+            Node nextRightNode = null;
+            if(rightNode.next != null){
+                nextRightNode = rightNode.next;
+            }
+            Node nextLeftNode = leftNode.next;
 
 
-//        cur = list.head;
-//
-//        while(cur != null){
-//            System.out.print(cur.data + " ");
-//            cur = cur.next;
-//        }
+            Node tmpNode = rightNode;//swap
+            rightNode = leftNode;
+            leftNode = tmpNode;
+
+
+            prevLeftNode.next = leftNode;
+            leftNode.next = nextLeftNode;
+
+            prevRightNode.next = rightNode;
+            rightNode.next = nextRightNode;
+
+
+            //Node 초기화
+            nextRightNode = rightNode;
+            rightNode = leftNode;
+            prevRightNode = leftNode;
+
+            while(rightNode.next != nextRightNode){
+                prevRightNode = rightNode;
+                rightNode = rightNode.next;
+            }
+
+            leftNode = leftNode.next;
+        }
+
 
         return list;
     }
