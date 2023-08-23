@@ -7,13 +7,17 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_05.src.P4;
 // 각 문자열의 첫 글자가 같은 것끼리 같은 연결 리스트로 관리하기
 
 
+import java.util.Arrays;
 import java.util.HashSet;
+import java.util.Set;
 
 class Node {
     String data;
     Node next;
 
-    Node() {}
+    Node() {
+    }
+
     Node(String data, Node next) {
         this.data = data;
         this.next = next;
@@ -24,7 +28,9 @@ class LinkedList {
     Node head;
     char alphabet;
 
-    LinkedList() {}
+    LinkedList() {
+    }
+
     LinkedList(Node node, char alphabet) {
         this.head = node;
         this.alphabet = alphabet;
@@ -105,29 +111,34 @@ class LinkedList {
 public class Practice4 {
 
     public static void dataCollect(String[] data) {
-        HashSet<Character> set = new HashSet<>();
+        Set<Character> set = new HashSet<>();
+        Arrays.stream(data)
+                .map(x -> set.add(x.charAt(0)));
+        Arrays.stream(data).forEach(x -> set.add(x.charAt(0)));
 
-        for(String item : data){
-            set.add(item.toCharArray()[0]);
-        }
-        Character[] characters = set.toArray(new Character[0]);
         LinkedList[] linkedLists = new LinkedList[set.size()];
 
-        for (int i = 0; i < linkedLists.length; i++) {
-            linkedLists[i] = new LinkedList(null, characters[i]);
-        }
+        for (String str : data) {
+            for (int i = 0; i < linkedLists.length; i++) {
+                if (linkedLists[i] == null) {
+                    linkedLists[i] = new LinkedList(new Node(str, null), str.charAt(0));
+                    break;
+                }
 
-        for (int i = 0; i < data.length; i++) {
-            for (int j = 0; j < linkedLists.length; j++) {
-                if(data[i].toCharArray()[0] == characters[j]){
-                    linkedLists[j].addData(data[i]);
+                if(linkedLists[i].alphabet == str.charAt(0)){
+                    linkedLists[i].addData(str);
+                    break;
                 }
             }
         }
 
-        for (int i = 0; i < linkedLists.length; i++) {
-            linkedLists[i].showData();
-        }
+
+       for (LinkedList list : linkedLists){
+           list.showData();
+           System.out.println();
+       }
+
+
     }
 
     public static void main(String[] args) {
