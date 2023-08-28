@@ -17,28 +17,35 @@ public class Practice2 {
     public static void checkParenthesis(String str) {
         Stack<Character> stk = new Stack<>();
         char[] chars = str.toCharArray();
-        for (int i = 0; i < chars.length; i++) {
 
-            if(!stk.isEmpty()){
-                char popChar = stk.peek();
-//                System.out.println("popChar == " + popChar);
-//                System.out.println("chars["+i+"] == " + chars[i]);
-                if(popChar == '(' && chars[i]==')'){ // 다르면 없어짐
-                    stk.pop();
-                }else{
-                    stk.push(chars[i]);
-                }
-            }else{
-                stk.push(chars[i]);
+        for (char c : chars){
+
+            if(stk.isEmpty()){
+                stk.push(c);
+                continue;
             }
+
+            if(isMatched(stk.peek(), c)){
+                stk.pop();
+                continue;
+            }
+
+            stk.push(c);
         }
 
-        if(stk.isEmpty()){
+        if(stk.size() == 0){
             System.out.println("PASS!");
-        }else{
-            System.out.println("FAIL!");
+            return;
         }
 
+        System.out.println("FAIL!");
+    }
+
+    public static boolean isMatched(char peeked, char parenthesis){
+        if(peeked == '(' && parenthesis == ')'){
+            return  true;
+        }
+        return false;
     }
 
     public static void main(String[] args) {

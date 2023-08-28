@@ -13,15 +13,42 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_07.src;// Practice4
 // 출력: false
 
 
+import java.util.Stack;
+
 public class Practice4 {
 
     public static boolean stringCompare(String s1, String s2) {
+        Stack<Character> stk1 = makeStack(new Stack<>(), s1);
+        Stack<Character> stk2 = makeStack(new Stack<>(), s2);
 
+        while (!stk1.isEmpty() && !stk2.isEmpty()) {
 
+            char c1 = chooseCharacter(stk1);
+            char c2 = chooseCharacter(stk2);
+
+            if(c1 != c2){
+                return false;
+            }
+        }
 
         return true;
     }
 
+    public static char chooseCharacter(Stack<Character> stk) {
+        char c = stk.pop();
+        if (c == '#') {
+            stk.pop();
+            c = stk.pop();
+        }
+        return c;
+    }
+
+    public static Stack<Character> makeStack(Stack<Character> stk, String str) {
+        for (int i = 0; i < str.length(); i++) {
+            stk.push(str.charAt(i));
+        }
+        return stk;
+    }
 
     public static void main(String[] args) {
         // Test code
