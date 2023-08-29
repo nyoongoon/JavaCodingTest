@@ -13,7 +13,6 @@ import java.util.Stack;
 
 public class Practice3 {
     public static double calculate(String string) throws Exception {
-        double result = 0;
         Stack<Double> stk = new Stack<>();
         for (int i = 0; i < string.length(); i++) {
             char c = string.charAt(i);

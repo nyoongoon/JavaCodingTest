@@ -20,12 +20,12 @@ public class Practice2 {
 
         for (char c : chars){
 
-            if(stk.isEmpty()){
-                stk.push(c);
-                continue;
-            }
+//            if(stk.isEmpty()){
+//                stk.push(c);
+//                continue;
+//            }
 
-            if(isMatched(stk.peek(), c)){
+            if(!stk.isEmpty() && isMatched(stk.peek(), c)){
                 stk.pop();
                 continue;
             }
