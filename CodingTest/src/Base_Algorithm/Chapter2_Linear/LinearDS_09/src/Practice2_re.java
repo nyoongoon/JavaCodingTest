@@ -14,24 +14,36 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_09.src;// Practice2
 // 결과: 3, 6, 2, 7, 5, 1, 4
 
 
-import java.util.ArrayList;
-import java.util.stream.IntStream;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class Practice2_re {
 
-    public static int[] getJosephusPermutation(int N, int K) {
-        int[] result = new int[N];
-        int resultIdx = 0;
+    public static Queue<Integer> getJosephusPermutation(int N, int K) {
+        Queue<Integer> resultQueue = new LinkedList<>();
+        Queue<Integer> queue = new LinkedList<>();
+        for (int i = 1; i <= N; i++) {
+            queue.add(i);
+        }
 
+        int times = 0;
 
-        int[] queue = new int[N];
-        int qIdx = 0;
+        while (!queue.isEmpty()) {
+            int element = queue.poll();
+            ++times;
+//            if(times == K){ //
+//                times = 0;
+//                resultQueue.add(element);
+//                continue;
+//            }
+            if(times % K == 0){ // 반복되는 횟수 판단의 경우 나머지 연산을 사용하자 !
+                resultQueue.add(element);
+                continue;
+            }
+            queue.add(element);
+        }
 
-
-    }
-
-    public void findNext(){
-
+        return resultQueue;
     }
 
     public static void main(String[] args) {
@@ -39,4 +51,5 @@ public class Practice2_re {
         System.out.println(getJosephusPermutation(5, 2));
         System.out.println(getJosephusPermutation(7, 3));
     }
+
 }
