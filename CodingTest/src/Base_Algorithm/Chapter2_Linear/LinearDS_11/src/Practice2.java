@@ -16,13 +16,15 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_11.src;// Practice1
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.stream.IntStream;
 
 public class Practice2 {
     public static boolean checkPalindrome(String str) {
-        Deque deque = new ArrayDeque();
-        IntStream.range(0, str.length()).forEach((x)->deque.addLast(str.charAt(x)));
-        while(deque.size() > 1){
+        Deque<Character> deque = new ArrayDeque<>();
+        for (int i = 0; i < str.length(); i++) {
+            deque.add(str.charAt(i));
+        }
+
+        for (int i = 0; i < str.length() / 2; i++) {
             if(deque.removeFirst() != deque.removeLast()){
                 return false;
             }

@@ -6,10 +6,17 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_11.src;// Practice2
 // 입력 예시)
 // 초기 데크 상태 (size: 5)
 // -> 1, 2, 3, 4
-// 중간 입력: 10
+// 중간 입력: 10     //데크 크기 증가는 아님...
 // 결과 데크
 // -> 1, 2, 10, 3, 4
 
+// front(0)       rear(4)
+//         1, 2, 4, 5
+
+//         rear(1) front(2)
+//         2, 3,            1, 2
+
+// front에서 rear까지 for문 돌고 돈 결과의 /2 한 값으로 중간 길이를 찾아야할거같은데..
 
 class MyDeque {
     int[] arr;
@@ -38,24 +45,31 @@ class MyDeque {
 
 
     public void addMiddle(int data) {
-        if (this.isFull()) {
-            System.out.println("Deque is full!");
+        if (isFull()) {
             return;
         }
-        int elements = this.rear - this.front;
-        if (elements < 0) {
-            elements = this.arr.length + elements;
+
+        int size = 0;
+        int start = (front + 1) % arr.length;
+        int end = (rear + 1) % arr.length;
+        for (int i = start; i != end; i = (i + 1) % arr.length) {
+            size++;
         }
 
-        int mid = (this.rear - elements / 2 + this.arr.length) % this.arr.length + 1;
-        int start = (this.rear + 1) % this.arr.length;
-        int end = (this.rear - elements / 2 + this.arr.length) % this.arr.length;
-
-        for (int i = start; i != end; i=(i - 1 + this.arr.length) % this.arr.length) {
-            this.arr[i] = this.arr[(i - 1 + this.arr.length) % this.arr.length];
+        int idx = start;
+        for (int i = 0; i < size / 2; i = (i + 1) % arr.length) {
+            idx = (idx + 1) % arr.length;
         }
-        this.arr[mid] = data;
-        this.rear = (this.rear + 1) % this.arr.length;
+
+
+        for (int i = idx; i != (end + 1) % arr.length; i = (i + 1) % arr.length) {
+            int tmp = arr[i];
+            arr[i] = data;
+            data = tmp;
+        }
+
+        rear++; // 리어 1 증가
+
     }
 
     public void addFirst(int data) {
