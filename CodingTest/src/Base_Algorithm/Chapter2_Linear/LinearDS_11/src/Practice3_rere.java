@@ -18,12 +18,12 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_11.src;// Practice2
 
 // front에서 rear까지 for문 돌고 돈 결과의 /2 한 값으로 중간 길이를 찾아야할거같은데..
 
-class MyDeque {
+class MyDequeRe {
     int[] arr;
     int front;
     int rear;
 
-    MyDeque(int size) {
+    MyDequeRe(int size) {
         this.arr = new int[size + 1]; // front 빈칸이므로 하나 더 크게
     }
 
@@ -46,30 +46,34 @@ class MyDeque {
 
     public void addMiddle(int data) {
         if (isFull()) {
+            System.out.println("Queue is full ...");
             return;
         }
 
-        int size = 0;
+        int[] result = new int[arr.length];
+        int size;
+        if (rear - front < 0) {
+            size = rear - front + arr.length;
+        } else {
+            size = rear - front;
+        }
+        int idx = 1;
         int start = (front + 1) % arr.length;
         int end = (rear + 1) % arr.length;
-        for (int i = start; i != end; i = (i + 1) % arr.length) {
-            size++;
+
+        for (int i = start; i != (start + size / 2) % arr.length; i = (i + 1) % arr.length) {
+            result[idx++] = arr[i];
         }
 
-        int idx = start;
-        for (int i = 0; i < size / 2; i = (i + 1) % arr.length) {
-            idx = (idx + 1) % arr.length;
+        result[idx++] = data;
+
+        for (int i = (start + size / 2) % arr.length; i != end; i = (i + 1) % arr.length) {
+            result[idx++] = arr[i];
         }
 
-
-        for (int i = idx; i != (end + 1) % arr.length; i = (i + 1) % arr.length) {
-            int tmp = arr[i];
-            arr[i] = data;
-            data = tmp;
-        }
-
-//        rear++; // 리어 1증가 << 이렇게 증가하면 안됨...
-        rear = (rear + 1) % arr.length;
+        arr = result;
+        front = 0;
+        rear = idx - 1;
     }
 
     public void addFirst(int data) {
@@ -122,7 +126,7 @@ class MyDeque {
 
 }
 
-public class Practice3 {
+public class Practice3_rere {
     public static void main(String[] args) {
         // Test code
         MyDequeRe myDequeRe1 = new MyDequeRe(5);

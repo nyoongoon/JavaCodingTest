@@ -122,22 +122,22 @@ public class Practice3_ans {
         myDeque1.addMiddle(10);
         myDeque1.printDeque();
 
-        MyDeque myDeque2 = new MyDeque(5);
-        myDeque2.addLast(10);
-        myDeque2.addLast(10);
-        myDeque2.addLast(10);
-        myDeque2.addLast(10);
-        myDeque2.addLast(10);
-        myDeque2.removeFirst();
-        myDeque2.removeFirst();
-        myDeque2.removeFirst();
-        myDeque2.removeFirst();
-        myDeque2.addLast(11);
-        myDeque2.addLast(12);
-        myDeque2.addLast(13);
-        myDeque2.printDeque();
+        MyDequeRe myDequeRe2 = new MyDequeRe(5);
+        myDequeRe2.addLast(10);
+        myDequeRe2.addLast(10);
+        myDequeRe2.addLast(10);
+        myDequeRe2.addLast(10);
+        myDequeRe2.addLast(10);
+        myDequeRe2.removeFirst();
+        myDequeRe2.removeFirst();
+        myDequeRe2.removeFirst();
+        myDequeRe2.removeFirst();
+        myDequeRe2.addLast(11);
+        myDequeRe2.addLast(12);
+        myDequeRe2.addLast(13);
+        myDequeRe2.printDeque();
 
-        myDeque2.addMiddle(100);
-        myDeque2.printDeque();
+        myDequeRe2.addMiddle(100);
+        myDequeRe2.printDeque();
     }
 }
