@@ -3,7 +3,8 @@ package Base_Algorithm.Chapter2_Linear;
 public class Linear_TEST_02_05 {
 
     public static void main(String[] args) {
-        int[][] image = {{4, 5, 2, 6, 7},
+        int[][] image = {
+                        {4, 5, 2, 6, 7},
                         {5, 4, 2, 4, 6},
                         {6, 8, 4, 8, 7},
                         {7, 3, 6, 6, 4},
