@@ -1,10 +1,6 @@
-package Base_Algorithm.Chapter2_Linear;
+package Base_Algorithm.Chapter2_Linear.LinearDS_14_2.src;
 
-import java.util.LinkedList;
-import java.util.List;
-
-public class Linear_TEST_02_04 {
-
+public class Linear_TEST_02_04_ans {
     public static void main(String[] args) { // ans로 풀어보기...
         int delay = 5;
         int capacity = 5;
@@ -19,41 +15,24 @@ public class Linear_TEST_02_04 {
 
     public static int solution(int delay, int capacity, int[] times) {
         int missing = 0;
-        LinkedList<Integer> queue = new LinkedList<>();
-        int processd = 0;
+        int processed = 0; //진행시간
+        int queueSize = 0;
 
         for (int time : times) {
-            processd += time;
+            processed += time;
+            queueSize = Math.max(0, queueSize - processed / delay); // 진행시간 / delay == 제거된 갯수
 
-            int pollTimes = processd == 0 ? 0 : processd / delay;
-
-            // 제거
-            for (int i = 0; i < pollTimes; i++) {
-                queue.poll();
-            }
-
-            // 삽입
-            if (isFull(queue, capacity)) {
+            if(queueSize < capacity){
+                queueSize++;
+            }else{
                 missing++;
-            } else {
-                queue.add(0);
             }
-
-            processd %= delay;
+            processed %= delay;
         }
+
 
         return missing;
     }
 
-    static boolean isFull(List<Integer> queue, int capacity) {
-        if (queue.size() >= capacity) {
-            return true;
-        }
-        return false;
-    }
 
 }
-
-
-
-
