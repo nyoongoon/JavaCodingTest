@@ -7,27 +7,27 @@ class MyHashTable3 extends MyHashTable {
         super(size);
     }
 
-    public void setValue(int key, int data) {
+    @Override
+    public void setValue(int key, int value) {
         int idx = this.getHash(key);
-
-        if (this.elemCnt == this.table.length) {
-            System.out.println("Hash table is full!");
+        if (this.eleCnt == this.table.length) {
+            System.out.println("table is full");
             return;
         } else if (this.table[idx] == null) {
-            this.table[idx] = data;
-        } else { // 해시 충돌 !! => 제곱 탐사법
+            this.table[idx] = value;
+        } else {
+            int i = 0;
             int newIdx = idx;
-            int cnt = 0;
             while (true) {
-                newIdx = (newIdx + (int) Math.pow(2, cnt)) % this.table.length;
-                if (this.table[newIdx] == null) {
+                newIdx = (idx + (int) Math.pow(2, i++)) % this.table.length;
+                if(this.table[newIdx] == null){
                     break;
                 }
-                cnt++;
             }
-            this.table[newIdx] = data;
+            this.table[newIdx] = value;
         }
-        this.elemCnt++;
+
+        this.eleCnt++;
     }
 }
 

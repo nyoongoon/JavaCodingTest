@@ -1,4 +1,4 @@
-package Base_Algorithm.Chapter2_Linear.LinearDS_14_2.src;
+package Base_Algorithm.Chapter2_Linear;
 
 public class Linear_TEST_02_04_ans {
     public static void main(String[] args) { // ans로 풀어보기...

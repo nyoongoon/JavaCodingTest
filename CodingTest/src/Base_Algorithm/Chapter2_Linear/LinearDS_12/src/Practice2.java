@@ -2,28 +2,29 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_12.src;// Practice2
 // 해시 충돌 해결 - 개방 주소법 (선형 탐사법)
 
 class MyHashTable2 extends MyHashTable {
-
     MyHashTable2(int size) {
         super(size);
     }
 
-    public void setValue(int key, int data) {
+    public void setValue(int key, int value) {
         int idx = this.getHash(key);
-        if(this.elemCnt == this.table.length){
-            System.out.println("Hash table is full!");
+
+        if (this.eleCnt == this.table.length) {
+            System.out.println("table is full");
             return;
-        }else if (this.table[idx] == null){
-            this.table[idx] = data;
-        }else{ //해시 충돌 !!! => 선형 탐사법
+        } else if (this.table[idx] == null) {
+            this.table[idx] = value;
+        } else {
             int newIdx = idx;
-            while(true){
+            while (true) {
                 newIdx = (newIdx + 1) % this.table.length;
-                if(this.table[newIdx] == null){
+                if (this.table[newIdx] == null) {
                     break;
                 }
-            }this.table[newIdx] = data;
+            }
+            this.table[newIdx] = value;
         }
-        elemCnt++;
+        eleCnt++;
     }
 
 }

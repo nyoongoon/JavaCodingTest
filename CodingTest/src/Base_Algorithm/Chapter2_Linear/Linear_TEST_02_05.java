@@ -2,7 +2,7 @@ package Base_Algorithm.Chapter2_Linear;
 
 public class Linear_TEST_02_05 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // ans 풀어보기...
         int[][] image = {
                         {4, 5, 2, 6, 7},
                         {5, 4, 2, 4, 6},
