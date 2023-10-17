@@ -15,23 +15,25 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_13.src;// Practice2
 
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 public class Practice2 {
     public static int[] solution(int[] numbers, int target) {
         int[] result = new int[2];
-        Hashtable<Integer, Integer> ht = new Hashtable<>();
-
+        Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < numbers.length; i++) {
-
-            if(ht.containsKey(numbers[i])){
-                //System.out.println(i + ", " + ht.get(target - numbers[i]));
-                result[1] = ht.get(numbers[i]);
-                result[0] = i;
+            //key가 값, value가 인덱스
+            map.put(numbers[i], i);
+        }
+        for(Integer number : map.keySet()){
+            int findValue = target - number;
+            if(map.containsKey(findValue)){
+                result[0] = map.get(number);
+                result[1] = map.get(findValue);
                 return result;
             }
-
-            ht.put(target - numbers[i], i);
         }
 
         return null;
