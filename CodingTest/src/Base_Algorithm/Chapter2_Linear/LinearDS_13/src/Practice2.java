@@ -16,7 +16,6 @@ package Base_Algorithm.Chapter2_Linear.LinearDS_13.src;// Practice2
 
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
 
 public class Practice2 {
@@ -27,15 +26,30 @@ public class Practice2 {
             //key가 값, value가 인덱스
             map.put(numbers[i], i);
         }
-        for(Integer number : map.keySet()){
+        for (Integer number : map.keySet()) { // 어차피 키값이 짝을 이루고 있으므로 하나의 for문으로 해결 가능! -> 아래 보기
             int findValue = target - number;
-            if(map.containsKey(findValue)){
+            if (map.containsKey(findValue)) {
                 result[0] = map.get(number);
                 result[1] = map.get(findValue);
                 return result;
             }
         }
 
+        return null;
+    }
+
+    public static int[] solution_ans(int[] numbers, int target) {
+        Map<Integer, Integer> map = new HashMap();
+        int[] result = new int[2];
+        for (int i = 0; i < numbers.length; i++) {
+            if(map.containsKey(numbers[i])){
+                result[0] = map.get(numbers[i]);
+                result[1] = i;
+                return result;
+            }
+
+            map.put(target-numbers[i], i);
+        }
         return null;
     }
 

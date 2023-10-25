@@ -1,29 +1,43 @@
 package Base_Algorithm.Chapter2_Linear.LinearDS_14_1.src;
 
-import java.util.LinkedList;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Practice3 {
-    public static void solution(int[] data) {
-        LinkedList<Integer> result = new LinkedList<>();
-        LinkedList<int[]> ll = new LinkedList<>();
-        for (int i = 0; i < data.length; i++) {
-            ll.add(new int[]{i, data[i]});
+    public static void solution(int[] data) { //선형 탐사법(liner probing) ㄱㅐ념이라서 해시 인가...
+        // {3, 2, 1, -3, -1}; -> 1 4 5 3 2
+        List<Integer> list = new ArrayList<>();
+        boolean[] visited = new boolean[data.length];
+
+        visited[0] = true;
+        int idx = 0;
+        int val = data[idx];
+        while (list.size() < data.length) {
+
+            idx = getIdxByVal(visited, idx, val);
+            val = data[idx]; // 3
+            list.add(idx + 1);
+            visited[idx] = true;
         }
 
-        int idx = 0;
-        while(!ll.isEmpty()){ //remove했을 때, 양수와 음수의 움직임이 다르다. // 링크드리스트 remove경우 idx 하나씩 땡겨짐
-            int[] val = ll.remove(idx);
-            result.add(val[0] + 1);
-            int size = ll.size();
-            if (size == 0) break;
-            if(val[1] >= 0){
-                idx = (idx + val[1] - 1) % size;
-            }else{
-                idx = (idx + val[1] + size) % size;
+
+        System.out.println(list);
+    }
+
+    public static int getIdxByVal(boolean[] visited, int idx, int val) {
+        int newIdx;
+        if (val >= 0) {
+            newIdx = (idx + val) % visited.length;
+            while (!visited[newIdx]) {
+                newIdx = (newIdx + 1) % visited.length;
+            }
+        } else { // val < 0
+            newIdx = (idx + val + visited.length) % visited.length;
+            while(!visited[newIdx]){
+                newIdx = (newIdx - 1 + visited.length) % visited.length;
             }
         }
-
-        System.out.println(result);
+        return newIdx;
     }
 
     public static void main(String[] args) {
