@@ -8,27 +8,8 @@ public class Practice1 {
     // 1 3 5 7 9 -> mod -> 1, 3, 7, 9, 5
 
     // 3 6 8 2 -> mod -> 3 2 6 8
-    public static int[] solution(int[] arr) {
-        boolean[] visited = new boolean[arr.length];
-        int[] origin = new int[arr.length];
-        // 인덱스를 해시로 관리... 혹은 visited 불리언 배열로
-        // 첫번째는 무조건 첫번째...
-        int cnt = 0;
-        int idx = 0;
-        while (cnt < arr.length) {
-            int val = arr[cnt];
-
-            while (visited[idx]) {
-                idx = (idx + 1) % arr.length;
-            }
-
-            origin[idx] = val;
-            visited[idx] = true;
-            idx = (arr[cnt] + cnt) % arr.length;
-
-            cnt++;
-        }
-        return origin;
+    public static int[] solution(int[] arr) { // 잘못 품 !!
+        return null;
     }
 
     public static int[] modification(int[] arr) {

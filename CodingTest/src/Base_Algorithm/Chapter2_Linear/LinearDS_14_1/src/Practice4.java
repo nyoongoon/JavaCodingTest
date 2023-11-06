@@ -1,45 +1,43 @@
 package Base_Algorithm.Chapter2_Linear.LinearDS_14_1.src;
 
-import java.util.Stack;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class Practice4 {
     public static void solution(String str) {
-        System.out.println();
-        System.out.println();
-        String result = "Pass";
-        Stack<Character> stk = new Stack<>();
-        for (char c : str.toCharArray()) {
-            //System.out.println(c);
-            if (c == '(' || c == '{' || c == '[') {
-                stk.add(c);
-                continue;
-            }
+        Map<Character, Integer> map = new HashMap<>();
+        map.put('(', 0);
+        map.put('[', 0);
+        map.put('{', 0);
 
-            if (c == ')') {
-                if (stk.peek() == '(') {
-                    stk.pop();
-                } else {
-                    result = "Fail";
-                    break;
-                }
-            } else if (c == '}') {
-                if (stk.peek() == '{') {
-                    stk.pop();
-                } else {
-                    result = "Fail";
-                    break;
-                }
-            } else if (c == ']') {
-                if (stk.peek() == '[') {
-                    stk.pop();
-                } else {
-                    result = "Fail";
-                    break;
-                }
+        for (int i = 0; i < str.length(); i++) {
+            check(map, str.charAt(i));
+        }
+
+        for (Character key : map.keySet()) {
+            if (map.get(key) != 0) {
+                System.out.println("FAIL");
+                return;
             }
         }
-        System.out.println(result);
+        System.out.println("PASS");
+    }
 
+    public static void check(Map<Character, Integer> map, char c) {
+        if (c == '(') {
+            map.put('(', map.get('(') + 1);
+        } else if (c == '{') {
+            map.put('{', map.get('{') + 1);
+        } else if (c == '[') {
+            map.put('[', map.get('[') + 1);
+        } else if (c == ')') {
+            map.put('(', map.get('(') - 1);
+        } else if (c == '}') {
+            map.put('{', map.get('{') - 1);
+        } else if (c == ']') {
+            map.put('[', map.get('[') - 1);
+        }
     }
 
     public static void main(String[] args) {

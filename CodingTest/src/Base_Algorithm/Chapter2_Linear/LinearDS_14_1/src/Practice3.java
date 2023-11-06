@@ -11,13 +11,16 @@ public class Practice3 {
 
         visited[0] = true;
         int idx = 0;
-        int val = data[idx];
-        while (list.size() < data.length) {
 
-            idx = getIdxByVal(visited, idx, val);
-            val = data[idx]; // 3
+        for (int i = 0; i < data.length; i++) {
             list.add(idx + 1);
             visited[idx] = true;
+            int val = data[idx]; // 3
+
+            if (i == data.length - 1) {
+               break;
+            }
+            idx = getIdxByVal(visited, idx, val);
         }
 
 
@@ -28,12 +31,13 @@ public class Practice3 {
         int newIdx;
         if (val >= 0) {
             newIdx = (idx + val) % visited.length;
-            while (!visited[newIdx]) {
+            while (visited[newIdx]) {
+                System.out.println(newIdx);
                 newIdx = (newIdx + 1) % visited.length;
             }
         } else { // val < 0
             newIdx = (idx + val + visited.length) % visited.length;
-            while(!visited[newIdx]){
+            while (visited[newIdx]) {
                 newIdx = (newIdx - 1 + visited.length) % visited.length;
             }
         }
