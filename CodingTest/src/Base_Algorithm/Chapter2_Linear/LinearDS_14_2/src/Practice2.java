@@ -19,17 +19,19 @@ public class Practice2 {
 
         while (i != -1) {
 //            System.out.println(i);
-            if (!stk.isEmpty() && stk.peek() < nums[i]) {
+            if (stk.isEmpty()) {
+                System.out.println("NO");
+                return;
+            }
+
+            if (stk.peek() < nums[i]) {
                 stk.push(nums[i]);
                 strs.addFirst("-");
 //                System.out.println("-");
                 i--;
                 continue;
             }
-            if (stk.isEmpty()) {
-                System.out.println("NO");
-                return;
-            }
+
             while (!stk.isEmpty() && stk.peek() > nums[i]) {
                 stk.pop();
                 strs.addFirst("+");
