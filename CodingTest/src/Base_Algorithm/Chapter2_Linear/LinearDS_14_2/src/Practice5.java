@@ -1,63 +1,65 @@
 package Base_Algorithm.Chapter2_Linear.LinearDS_14_2.src;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.stream.Collectors;
+import java.util.*;
 
 public class Practice5 {
+
+    // 에외케이스 더 있나 파악 필요.. 더 짧은데 뒤에 있는 경우가 가능한기? -> 더 있는듯!
+
     public static ArrayList<Integer> solution(String[] gems) {
-        // 한번 돌면서 String 배열 이름 중복 제거한 해시 테이블 생성
-        // 두번째 돌면서 -> 슬라이딩 윈도우 + 해시테이블 => 해시테이블의 길이가 첫번째 길이와 같은지.
-        // 두번째 거꾸로 돌기 -> 낮은 시작 인덱스가 필요.
-        int[] result = new int[2];
-        HashMap<String, Integer> allMap = new HashMap<>();
-        for (int i = 0; i < gems.length; i++) {
-            int cnt = allMap.getOrDefault(gems[i], 0);
-            allMap.put(gems[i], cnt + 1);
+        ArrayList<ArrayList<Integer>> list = new ArrayList<>();
+
+        Set<String> set = new HashSet<>();
+        for (String str : gems) {
+            set.add(str);
         }
-        // 좌 <<-- 우
-        HashMap<String, Integer> windowMap = new HashMap<>();
-        int left = gems.length - 1;
-        int right = gems.length - 1;
+        int limit = set.size();
+        boolean isFull = false;
+        int rt = 0;
+        int lt = 0;
 
-        int minLen = Integer.MAX_VALUE;
-        while (true) {
+        Map<String, Integer> map = new HashMap<>();
+//        map.put(gems[rt++], 1);
 
-            //while(windowMap.size() != allMap.size() && left > 0){ //모든 값 저장될떄까지 left 이동
-            while (windowMap.size() != allMap.size() && left >= 0) { //모든 값 저장될떄까지 left 이동
-                //System.out.println("left == " + left);
-                System.out.println("left--");
-                int cnt = windowMap.getOrDefault(gems[left], 0);
-                windowMap.put(gems[left], cnt + 1);
-                //if (left >= 0) left--;
-                left--;
-            }
+        while (rt < gems.length && lt <= rt && lt < gems.length) {
+//            System.out.println("lt == " + lt + ", rt == " + rt);
 
-            while (windowMap.size() == allMap.size()&& right >= 0) { //사이즈가 같으면 오른쪽 하나씩 제거시도
-                System.out.println("right--");
-                //System.out.println("right == " + right);
-                int cnt = windowMap.get(gems[right]);
-                if (cnt == 1) {
-                    windowMap.remove(gems[right]);
+            if (!isFull) { //rt 증가
+//                System.out.println("rt == " + rt);
+                int cnt = map.getOrDefault(gems[rt], 0);
+                map.put(gems[rt], cnt + 1);
+                if (map.size() == limit) {
+                    isFull = true;
+                    list.add(new ArrayList<>(List.of(lt + 1, rt + 1)));
                 } else {
-                    windowMap.put(gems[right], cnt - 1);
+                    rt++;
                 }
-                if (right > 0) right--;
-            }
+            } else { // lt 증가
+//                System.out.println("lt == " + lt);
+                int cnt = map.get(gems[lt]);
+                if (cnt - 1 == 0) {
+                    map.remove(gems[lt]);
+                } else {
+                    map.put(gems[lt], cnt - 1);
+                }
+                if (map.size() < limit) {
+                    isFull = false;
+                    list.add(new ArrayList<>(List.of(lt + 1, rt + 1)));
+                }
+                lt++;
 
-            if (minLen > right - left) { // minLen => left에서 right까지 거리
-                minLen = right - left;
-                result[0] = left + 2;
-                result[1] = right + 2;
-                //   System.out.println("put => " +result[0] +", " + result[1] );
-            }
-            if (left == -1 && windowMap.size() != allMap.size()) {
-                break;
             }
         }
 
-        return (ArrayList) Arrays.stream(result).boxed().collect(Collectors.toList());
+        list.sort((x, y) -> (x.get(1) - x.get(0) - (y.get(1) - y.get(0))));
+
+
+//        for (List<Integer> ll : list){
+//            System.out.println(ll.get(0) + ", "  + ll.get(1));
+//        }
+
+
+        return list.get(0);
     }
 
     public static void main(String[] args) {

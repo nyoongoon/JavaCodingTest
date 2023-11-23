@@ -6,6 +6,15 @@ import java.util.List;
 import java.util.Map;
 
 public class Practice3_ans {
+
+    public static void main(String[] args) {
+        // Test code
+        String[] genres = {"classic", "pop", "classic", "classic", "pop"};
+        int[] plays = {500, 600, 150, 800, 2500};
+        solution(genres, plays);
+
+    }
+
     public static void solution(String[] genres, int[] plays) {
         // 공부할 점 2가지 블로그에 쓸 것! -> ArrayList Comparator 정렬, Map.Entry
 
@@ -49,15 +58,6 @@ public class Practice3_ans {
                 System.out.print(songList.get(j).id + " ");
             }
         }
-
-    }
-
-
-    public static void main(String[] args) {
-        // Test code
-        String[] genres = {"classic", "pop", "classic", "classic", "pop"};
-        int[] plays = {500, 600, 150, 800, 2500};
-        solution(genres, plays);
 
     }
 

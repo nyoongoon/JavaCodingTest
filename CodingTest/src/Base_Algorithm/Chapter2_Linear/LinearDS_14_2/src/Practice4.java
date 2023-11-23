@@ -1,9 +1,30 @@
 package Base_Algorithm.Chapter2_Linear.LinearDS_14_2.src;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Practice4 {
     public static String solution(String[] participant, String[] completion) {
+        Map<String, Integer> map = new HashMap<>();
+        for (int i = 0; i < participant.length; i++) {
+            int cnt = map.getOrDefault(participant[i], 0);
+            map.put(participant[i], cnt + 1);
+        }
 
-        return null;
+        for (int i = 0; i < completion.length; i++) {
+            int cnt = map.get(completion[i]);
+
+            if (cnt - 1 == 0) {
+                map.remove(completion[i]);
+                continue;
+            }
+            map.put(completion[i], cnt - 1);
+        }
+
+        for(String str : map.keySet()){
+            System.out.println(str);
+        }
+        return "";
     }
 
     public static void main(String[] args) {
