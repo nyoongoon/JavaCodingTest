@@ -15,29 +15,9 @@ package Base_Algorithm.Chapter3_NonLinear.NonLinearDS_02.src;// Practice1
 // 출력: 0, 0, 1, 0, 0, 1, 1
 
 
-public class Practice1 {
+public class Practice1_re {
     public static void solution(int n) {
-        int[] binaryTree = new int[(int) Math.pow(2, n)]; // 포화 이진트리 사이즈는 2^n 개씩 증가 (배열 마지막 인덱스는 사용x)
-        binaryTree[0] = 0;
-        for (int i = 0; i < (int) Math.pow(2, n - 1) - 1; i++) {
-            binaryTree[i * 2 + 1] = 0; // left 자식 0
-            binaryTree[i * 2 + 2] = 1; // right 자식 1
-        }
-        inOrder(binaryTree, 0);
-        System.out.println();
-    }
-
-    public static void inOrder(int[] arr, int idx){
-        int left = 2 * idx + 1;
-        int right = 2 * idx + 2;
-
-        if(left < arr.length -1){
-            inOrder(arr, left);
-        }
-        System.out.print(arr[idx] + " ");
-        if(right < arr.length - 1){
-            inOrder(arr, right);
-        }
+      // 문제풀고 블로그에 적기..
     }
 
     public static void main(String[] args) {

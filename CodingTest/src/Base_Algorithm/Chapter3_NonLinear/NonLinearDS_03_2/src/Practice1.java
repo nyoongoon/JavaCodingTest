@@ -1,4 +1,4 @@
-package NonLinearDS_03_2.src;// 비선형 자료구조 - 이진 탐색 트리_2
+package Base_Algorithm.Chapter3_NonLinear.NonLinearDS_03_2.src;// 비선형 자료구조 - 이진 탐색 트리_2
 // AVL 트리 - 삽입
 
 import java.util.LinkedList;
