@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_02.src;// Practice1
+package _Theory.Chapter3_NonLinear._02_이진트리_문제.src;// Practice1
 // 종이 접기
 // 종이를 반으로 접었을 때, 안으로 파인 부분은 0, 볼록 튀어나온 부분은 1이라고 하자.
 // 종이를 접을 때는 오른쪽에서 왼쪽으로 접는다.

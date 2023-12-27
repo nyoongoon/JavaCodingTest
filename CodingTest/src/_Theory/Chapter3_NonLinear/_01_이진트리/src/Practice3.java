@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_01.src;// Practice3
+package _Theory.Chapter3_NonLinear._01_이진트리.src;// Practice3
 // 트리 구조 복습 / 구현
 
 import java.util.LinkedList;

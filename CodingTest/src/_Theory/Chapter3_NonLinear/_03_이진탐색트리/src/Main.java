@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_03_1.src;// 비선형 자료구조 - 이진 탐색 트리
+package _Theory.Chapter3_NonLinear._03_이진탐색트리.src;// 비선형 자료구조 - 이진 탐색 트리
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_01.src;// Practice2
+package _Theory.Chapter3_NonLinear._01_이진트리.src;// Practice2
 // 연결 리스트를 이용한 이진 트리 구성, 순회
 
 import java.util.LinkedList;

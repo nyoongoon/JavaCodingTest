@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_03_1.src;// Practice1
+package _Theory.Chapter3_NonLinear._03_이진탐색트리.src;// Practice1
 // 앞의 BST 삽입, 삭제 코드를 재귀 형태로 구현
 
 import java.util.LinkedList;

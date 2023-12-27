@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_02.src;// Practice2
+package _Theory.Chapter3_NonLinear._02_이진트리_문제.src;// Practice2
 
 // 각각의 에지에 가중치가 있는 포화 이진 트리가 있다.
 // 루트에서 각 리프까지의 경로 길이를 모두 같게 설정하고,

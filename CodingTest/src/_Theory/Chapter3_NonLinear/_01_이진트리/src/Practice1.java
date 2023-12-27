@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_01.src;// Practice1
+package _Theory.Chapter3_NonLinear._01_이진트리.src;// Practice1
 // 배열을 이용한 이진 트리 구성, 순회
 
 class BinaryTree {

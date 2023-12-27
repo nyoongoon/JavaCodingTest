@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_03_2.src;// AVL 트리 - 삭제
+package _Theory.Chapter3_NonLinear._04_AVL트리.src;// AVL 트리 - 삭제
 
 class AVLTree2 extends AVLTree{
 
