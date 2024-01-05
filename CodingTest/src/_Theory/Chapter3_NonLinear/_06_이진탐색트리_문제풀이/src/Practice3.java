@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_04.src;// Practice3
+package _Theory.Chapter3_NonLinear._06_이진탐색트리_문제풀이.src;// Practice3
 // 주어진 BST 에서 두 노드의 합이 target 값이 되는 경우가 있는지 확인하세요.
 // 있으면 true, 없으면 false 반환
 

@@ -60,6 +60,7 @@ class AVLTree {
         return rightRotate(node);
     }
 
+    //RL 케이스
     public Node rlRotate(Node node) {
         //node.right를 부모노드로 보고 한 번 rightRotate
         node.right = rightRotate(node.right);

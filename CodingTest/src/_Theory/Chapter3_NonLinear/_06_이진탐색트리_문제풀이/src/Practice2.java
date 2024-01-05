@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_04.src;// Practice2
+package _Theory.Chapter3_NonLinear._06_이진탐색트리_문제풀이.src;// Practice2
 // 주어진 BST 에서 노드 간의 차이값 중 최소 값을 구하세요.
 
 // 입력 트리: 4, 2, 6, 1, 3
