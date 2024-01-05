@@ -7,31 +7,37 @@ package _Theory.Chapter3_NonLinear._06_이진탐색트리_문제풀이.src;// Pr
 // 입력 트리: 5, 1, 48, null, null, 12, 51
 // 출력: 3
 
-public class Practice2 {
-    static int min = Integer.MAX_VALUE;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class Practice2_ans {
 
     public static void solution(Integer[] data) {
-
         BST bst = new BST();
         for (int i = 0; i < data.length; i++) {
             if(data[i] != null){
                 bst.addNode(data[i]);
             }
         }
-        bst.postOrder(bst.head);
-        System.out.println(min);
+        ArrayList<Integer> list = new ArrayList<>();
+        bst.levelOrder(list);
+
+        System.out.println(Collections.min(list));
+        System.out.println(list.stream().min((x, y) -> x > y ? 1 : -1).get());
+        list.sort((x, y) -> x > y ? 1 : -1);
+        System.out.println(list.get(0));
+
     }
 
     public static void main(String[] args) {
         // Test code
         Integer[] data = {3, 1, 4, null, 2};
         solution(data);
-        System.out.println("================");
-        min = Integer.MAX_VALUE;
         data = new Integer[]{5, 1, 48, null, null, 12, 51};
         solution(data);
     }
-
 
 
     static class Node {
@@ -71,22 +77,21 @@ public class Practice2 {
             return node;
         }
 
-        public void postOrder(Node node) {
-            if (node == null) {
-                return;
+        public void levelOrder(ArrayList<Integer> list) {
+            Queue<Node> queue = new LinkedList<>();
+            queue.add(this.head);
+
+            while (!queue.isEmpty()) {
+                Node cur = queue.poll();
+                if (cur.left != null) {
+                    queue.add(cur.left);
+                    list.add(Math.abs(cur.key - cur.left.key));
+                }
+                if (cur.right != null) {
+                    queue.add(cur.right);
+                    list.add(Math.abs(cur.key - cur.right.key));
+                }
             }
-
-            postOrder(node.left);
-            postOrder(node.right);
-
-
-            if(node.left != null){
-                min = Math.min(min, Math.abs(node.key - node.left.key));
-            }
-            if(node.right != null){
-                min = Math.min(min, Math.abs(node.key - node.right.key));
-            }
-
         }
 
     }
