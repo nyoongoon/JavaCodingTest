@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_05.src;// Practice3
+package _Theory.Chapter3_NonLinear._07_그래프.src;// Practice3
 // 인접 리스트 그래프의 DFS, BFS
 
 

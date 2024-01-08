@@ -1,15 +1,14 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_05.src;// Practice1
-// 인접 리스트를 이용한 그래프 구현
+package _Theory.Chapter3_NonLinear._07_그래프.src;// 비선형 자료구조 - 그래프
+// 인접 행렬을 이용한 그래프 구현
 
-
-class MyGraphList {
+class MyGraphMatrix {
 
 }
 
-public class Practice1 {
+public class Main {
     public static void main(String[] args) {
         // Test code
-//        MyGraphList graph = new MyGraphList(4);
+//        MyGraphMatrix graph = new MyGraphMatrix(4);
 //
 //        graph.addVertex('A');
 //        graph.addVertex('B');
@@ -21,6 +20,6 @@ public class Practice1 {
 //        graph.addEdge(1, 2);
 //        graph.addEdge(1, 3);
 //        graph.addEdge(2, 3);
-//        graph.printAdjacentList();
+//        graph.printAdjacentMatrix();
     }
 }
