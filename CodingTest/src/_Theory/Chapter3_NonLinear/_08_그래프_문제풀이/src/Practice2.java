@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_06.src;// Practice2
+package _Theory.Chapter3_NonLinear._08_그래프_문제풀이.src;// Practice2
 // 주어진 그래프에서 시작 노드에서 끝 노드로 가는 길이 있는지 확인하는 프로그램을 작성하세요.
 // path 가 존재하면 true 없으면 false 출력
 

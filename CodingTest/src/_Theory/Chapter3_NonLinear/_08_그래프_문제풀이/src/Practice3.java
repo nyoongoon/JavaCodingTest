@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_06.src;// Practice3
+package _Theory.Chapter3_NonLinear._08_그래프_문제풀이.src;// Practice3
 // 주어진 그래프를 두 개의 그래프로 분리할 수 있는지 확인 하는 프로그램을 작성하세요.
 // 분리 조건: 인접하지 않은 노드끼리 분리
 
