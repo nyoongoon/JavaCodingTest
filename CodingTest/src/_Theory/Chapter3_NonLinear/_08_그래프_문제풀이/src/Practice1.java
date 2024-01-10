@@ -94,8 +94,11 @@ public class Practice1 {
 
     }
 
-    public static int solution2(int[][] e) {
-        return 0;
+    public static int solution2(int[][] e) { // 풀이 2
+        // 간선의 총 개수는 노드의 개수 -1
+        // 모든 노드는 연결되어 있다.
+        // 위의 제약조건이 있는 경우 풀 수 있는 풀이! (센터 노드가 아닌 노드들은 센터 노드와만 연결되어있는 상황)
+        return e[0][0] == e[1][0] || e[0][0] == e[1][1] ? e[0][0] : e[0][1];
     }
 
     public static void main(String[] args) {
