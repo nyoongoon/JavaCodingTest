@@ -9,6 +9,8 @@ package _Theory.Chapter3_NonLinear._08_그래프_문제풀이.src;// Practice2
 // 종착 노드 = 2
 // 출력 : true
 
+import java.util.*;
+
 class Node {
     int id;
     Node next;
@@ -19,40 +21,80 @@ class Node {
     }
 }
 
-class MyGraphList {
-    int vertices[];
-    Node[] adjList;
-    int elemCnt;
+class GraphList {
+    int[] vertices;
+    Node[] nodeList;
+    int idx;
 
-    public MyGraphList() {}
-    public MyGraphList(int size) {
+    public GraphList(int size) {
         this.vertices = new int[size];
-        this.adjList = new Node[size];
-        this.elemCnt = 0;
+        this.nodeList = new Node[size];
+        int idx = 0;
     }
 
-    public boolean isFull() {
-        return this.elemCnt == this.vertices.length;
-    }
-
-    public void addVertex(int data) {
-        if (isFull()) {
-            System.out.println("Graph is full!");
+    public void addVertex(int id) {
+        if (idx == this.vertices.length) {
+            System.out.println("Graph is Full ...");
             return;
         }
-
-        this.vertices[elemCnt++] = data;
+        this.vertices[idx++] = id;
     }
 
-    public void addEdge(int x, int y) {
-        this.adjList[x] = new Node(y, this.adjList[x]);
-        this.adjList[y] = new Node(x, this.adjList[y]);
+    public void addEdges(int x, int y) {
+        this.nodeList[x] = new Node(y, this.nodeList[x]);
+        this.nodeList[y] = new Node(x, this.nodeList[y]);
+    }
+
+    public List<Integer> dfs(int id) {
+        List<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[vertices.length];
+        Stack<Integer> stk = new Stack<>();
+
+        stk.push(vertices[id]);
+        visited[id] = true;
+        result.add(id);
+
+        while (!stk.isEmpty()) {
+            Node cur = this.nodeList[stk.pop()];
+            while (cur != null) {
+                if (!visited[cur.id]) {
+                    stk.push(cur.id);
+                    visited[cur.id] = true;
+                    result.add(cur.id);
+                }
+                cur = cur.next;
+            }
+        }
+
+        return result;
+    }
+
+    public void bfs() {
+        int[] visited = new int[vertices.length];
+        Queue<Integer> queue = new LinkedList<>();
+
     }
 }
 
 public class Practice2 {
     public static void solution(int n, int[][] edges, int source, int dest) {
+        GraphList graphList = new GraphList(n);
+        for (int i = 0; i < n; i++) {
+            graphList.addVertex(i);
+        }
 
+        for (int i = 0; i < edges.length; i++) {
+            graphList.addEdges(edges[i][0], edges[i][1]);
+        }
+
+        List<Integer> list = graphList.dfs(source);
+
+
+        if (list.get(0) == source && list.contains(dest)) {
+            System.out.println("true");
+        } else {
+            System.out.println("false");
+        }
     }
 
     public static void main(String[] args) {
