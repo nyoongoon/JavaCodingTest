@@ -69,10 +69,27 @@ class GraphList {
         return result;
     }
 
-    public void bfs() {
-        int[] visited = new int[vertices.length];
+    public List<Integer> bfs(int id) { //TODO bfs로도 풀어보기!!
+        List<Integer> result = new ArrayList<>();
+        boolean[] visited = new boolean[vertices.length];
         Queue<Integer> queue = new LinkedList<>();
 
+        queue.offer(vertices[id]);
+        visited[id] = true;
+        result.add(id);
+
+        while (!queue.isEmpty()) {
+            Node cur = nodeList[queue.poll()];
+            while (cur != null) {
+                if (!visited[cur.id]) {
+                    queue.offer(cur.id);
+                    visited[cur.id] = true;
+                    result.add(cur.id);
+                }
+                cur = cur.next;
+            }
+        }
+        return result;
     }
 }
 
@@ -87,7 +104,8 @@ public class Practice2 {
             graphList.addEdges(edges[i][0], edges[i][1]);
         }
 
-        List<Integer> list = graphList.dfs(source);
+//        List<Integer> list = graphList.dfs(source)
+        List<Integer> list = graphList.bfs(source);
 
 
         if (list.get(0) == source && list.contains(dest)) {
