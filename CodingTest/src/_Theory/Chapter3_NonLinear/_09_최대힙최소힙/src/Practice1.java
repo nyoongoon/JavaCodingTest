@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_07.src;// Practice 1
+package _Theory.Chapter3_NonLinear._09_최대힙최소힙.src;// Practice 1
 // ArrayList 로 최대 힙 구현
 
 public class Practice1 {
