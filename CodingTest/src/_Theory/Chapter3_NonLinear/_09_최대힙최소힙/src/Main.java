@@ -12,7 +12,7 @@ class MinHeap {
     }
 
     public void printTree() {
-        for (int i = 0; i < this.heap.size(); i++) {
+        for (int i = 1; i < this.heap.size(); i++) {
             System.out.print(this.heap.get(i) + " ");
         }
         System.out.println();
@@ -22,12 +22,13 @@ class MinHeap {
     // 트리의 가장 끝(리프) 위치에 데이터 삽입 && 부모 노드와 키 비교한 후 작을 경우 부모 노드와 자리 교체 (반복)
     public void insert(int data) {
         heap.add(data);
-        int cur = heap.size() - 1; //방금 insert한 대상의 인덱스 -> cur/2 == 부모인덱스
-        while (cur > 1 && heap.get(cur / 2) > heap.get(cur)) { //최상위 노드가 아니고, 부모보다 값이 작으면
-            int parentVal = heap.get(cur / 2);
-            heap.set(cur / 2, data);
-            heap.set(cur, parentVal);
-            cur /= 2;
+        int curIdx = heap.size() - 1; //방금 insert한 대상의 인덱스 -> cur/2 == 부모인덱스
+        // while조건 주의 -> //최상위 노드가 아니고, 부모보다 값이 작으면
+        while (curIdx > 1 && heap.get(curIdx / 2) > heap.get(curIdx)) {
+            int parentVal = heap.get(curIdx / 2);
+            heap.set(curIdx / 2, heap.get(curIdx));
+            heap.set(curIdx, parentVal);
+            curIdx /= 2;
         }
     }
 
