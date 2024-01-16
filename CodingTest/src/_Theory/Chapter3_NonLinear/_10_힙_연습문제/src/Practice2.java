@@ -1,9 +1,9 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_08.src;// Practice 2
+package _Theory.Chapter3_NonLinear._10_힙_연습문제.src;// Practice 2
 // 최소 힙, 최대 힙을 이용하여 데이터를 오름차순, 내림차순으로 출력해보세요.
 
 import java.util.ArrayList;
 
-class MaxHeap{
+class MaxHeap {
     ArrayList<Integer> heap;
 
     public MaxHeap() {
@@ -72,7 +72,22 @@ class MaxHeap{
 
 public class Practice2 {
     public static void solution(MinHeap minHeap) {
-
+        MaxHeap maxHeap = new MaxHeap();
+        System.out.print("오름차순 : ");
+        int minSize = minHeap.heap.size();
+        for (int i = 1; i < minSize; i++) {
+            int top = minHeap.delete();
+            System.out.print(top + " ");
+            maxHeap.insert(top);
+        }
+        System.out.println();
+        System.out.print("내림차순 : ");
+        int maxSize = maxHeap.heap.size();
+        for (int i = 1; i < maxSize; i++) {
+            int top = maxHeap.delete();
+            System.out.print(top + " ");
+            minHeap.insert(top);
+        }
     }
 
     public static void main(String[] args) {

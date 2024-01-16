@@ -1,10 +1,10 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_08.src;// Practice 1
+package _Theory.Chapter3_NonLinear._10_힙_연습문제.src;// Practice 1
 // 최소 힙에서 특정 값을 변경하는 코드를 작성하세요.
 // 특정 값이 여러개라면 모두 바꿔주세요.
 
 import java.util.ArrayList;
 
-class MinHeap{
+class MinHeap {
     ArrayList<Integer> heap;
 
     public MinHeap() {
@@ -73,7 +73,48 @@ class MinHeap{
 
 public class Practice1 {
     public static void solution(MinHeap minHeap, int from, int to) {
+        for (int i = 0; i < minHeap.heap.size(); i++) {
+            if (minHeap.heap.get(i) == from) {
+                minHeap.heap.set(i, to);
+                moveDown(minHeap, i);
+                moveUp(minHeap, i);
+            }
+        }
+    }
 
+    public static void moveDown(MinHeap minHeap, int idx) {
+        // moveDown 이므로 --> 부모가 더 작음
+        while (true) {
+            int childIdx = -1;
+            int leftIdx = idx * 2;
+            int rightIdx = idx * 2 + 1;
+            if (minHeap.heap.size() > rightIdx) {
+                childIdx = minHeap.heap.get(leftIdx) > minHeap.heap.get(rightIdx) ? leftIdx : rightIdx;
+            } else if (minHeap.heap.size() > leftIdx) {
+                childIdx = leftIdx;
+            } else {
+                break;
+            }
+
+            if (minHeap.heap.get(idx) < minHeap.heap.get(childIdx)) {
+                break;
+            } else {
+                int parentVal = minHeap.heap.get(idx);
+                minHeap.heap.set(idx, minHeap.heap.get(childIdx));
+                minHeap.heap.set(childIdx, parentVal);
+                idx = childIdx;
+            }
+        }
+    }
+
+    public static void moveUp(MinHeap minHeap, int idx) {
+        // 부모가 더 작음..
+        while (idx > 1 && minHeap.heap.get(idx / 2) > minHeap.heap.get(idx)) {
+            int parentVal = minHeap.heap.get(idx / 2);
+            minHeap.heap.set(idx / 2, minHeap.heap.get(idx));
+            minHeap.heap.set(idx, parentVal);
+            idx /= 2;
+        }
     }
 
     public static void main(String[] args) {
