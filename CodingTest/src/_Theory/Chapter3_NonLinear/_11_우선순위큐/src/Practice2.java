@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_09.src;// Practice 2
+package _Theory.Chapter3_NonLinear._11_우선순위큐.src;// Practice 2
 // 문자열 사전식 오름차순
 
 import java.util.PriorityQueue;
@@ -25,5 +25,7 @@ public class Practice2 {
         int[] age = {30, 20, 45, 62, 35};
 
         solution(name, age);
+
+        PriorityQueue<Person2> pq5 = new PriorityQueue<>((x, y) -> x.name.compareTo(y.name)); //오름차순
     }
 }
