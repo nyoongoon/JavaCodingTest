@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_10.src;// Practice1
+package _Theory.Chapter3_NonLinear._12_우선순위큐_연습문제.src;// Practice1
 // nums 배열에 주어진 정수들 중에서 k 번째로 큰 수를 반환한는 프로그램을 작성하세요.
 
 // 입력 예시
@@ -11,13 +11,24 @@ package _Theory.Chapter3_NonLinear.NonLinearDS_10.src;// Practice1
 // 출력: 1
 
 
+import java.util.Arrays;
+import java.util.PriorityQueue;
+
 public class Practice1 {
     public static int solution1(int[] nums, int k) {
-        return 0;
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int i = 0; i < nums.length; i++) {
+            pq.add(nums[i]);
+            if (pq.size() > k) {
+                pq.poll();
+            }
+        }
+        return pq.poll();
     }
 
     public static int solution2(int[] nums, int k) {
-        return 0;
+        Arrays.sort(nums);
+        return nums[nums.length - k];
     }
 
     public static void main(String[] args) {

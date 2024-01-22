@@ -1,10 +1,19 @@
-package _Theory.Chapter1_Math._02_경우의수.src;// Practice
+package _Theory.Chapter1_Math._02_경우의수_최대공약수_최대공배수.src;// Practice
 // 약수 구하기, 두 수의 최대공약수와 최소공배수 구하기
 // 활용) 1~10의 수 중 A의 약수 또는 B의 약수인 경우의 수
 // 활용) 1~10의 수 중 A의 약수이면서 B의 약수인 경우의 수
 
 import java.util.ArrayList;
 
+//# 최대 공약수 & 최소 공배수
+//## 약수
+//- 해당 수를 나눠서 나머지가 0이 되는 수
+//- **해당 수 /2 까지 나머지가 0인 수 + 해당 수 **
+//## 최대 공약수
+//- 두 수의 약수 중 공통적으로 나오는 약수이면서 가장 큰 수
+//## 최소 공배수
+//- 배수 중 공통적으로 배수면서 가장 작은 수
+//- 최소 공배수 == (a * b) / GCD(a, b)   <- **두 원소 곱하고 최대 공약수로 나누기.**
 public class Practice {
 
     public static void main(String[] args) {
