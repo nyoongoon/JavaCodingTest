@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Practice4 {
+public class Practice4 { // 내풀이 틀림 --->>> 빈도수 우선순위 처리를 하지 않아서 ...
     public static String solution(String s) {
         List<Character> resultList = new ArrayList<>(); //결과 String이 될 리스트
         List<Character> charList = new ArrayList<>(); //순회용 리스트
@@ -36,6 +36,7 @@ public class Practice4 {
                 continue;
             }
             if (map.get(c) > 0) { //하나씩 차감..
+                System.out.println(c);
                 if (resultList.size() == 0 || resultList.get(resultList.size() - 1) != c) {
                     resultList.add(c);
                 } else {
@@ -54,8 +55,8 @@ public class Practice4 {
 
     public static void main(String[] args) {
         // Test code
-        System.out.println(solution("aabb"));
+//        System.out.println(solution("aabb"));
         System.out.println(solution("aaaaabccd"));
-        System.out.println(solution("aaca"));
+//        System.out.println(solution("aaca"));
     }
 }

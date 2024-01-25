@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-class Num implements Comparable<Num> {
+class Num implements Comparable<Num> { //TODO 넘 복잡하게 푼 듯..!
     int value;
     int frequency;
 
@@ -53,7 +53,7 @@ public class Practice3 {
         }
     }
 
-    public static void solution2(int[] nums, int k) {
+    public static void solution2(int[] nums, int k) { // TODO 블로그
 
     }
 

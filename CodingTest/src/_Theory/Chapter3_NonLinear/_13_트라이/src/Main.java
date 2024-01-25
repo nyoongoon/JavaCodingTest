@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_11.src;// 비선형 자료구조 - 트라이 (Trie)
+package _Theory.Chapter3_NonLinear._13_트라이.src;// 비선형 자료구조 - 트라이 (Trie)
 
 import java.util.HashMap;
 
