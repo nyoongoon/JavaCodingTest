@@ -8,14 +8,58 @@ package _Theory.Chapter3_NonLinear.NonLinearDS_12.src;// Practice3
 // 출력: true, true, false
 
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Practice3 {
     public static void solution(String[] strs, String[] targets) {
+        Set<String> originSet = new HashSet<>();
+        for(String s: strs){
+            originSet.add(s);
+        }
+        for (int i = 0; i < targets.length; i++) {
+            if(originSet.contains(targets[i])){
+                targets[i] = "@";
+            }
+        }
 
-    }
+//       트라이 구현하여 한 번만 건너 뛰기..? -> 건너 못뜀..
+        Set<String> set = new HashSet<>();
 
-    public static boolean examineWord(Node node, String target, int i, boolean flag){
+        for (String s : strs) {
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < s.length(); i++) {
+                sb.append(s.charAt(i));
+            }
+            for (int i = 0; i < s.length(); i++) {
+                char c = sb.charAt(i);
+                sb.deleteCharAt(i);
+                set.add(sb.toString());
+                sb.insert(i, c);
+            }
+        }
 
-        return false;
+        for (String s : targets) {
+            StringBuffer sb = new StringBuffer();
+            for (int i = 0; i < s.length(); i++) {
+                sb.append(s.charAt(i));
+            }
+            System.out.println(sb);
+            for (int i = 0; i < s.length(); i++) {
+                char c = sb.charAt(i);
+                sb.deleteCharAt(i);
+                if (set.contains(sb.toString())) {
+                    System.out.println("true");
+                    break;
+                }
+                sb.insert(i, c);
+                if (i == s.length() - 1) {
+                    System.out.println("false");
+                }
+            }
+        }
+
+//        System.out.println("true");
     }
 
     public static void main(String[] args) {
@@ -24,4 +68,55 @@ public class Practice3 {
         String[] targets = {"applk", "bpple", "apple", "banan", "kiww"};
         solution(strs, targets);    // true, true, false, false, true
     }
+
+//    static class Node {
+//        Map<Character, Node> child;
+//        boolean isTerminal;
+//
+//        public Node() {
+//            this.child = new HashMap<>();
+//            this.isTerminal = false;
+//        }
+//    }
+//
+//    static class Trie {
+//        Node root;
+//
+//        public Trie() {
+//            this.root = new Node();
+//        }
+//
+//        public void insert(String str) {
+//            Node cur = this.root;
+//            for (int i = 0; i < str.length(); i++) {
+//                char c = str.charAt(i);
+//                if (!cur.child.containsKey(c)) {
+//                    cur.child.putIfAbsent(c, new Node());
+//                }
+//                cur = cur.child.get(c);
+//            }
+//            cur.isTerminal = true;
+//        }
+//        // a
+//        // b c  --> f ?
+//        // c d
+//
+//        public boolean search(String str) {
+//            int cnt = 0;
+//            Node cur = this.root;
+//            for (int i = 0; i < str.length(); i++) {
+//                char c = str.charAt(i);
+//                if(cur.child.containsKey(c)){
+//                    cur = cur.child.get(c);
+//                }else{
+//                    if(cnt == 0){
+//                        cnt++;
+//                        continue;;
+//                    }else{
+//                        return false;
+//                    }
+//                }
+//            }
+//        }
+//    }
 }

@@ -13,11 +13,35 @@ package _Theory.Chapter3_NonLinear.NonLinearDS_12.src;// Practice2
 // 출력: "a b c water"
 
 
+import java.util.*;
+
 public class Practice2 {
     public static void solution(String[] dictionary, String sentence) {
+        //the cattle was rattled by the battery" -> set은 순서보장이 안됨..
+        // 순서 보장이 되는 linkedList로..
+        Set<String> set = new HashSet<>();
+        for(String str : dictionary){
+            set.add(str);
+        }
 
+        String[] words = sentence.split(" ");
+
+        for (int i = 0; i <words.length ; i++) {
+            StringBuffer sb = new StringBuffer();
+            for (int j = 0; j < words[i].length(); j++) {
+                sb.append(words[i].charAt(j));
+                if(set.contains(sb.toString())){
+                    words[i] = sb.toString();
+                    break;
+                }
+            }
+        }
+
+        for(String str : words){
+            System.out.print(str + " ");
+        }
+        System.out.println();
     }
-
 
     public static void main(String[] args) {
         // Test code
@@ -29,4 +53,5 @@ public class Practice2 {
         sentence = "apple banana carrot water";
         solution(dictionary, sentence);
     }
+
 }
