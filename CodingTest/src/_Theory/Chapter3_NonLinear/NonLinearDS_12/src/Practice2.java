@@ -18,7 +18,6 @@ import java.util.*;
 public class Practice2 {
     public static void solution(String[] dictionary, String sentence) {
         //the cattle was rattled by the battery" -> set은 순서보장이 안됨..
-        // 순서 보장이 되는 linkedList로..
         Set<String> set = new HashSet<>();
         for(String str : dictionary){
             set.add(str);
