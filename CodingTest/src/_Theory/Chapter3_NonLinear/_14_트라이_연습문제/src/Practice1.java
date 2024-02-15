@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_12.src;// Practice1
+package _Theory.Chapter3_NonLinear._14_트라이_연습문제.src;// Practice1
 // 문자열 배열 strs 와 문자열 prefix 가 주어졌을 때
 // 문자열 배열 내에 prefix 로 시작하는 단어가 있는지를 확인하는 프로그램을 작성하세요.
 // prefix 로 시작하는 단어가 있으면 true, 없으면 false 를 반환하세요.

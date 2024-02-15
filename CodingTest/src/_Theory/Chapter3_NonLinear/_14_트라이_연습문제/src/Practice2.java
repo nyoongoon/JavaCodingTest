@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_12.src;// Practice2
+package _Theory.Chapter3_NonLinear._14_트라이_연습문제.src;// Practice2
 // 문자열 배열 dictionary 와 문자열 sentence 가 주어졌을 때
 // sentence 내의 단어 중 dictionary 의 단어로 시작하는 경우
 // 해당 단어로 변경하여 출력하는 프로그램을 작성하세요.
