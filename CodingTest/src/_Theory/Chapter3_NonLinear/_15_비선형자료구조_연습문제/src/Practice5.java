@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_13_1.src;
+package _Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src;
 
 public class Practice5 {
     public static int solution(int[] forbidden, int a, int b, int x) {
