@@ -5,7 +5,7 @@ import java.util.*;
 public class Practice3_ans {
     public static ArrayList<ArrayList<String>> solution(ArrayList<ArrayList<String>> accounts) {
 
-        return result;
+        return null;
     }
 
     public static void main(String[] args) {
