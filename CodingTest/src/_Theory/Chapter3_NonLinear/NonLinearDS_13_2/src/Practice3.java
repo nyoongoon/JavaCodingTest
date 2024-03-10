@@ -1,10 +1,53 @@
 package _Theory.Chapter3_NonLinear.NonLinearDS_13_2.src;
 
-public class Practice3 {
-    public static boolean solution(int[] target) {
+import java.util.Arrays;
 
+public class Practice3 {
+    static int maxSum = 0;
+
+    public static boolean solution(int[] target) {
+        maxSum = Arrays.stream(target).max().orElseThrow();
+
+        int[] arr = new int[target.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = 1;
+        }
+
+        return dfs(target, arr);
+    }
+
+    private static boolean dfs(int[] target, int[] arr) {
+        if(isEqual(target, arr)) {
+            return true;
+        }
+        if(Arrays.stream(arr).sum() > maxSum){
+            return false;
+        }
+
+        int sum = Arrays.stream(arr).sum();
+        for (int i = 0; i < arr.length; i++) {
+            int tmp = arr[i];
+            arr[i] = sum;
+            if(dfs(target, arr)){
+                return true;
+            }
+            arr[i] = tmp;
+        }
         return false;
     }
+
+    private static boolean isEqual(int[] target, int[] arr) {
+        if(target.length != arr.length){
+            return false;
+        }
+        for (int i = 0; i < target.length; i++) {
+            if(target[i] != arr[i]){
+                return false;
+            }
+        }
+        return true;
+    }
+
 
     public static void main(String[] args) {
         // Test code
