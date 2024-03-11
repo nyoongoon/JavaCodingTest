@@ -1,6 +1,5 @@
-package _Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src;
+package _Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class Practice3 {

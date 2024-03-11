@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src;
+package _Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src;
 
 public class Practice1 {
     static int[][] move = new int[][]{{-1, 0}, {0, 1}, {1, 0}, {0, -1}};

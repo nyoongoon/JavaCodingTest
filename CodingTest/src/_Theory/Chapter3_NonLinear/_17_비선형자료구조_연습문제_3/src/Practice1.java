@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_13_3.src;
+package _Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src;
 
 public class Practice1 {
 

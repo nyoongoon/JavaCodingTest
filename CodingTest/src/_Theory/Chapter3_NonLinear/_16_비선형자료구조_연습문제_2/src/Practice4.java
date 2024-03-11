@@ -1,4 +1,4 @@
-package _Theory.Chapter3_NonLinear.NonLinearDS_13_2.src;
+package _Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src;
 
 import java.util.ArrayList;
 import java.util.List;
