@@ -10,7 +10,7 @@ public class Practice_re {
     //  약수 --> 나눠서 나머지가 발생하지 않는 수
     public List<Integer> getDivisor(int num) {
         List<Integer> result = new ArrayList();
-        for (int i = 1; i <= num / 2; i++) { // 절반까지 체크
+        for (int i = 1; i <= num / 2; i++) { // 절반까지 체크 //제곱근이 더 효율적임!!!
             if (num % i == 0) {
                 result.add(i);
             }
