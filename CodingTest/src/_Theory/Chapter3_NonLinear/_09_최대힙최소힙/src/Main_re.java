@@ -2,62 +2,64 @@ package _Theory.Chapter3_NonLinear._09_최대힙최소힙.src;// 비선형자료
 // ArrayList 로 최소 힙 구현
 
 import java.util.ArrayList;
-import java.util.List;
 
 class MinHeap_re {
-    List<Integer> heap;
+    ArrayList<Integer> list = new ArrayList<>();
 
-    public MinHeap_re() {
-        this.heap = new ArrayList<>();
-        this.heap.add(0); // 더미
-    }
+    // 맨뒤에 넣기 -> 올리기
+    public void insert(int value) {
+        list.add(value);
+        int curIdx = list.size() - 1;
+//        System.out.println("curIdx == " + curIdx);
+        int parentIdx = (curIdx - 1) / 2;
+//        System.out.println("parentIdx == " + parentIdx);
 
-    // 맨 뒤에 넣고 올리기
-    public void insert(int data) {
-        this.heap.add(data);
-        int curIdx = this.heap.size() - 1;
+        while (list.get(parentIdx) > list.get(curIdx)) {
+            int tmp = list.get(curIdx);
+            list.set(curIdx, list.get(parentIdx)); /* 뒤부터설정주의 */
+            list.set(parentIdx, tmp);
 
-        // 최상위 노드 && 부모가 더 작으면 멈추기
-        while (curIdx > 1 && this.heap.get(curIdx / 2) > this.heap.get(curIdx)) {
-            int parentVal = this.heap.get(curIdx / 2);
-            this.heap.set(curIdx / 2, this.heap.get(curIdx));
-            this.heap.set(curIdx, parentVal);
-            curIdx /= 2; // 부모로
+            curIdx = parentIdx;
+            /* parentIdx 뺴먹었었음;;; */
+            parentIdx = (curIdx - 1) / 2;
         }
     }
 
-    // 최상단 노드 제거 -> 맨 아래 대체 후 내리기...
+
+    // 맨위 제거 -> 맨아래 맨위에 놓고 내리기
     public Integer delete() {
-        if (this.heap.size() == 1) {
-            System.out.println("heap is empty ...");
+        /* 사이즈 체크 빼먹었음..! */
+        if (list.size() == 1) {
+            System.out.println("Heap is empty");
             return null;
         }
 
-        int target = this.heap.get(1);
-        this.heap.set(1, this.heap.get(this.heap.size() - 1));
-        this.heap.remove(this.heap.size() - 1);
-
-        int curIdx = 1;
-//        int childIdx = -1;
-        int childIdx = 1; // 이래야 error 안터질듯 ?
+        int target = list.remove(0);
+        list.add(0, list.get(list.size() - 1));
+        list.remove(list.size() - 1);
+        // 0 1 2 3 4 5 6 7 8
+        int curIdx = 0;
         while (true) {
-            int leftIdx = curIdx * 2;
-            int rightIdx = curIdx * 2 + 1;
-            if (heap.size() > rightIdx) {
-                childIdx = this.heap.get(leftIdx) < this.heap.get(rightIdx) ? leftIdx : rightIdx;
-            } else if (heap.size() > leftIdx) {
-                childIdx = leftIdx;
+            int leftIdx = curIdx * 2 + 1;
+            int rightIdx = curIdx * 2 + 2;
+            int targetIdx = -1;
+
+            if (rightIdx < list.size()) {
+                // 좌우 둘 다 범위에 들어올 경우엔 둘 중 더 작은 쪽 골라야함!
+                targetIdx = list.get(leftIdx) < list.get(rightIdx) ? leftIdx : rightIdx;
+            } else if (leftIdx < list.size()) {
+                targetIdx = leftIdx;
             } else {
                 break;
             }
 
-            if(this.heap.get(curIdx) < this.heap.get(childIdx)){
+            if(list.get(curIdx) < list.get(targetIdx)){
                 break;
             }else{
-                int parentVal = this.heap.get(curIdx);
-                this.heap.set(curIdx, this.heap.get(childIdx));
-                this.heap.set(childIdx, parentVal);
-                curIdx = childIdx;
+                int tmp = list.get(targetIdx);
+                list.set(targetIdx, list.get(curIdx));
+                list.set(curIdx, tmp);
+                curIdx = targetIdx;
             }
         }
 
@@ -65,8 +67,8 @@ class MinHeap_re {
     }
 
     public void printTree() {
-        for (int i = 1; i < this.heap.size(); i++) {
-            System.out.print(heap.get(i) + " ");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.print(list.get(i) + ", ");
         }
         System.out.println();
     }
@@ -90,7 +92,7 @@ public class Main_re {
         minHeap.printTree();
         minHeap.insert(30);
         minHeap.printTree();
-
+//
         System.out.println();
         System.out.println("== 데이터 삭제 ==");
         System.out.println("삭제: " + minHeap.delete());
