@@ -40,7 +40,7 @@ public class Main {
 
 
         System.out.println("== 점화식/재귀함수 연습2 ==");
-//      1, 2, 3, 4, 5, 6, ... 의 n번째 까지의 합
+//      1, 2, 3, 4, 5, 6, ... 의 n번째의 수
         n = 5;
         result = 0;
         for (int i = 1; i < n + 1; i++) {
