@@ -4,39 +4,40 @@ package _Theory.Chapter3_NonLinear._09_최대힙최소힙.src;// 비선형자료
 import java.util.ArrayList;
 
 class MinHeap_re {
-    ArrayList<Integer> list = new ArrayList<>();
+    ArrayList<Integer> heap;
 
-    // 맨뒤에 넣기 -> 올리기
+    public MinHeap_re() {
+        this.heap = new ArrayList<>();
+    }
+
+    // 맨 뒤에 추가하고 위로 올리기
     public void insert(int value) {
-        list.add(value);
-        int curIdx = list.size() - 1;
-//        System.out.println("curIdx == " + curIdx);
+        heap.add(value);
+        int curIdx = heap.size() - 1;
+        // 0 1 2 3 4 5 6 7 8
         int parentIdx = (curIdx - 1) / 2;
-//        System.out.println("parentIdx == " + parentIdx);
-
-        while (list.get(parentIdx) > list.get(curIdx)) {
-            int tmp = list.get(curIdx);
-            list.set(curIdx, list.get(parentIdx)); /* 뒤부터설정주의 */
-            list.set(parentIdx, tmp);
+        while (parentIdx >= 0 && heap.get(parentIdx) > heap.get(curIdx)) {
+            int tmp = heap.get(curIdx);
+            heap.set(curIdx, heap.get(parentIdx));
+            heap.set(parentIdx, tmp);
 
             curIdx = parentIdx;
-            /* parentIdx 뺴먹었었음;;; */
             parentIdx = (curIdx - 1) / 2;
         }
     }
 
-
-    // 맨위 제거 -> 맨아래 맨위에 놓고 내리기
-    public Integer delete() {
-        /* 사이즈 체크 빼먹었음..! */
-        if (list.size() == 1) {
-            System.out.println("Heap is empty");
-            return null;
+    public void printTree() {
+        for (int i = 0; i < heap.size(); i++) {
+            System.out.print(heap.get(i) + " ");
         }
+        System.out.println();
+    }
 
-        int target = list.remove(0);
-        list.add(0, list.get(list.size() - 1));
-        list.remove(list.size() - 1);
+    // 맨위 삭제, 마지막 위로 올린 후 내리기
+    public int delete() {
+        int target = heap.get(0);
+        heap.set(0, heap.get(heap.size() - 1));
+        heap.remove(heap.size() - 1);
         // 0 1 2 3 4 5 6 7 8
         int curIdx = 0;
         while (true) {
@@ -44,33 +45,26 @@ class MinHeap_re {
             int rightIdx = curIdx * 2 + 2;
             int targetIdx = -1;
 
-            if (rightIdx < list.size()) {
-                // 좌우 둘 다 범위에 들어올 경우엔 둘 중 더 작은 쪽 골라야함!
-                targetIdx = list.get(leftIdx) < list.get(rightIdx) ? leftIdx : rightIdx;
-            } else if (leftIdx < list.size()) {
+            if (rightIdx < heap.size()) {
+                targetIdx = heap.get(leftIdx) < heap.get(rightIdx) ? leftIdx : rightIdx;
+            } else if (leftIdx < heap.size()) {
                 targetIdx = leftIdx;
             } else {
                 break;
             }
 
-            if(list.get(curIdx) < list.get(targetIdx)){
-                break;
-            }else{
-                int tmp = list.get(targetIdx);
-                list.set(targetIdx, list.get(curIdx));
-                list.set(curIdx, tmp);
+            if (heap.get(curIdx) > heap.get(targetIdx)) {
+                int tmp = heap.get(curIdx);
+                heap.set(curIdx, heap.get(targetIdx));
+                heap.set(targetIdx, tmp);
+                // 아이씨.. 자꾸 뺴먹네.. 인덱스 업데이트..
                 curIdx = targetIdx;
+            } else {
+                break;
             }
         }
 
         return target;
-    }
-
-    public void printTree() {
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print(list.get(i) + ", ");
-        }
-        System.out.println();
     }
 }
 
