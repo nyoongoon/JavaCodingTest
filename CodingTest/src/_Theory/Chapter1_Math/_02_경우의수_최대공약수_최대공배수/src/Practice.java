@@ -35,7 +35,7 @@ public class Practice {
     //  약수
     public ArrayList getDivisor(int num) {
         ArrayList result = new ArrayList();
-        for (int i = 1; i <= num / 2; i++) {
+        for (int i = 1; i <= num / 2; i++) { // 절반까지 체크 //제곱근이 더 효율적임!!!
             if (num % i == 0) {
                 result.add(num);
             }

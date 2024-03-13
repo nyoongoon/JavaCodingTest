@@ -19,10 +19,28 @@ public class Practice1_my {
 
     // swap을 이용한 풀이..
     public void permutationBySwap(int[] arr, int depth, int n, int r) {
+        if (depth == r) {
+            result++;
+            for (int i = 0; i < r; i++) {
+                System.out.print(arr[i] + " ");
+            }
+            System.out.println();
+            return;
+        }
 
+        for (int i = depth; i < arr.length; i++) {
+            swap(arr, depth, i);
+            permutationBySwap(arr, depth + 1, n, r);
+            swap(arr, depth, i);
+        }
     }
 
 
+    public void swap(int[] arr, int a, int b) {
+        int tmp = arr[b];
+        arr[b] = arr[a];
+        arr[a] = tmp;
+    }
 
 
 }

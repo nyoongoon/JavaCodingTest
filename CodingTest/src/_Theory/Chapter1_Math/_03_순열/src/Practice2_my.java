@@ -20,6 +20,23 @@ public class Practice2_my {
 
     //visit 배열을 이용한 풀이
     public void permutationByVisited(int[] arr, boolean[] visited, int[] out, int depth, int n, int r) {
+        if (depth == r) {
+            result++;
+            for (int i = 0; i < r; i++) {
+                System.out.print(out[i] + " ");
+            }
+            System.out.println();
+            return;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (!visited[i]) {
+                visited[i] = true;
+                out[depth] = arr[i];
+                permutationByVisited(arr, visited, out, depth + 1, n, r);
+                visited[i] = false;
+            }
+        }
 
     }
 }
