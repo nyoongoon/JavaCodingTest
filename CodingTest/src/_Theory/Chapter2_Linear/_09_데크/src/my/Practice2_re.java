@@ -1,66 +1,74 @@
 package _Theory.Chapter2_Linear._09_데크.src.my;// Practice2
 // 배열을 이용한 기본 데크 직접 구현
 
-class MyDeque {
+class MyDeque_re {
     int[] arr;
     int front;
     int rear;
 
-    MyDeque(int size) {
-        arr = new int[size + 1]; //front 비어있으므로 + 1
-        front = 0;
-        rear = 0;
-    }
-
-    public boolean isEmpty() {
-        return front == rear;
+    public MyDeque_re(int size) {
+        this.arr = new int[size + 1];
+        this.front = 0;
+        this.rear = 0;
     }
 
     public boolean isFull() {
-        return (rear + 1) % arr.length == front;
+        if ((rear + 1) % arr.length == front) {
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isEmpty() {
+        if (front == rear) {
+            return true;
+        }
+        return false;
     }
 
     public void addFirst(int data) {
         if (isFull()) {
-            System.out.println("Deque is full ...");
+            System.out.println("queue is full..");
             return;
         }
-        arr[front] = data; // front는 비어있는 개념이므로 들어갈 데이터 먼저 넣기
-        front = (front - 1 + arr.length) % arr.length; // 원형일 경우 인덱스 마이너스 경우 주의
+        arr[front] = data;
+        front = (front - 1 + arr.length) % arr.length;
     }
+
 
     public void addLast(int data) {
         if (isFull()) {
-            System.out.println("Deque is full ...");
+            System.out.println("queue is full..");
             return;
         }
         rear = (rear + 1) % arr.length;
         arr[rear] = data;
     }
 
+
     public Integer removeFirst() {
         if (isEmpty()) {
-            System.out.println("Deque is empty ...");
+            System.out.println("queue is empty..");
             return null;
         }
         front = (front + 1) % arr.length;
-        return arr[front]; //프론트는 비어있는 개념이므로...
+        return arr[front];
     }
 
     public Integer removeLast() {
         if (isEmpty()) {
-            System.out.println("Deque is empty ...");
+            System.out.println("queue is empty..");
             return null;
         }
-        int removeData = arr[rear];
+        int target = arr[rear];
         rear = (rear - 1 + arr.length) % arr.length;
-        return removeData;
+        return target;
     }
 
     public void printDeque() {
-        int start = front + 1;
-        int end = rear + 1;
-        for (int i = start; i != end; i = (i + 1) % arr.length) {
+        int start = (front + 1) % arr.length;
+        int end = rear;
+        for (int i = start; i != (end + 1) % arr.length; i = (i + 1) % arr.length) {
             System.out.print(arr[i] + " ");
         }
         System.out.println();
@@ -68,7 +76,7 @@ class MyDeque {
 
 }
 
-public class Practice2 {
+public class Practice2_re {
     public static void main(String[] args) {
         // Test code
         MyDeque_re myDequeRe = new MyDeque_re(5);
