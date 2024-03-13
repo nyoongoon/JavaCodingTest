@@ -80,7 +80,7 @@ class CircularLinkedList {
                 this.head = nodeBi;
                 break;
             }
-//            cur == tail 이라고 해도 tail앞으로 들어가는 것이기 떄문에 head~tail 관계 변하지 않음.
+//            cur == tail 이라고 해도 tail앞으로 들어가는 것이기 떄문에 head, tail 참조 변하지 않음.
 //            if (cur.data == beforeData && cur == tail) {
 //            }
             if (cur.data == beforeData) {

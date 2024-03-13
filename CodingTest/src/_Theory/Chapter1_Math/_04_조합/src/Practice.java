@@ -27,10 +27,8 @@ public class Practice { //visited 배열이 true인 것들만 출력하는 개�
         }
 
         visited[depth] = true;
-        combination(arr, visited, depth + 1, r - 1);
+        combination(arr, visited, depth + 1, r - 1); //뽑는 경우
         visited[depth] = false;
-        combination(arr, visited, depth + 1, r);
+        combination(arr, visited, depth + 1, r); //안뽑는 경우
     }
-
-
 }

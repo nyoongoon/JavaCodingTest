@@ -62,6 +62,5 @@ public class Main {
         r = 3;
 
         System.out.println(combination(n + r - 1, r));
-
     }
 }
