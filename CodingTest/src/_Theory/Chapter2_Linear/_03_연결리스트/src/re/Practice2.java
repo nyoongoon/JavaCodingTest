@@ -67,7 +67,14 @@ class DoublyLinkedList {
             }
             prev.next = new NodeBi(num, null, prev);
         } else { // 찾는 값이 있는 경우
-            while (cur.data != data) {
+            while (true) {
+                if (cur == null) {
+                    System.out.println("찾으려는 값이 없음");
+                    break;
+                }
+                if (cur.data == data) {
+                    break;
+                }
                 prev = cur;
                 cur = cur.next;
             }
