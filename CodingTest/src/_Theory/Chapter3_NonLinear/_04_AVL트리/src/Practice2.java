@@ -44,7 +44,7 @@ class AVLTree2 extends AVLTree {
         //삭제 되고 나서 balance 조절
         int bf = getBalance(node);
 
-        // ll
+        // ll => insert와 다르게 data로 bf 판단하는것 아님! -> balance 결과로
         if (bf > 1 && getBalance(node.left) > 0) {
             return rightRotate(node);
         }
