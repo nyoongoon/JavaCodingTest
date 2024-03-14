@@ -61,7 +61,7 @@ class LinkedList {
         }
     }
 
-    public Integer findData(int data) {
+    public Integer findData(int key) {
         if (this.isEmpty()) {
             System.out.println("List is empty");
             return null;
@@ -69,7 +69,7 @@ class LinkedList {
 
         Node cur = this.head;
         while (cur != null) {
-            if (cur.key == data) {
+            if (cur.key == key) {
                 System.out.println("Data exist!");
                 return cur.data;
             }
