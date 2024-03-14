@@ -26,15 +26,15 @@ class BinarySearchTree {
         Node cur = this.head;
         Node parent = cur;
         while (cur != null) {
-            if (data < cur.data) {
-                parent = cur;
-                cur = cur.left;
-            } else if (data > cur.data) {
-                parent = cur;
-                cur = cur.right;
-            } else {
+            if (data == cur.data) {
                 System.out.println("요소 이미 있음");
                 return;
+            }
+            parent = cur;
+            if (data < cur.data) {
+                cur = cur.left;
+            } else {
+                cur = cur.right;
             }
         }
         if (data < parent.data) {
@@ -66,7 +66,6 @@ class BinarySearchTree {
      * 자식이 없는 경우 | 자식 하나인 경우 | 자식 둘인 경우 -> 케이스 분리 주의
      * -> 각각의 경우 target==head 별도 로직
      * 자식 둘인 경우 => 타겟을 찾아서 -> 타겟 중 작은 것 중에 제일 큰 노드
-     *
      */
     public void removeNode(int data) {
         Node target = this.head;
@@ -99,7 +98,7 @@ class BinarySearchTree {
             }
         } else if (target.left == null || target.right == null) {
             Node child = target.left == null ? target.right : target.left;
-            if (targetParent == null) {
+            if (target == this.head) {
                 this.head = child;
                 return;
             }
@@ -121,7 +120,8 @@ class BinarySearchTree {
             } else {
                 changeTargetParent.right = changeTarget.left;
             }
-            //target과 chageTarget 바꾸기
+            // target과 chageTarget 바꾸기
+            // target.key = changeTarget.key; 키값만 바꾸면 아래 코드 필요 없음..
             changeTarget.left = target.left; //왼쪽자식 <<- 틀림 주의 체인지타겟의 자식을 타겟을 자식으로!
             changeTarget.right = target.right; //오른쪽 자식
             // 부모

@@ -31,11 +31,11 @@ class BinarySearchTree2 {
         }
 
         if (key < cur.key) {
-            cur.left =  removeNodeRecursive(cur.left, key);
+            cur.left = removeNodeRecursive(cur.left, key);
         } else if (key > cur.key) {
             cur.right = removeNodeRecursive(cur.right, key);
         } else { // key == cur.key
-            // cur를 삭제
+            // cur를 삭제 //head설정 안하나..? -> 해줘야함!
             if (cur.left == null) { // 자식이 없거나 하나
                 return cur.right; //right 반환 //nullable
             } else if (cur.right == null) { // 자식이 없거나 하나
@@ -96,11 +96,20 @@ public class Practice1 {
         bst.levelOrder(bst.head);
 
         // 노드 삭제
-        bst.head = bst.removeNodeRecursive(bst.head, 40);
+//        bst.head = bst.removeNodeRecursive(bst.head, 40);
+        bst.removeNodeRecursive(bst.head, 40);
         bst.levelOrder(bst.head);
-        bst.head = bst.removeNodeRecursive(bst.head, 25);
+//        bst.head = bst.removeNodeRecursive(bst.head, 25);
+        bst.removeNodeRecursive(bst.head, 25);
         bst.levelOrder(bst.head);
-        bst.head = bst.removeNodeRecursive(bst.head, 20);
+//        bst.head = bst.removeNodeRecursive(bst.head, 20);
+        bst.removeNodeRecursive(bst.head, 20);
         bst.levelOrder(bst.head);
+
+
+        BinarySearchTree2 bst2 = new BinarySearchTree2(99);
+        bst2.removeNodeRecursive(bst2.head, 99);
+        bst2.levelOrder(bst2.head);
+
     }
 }
