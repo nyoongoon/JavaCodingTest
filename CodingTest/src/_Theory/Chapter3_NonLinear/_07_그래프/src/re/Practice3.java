@@ -13,19 +13,19 @@ class MyGraphList2 extends MyGraphList {
     public void dfs(int idx) {
         boolean[] visited = new boolean[this.vertex.length];
         Stack<Integer> stk = new Stack<>();
-        stk.push(idx);
         visited[idx] = true;
+        stk.add(idx);
 
         while (!stk.isEmpty()) {
             Integer popped = stk.pop();
-            System.out.print(vertex[popped] + " ");
-            Node cur = edges[popped];
+            System.out.print(this.vertex[popped] + " ");
+            Node cur = this.edges[popped];
             while (cur != null) {
-                if(!visited[cur.idx]){
+                if (!visited[cur.idx]) {
                     visited[cur.idx] = true;
                     stk.add(cur.idx);
                 }
-                cur = cur.nextNode;
+                cur = cur.next;
             }
         }
         System.out.println();
@@ -34,20 +34,19 @@ class MyGraphList2 extends MyGraphList {
     public void bfs(int idx) {
         boolean[] visited = new boolean[this.vertex.length];
         Queue<Integer> queue = new LinkedList<>();
-        queue.add(idx);
         visited[idx] = true;
+        queue.add(idx);
 
-        while(!queue.isEmpty()){
+        while (!queue.isEmpty()) {
             Integer polled = queue.poll();
-            System.out.print(vertex[polled] + " ");
-
-            Node cur = edges[polled];
-            while(cur != null){
-                if(!visited[cur.idx]){
+            System.out.print(this.vertex[polled] + " ");
+            Node cur = this.edges[polled];
+            while (cur != null) {
+                if (!visited[cur.idx]) {
                     visited[cur.idx] = true;
                     queue.add(cur.idx);
                 }
-                cur = cur.nextNode;
+                cur = cur.next;
             }
         }
         System.out.println();

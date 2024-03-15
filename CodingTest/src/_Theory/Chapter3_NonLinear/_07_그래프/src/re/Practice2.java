@@ -7,26 +7,27 @@ import java.util.Queue;
 import java.util.Stack;
 
 class MyGraphMatrix2 extends MyGraphMatrix {
+
     public MyGraphMatrix2(int size) {
         super(size);
     }
 
-
     public void dfs(int idx) {
-        System.out.print("dfs : ");
         boolean[] visited = new boolean[this.vertex.length];
-        Stack<Integer> stk = new Stack<>();
-        stk.push(idx);
-        visited[idx] = true;
+        Stack<Integer> stack = new Stack<>();
+        int curIdx = idx;
+        stack.add(curIdx);
+        visited[curIdx] = true;
 
-        while (!stk.isEmpty()) {
-            Integer pop = stk.pop();
-            System.out.print(vertex[pop] + " ");
+        while (!stack.isEmpty()) {
+            Integer popped = stack.pop();
+            System.out.print(this.vertex[popped] + " -> ");
 
-            for (int i = graph[pop].length - 1; i >= 0; i--) {
-                if (graph[pop][i] == 1 && !visited[i]) {
-                    stk.push(i);
+
+            for (int i = this.graph[popped].length - 1; i >= 0; i--) {
+                if (graph[popped][i] == 1 && !visited[i]) {
                     visited[i] = true;
+                    stack.add(i);
                 }
             }
         }
@@ -34,21 +35,19 @@ class MyGraphMatrix2 extends MyGraphMatrix {
     }
 
     public void bfs(int idx) {
-        System.out.print("bfs : ");
         boolean[] visited = new boolean[this.vertex.length];
         Queue<Integer> queue = new LinkedList<>();
-        queue.add(idx);
-        visited[idx] = true;
+        int curIdx = idx;
+        queue.add(curIdx);
+        visited[curIdx] = true;
 
         while (!queue.isEmpty()) {
-            Integer polled = queue.poll();
-            System.out.print(vertex[polled] + " ");
-
-            for (int i = 0; i < graph[polled].length; i++) {
-
-                if (graph[polled][i] == 1 && !visited[i]) {
-                    queue.add(i);
+            Integer popped = queue.poll();
+            System.out.print(this.vertex[popped] + " -> ");
+            for (int i = 0; i < this.graph[popped].length; i++) {
+                if (graph[popped][i] == 1 && !visited[i]) {
                     visited[i] = true;
+                    queue.add(i);
                 }
             }
         }

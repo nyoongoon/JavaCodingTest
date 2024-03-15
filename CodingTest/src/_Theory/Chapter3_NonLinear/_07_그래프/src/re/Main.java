@@ -4,21 +4,20 @@ package _Theory.Chapter3_NonLinear._07_그래프.src.re;// 비선형 자료구�
 class MyGraphMatrix {
     int idx;
     char[] vertex;
-    char[][] graph;
+    int[][] graph;
 
     public MyGraphMatrix(int size) {
-        idx = 0;
-        vertex = new char[size];
-        this.graph = new char[size][size];
+        this.idx = 0;
+        this.vertex = new char[size];
+        this.graph = new int[size][size];
     }
 
-
     public void addVertex(char data) {
-        if (idx == vertex.length) {
+        if(idx == this.vertex.length){
             System.out.println("vertex is full..");
             return;
         }
-        vertex[idx++] = data;
+        this.vertex[idx++] = data;
     }
 
     public void addEdge(int x, int y) {
@@ -27,16 +26,18 @@ class MyGraphMatrix {
     }
 
     public void printAdjacentMatrix() {
+        System.out.print("  ");
         for (int i = 0; i < vertex.length; i++) {
-            System.out.print(vertex[i] + " 의 인접 노드 : ");
+            System.out.print(vertex[i] + " ");
+        }
+        System.out.println();
+        for (int i = 0; i < vertex.length; i++) {
+            System.out.print(vertex[i] + " ");
             for (int j = 0; j < graph[i].length; j++) {
-                if (graph[i][j] == 1) {
-                    System.out.print(vertex[j] + " ");
-                }
+                System.out.print(graph[i][j] + " ");
             }
             System.out.println();
         }
-
     }
 }
 
@@ -49,7 +50,7 @@ public class Main {
         graph.addVertex('B');
         graph.addVertex('C');
         graph.addVertex('D');
-//
+////
         graph.addEdge(0, 1);
         graph.addEdge(0, 2);
         graph.addEdge(1, 2);

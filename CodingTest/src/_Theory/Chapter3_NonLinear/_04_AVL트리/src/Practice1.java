@@ -5,14 +5,14 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 class Node {
-    int key;
     int height;
+    int data;
     Node left;
     Node right;
 
-    public Node(int key, Node left, Node right) {
-        this.key = key;
+    public Node(int data, Node left, Node right) {
         this.height = 0;
+        this.data = data;
         this.left = left;
         this.right = right;
     }
@@ -21,108 +21,97 @@ class Node {
 class AVLTree {
     Node head;
 
-    public int height(Node node) {
-        // 노드가 null일 때 높이는 -1
-        if (node == null) {
+    public int getHeight(Node cur) {
+        if (cur == null) {
             return -1;
         }
-        return node.height;
+        return cur.height;
     }
 
-    // LL 케이스
-    public Node rightRotate(Node node) { // 부모노드를 좌측자식의 우측으로
-        Node lNode = node.left;
-        node.left = lNode.right;
-        lNode.right = node;
+    public int getBalance(Node cur) {
+        if (cur == null) {
+            return 0;
+        }
+        return getHeight(cur.left) - getHeight(cur.right);
+    }
 
-        node.height = Math.max(height(node.left), height(node.right)) + 1;
-        lNode.height = Math.max(height(lNode.left), height(lNode.right)) + 1;
+    public void insert(int data) {
+        this.head = insert(data, this.head);
+    }
 
+    public Node insert(int data, Node cur) {
+        if (cur == null) {
+            return new Node(data, null, null);
+        }
+
+        if (data < cur.data) {
+            cur.left = insert(data, cur.left);
+        } else {
+            cur.right = insert(data, cur.right);
+        }
+
+        cur.height = Math.max(getHeight(cur.left), getHeight(cur.right)) + 1;
+
+        int bf = getBalance(cur);
+
+        if (bf > 1 && data < cur.left.data) { // ll
+            return rightRotate(cur);
+        }
+        if (bf < -1 && data > cur.right.data) { //rr
+            return leftRotate(cur);
+        }
+        if (bf > 1 && data > cur.left.data) { //lr
+            return leftRightRotate(cur);
+        }
+        if (bf < -1 && data < cur.right.data) { //rl
+            return rightLeftRotate(cur);
+        }
+
+        return cur;
+    }
+
+    //부모 좌측의 우측으로
+    public Node rightRotate(Node cur) { // ll
+        Node lNode = cur.left;
+        cur.left = lNode.right;
+        lNode.right = cur;
+
+        cur.height = Math.max(getHeight(cur.left), getHeight(cur.right)) + 1;
+        lNode.height = Math.max(getHeight(lNode.left), getHeight(lNode.right)) + 1;
         return lNode;
     }
 
-    //RR 케이스
-    public Node leftRotate(Node node) { // 부모노드를 우측자식의 좌측으로
-        Node rNode = node.right;
-        node.right = rNode.left;
-        rNode.left = node;
+    public Node leftRotate(Node cur) { // rr
+        Node rNode = cur.right;
+        cur.right = rNode.left;
+        rNode.left = cur;
 
-        node.height = Math.max(height(node.left), height(node.right)) + 1;
-        rNode.height = Math.max(height(rNode.left), height(rNode.right)) + 1;
-
+        cur.height = Math.max(getHeight(cur.left), getHeight(cur.right)) + 1;
+        rNode.height = Math.max(getHeight(rNode.left), getHeight(rNode.right)) + 1;
         return rNode;
     }
 
-    //LR 케이스
-    public Node lrRotate(Node node) {
-        //node.left를 부모노드로 보고 한 번 leftRotate
-        node.left = leftRotate(node.left);
-        return rightRotate(node);
+    public Node leftRightRotate(Node cur) {
+        cur.left = leftRotate(cur.left);
+        return rightRotate(cur);
     }
 
-    //RL 케이스
-    public Node rlRotate(Node node) {
-        //node.right를 부모노드로 보고 한 번 rightRotate
-        node.right = rightRotate(node.right);
-        return leftRotate(node);
+    public Node rightLeftRotate(Node cur) {
+        cur.right = rightRotate(cur.right);
+        return leftRotate(cur);
     }
 
-    public int getBalance(Node node) {
-        if (node == null) {
-            return 0;
-        }
-        return height(node.left) - height(node.right); //왼쪽자식높이 - 오른쪽자식높이
-    }
-
-    public void insert(int key) {
-        this.head = insert(this.head, key); // 회전 시 헤드 바뀔 케이스 있으므로
-    }
-
-    public Node insert(Node node, int key) {
-        if (node == null) {
-            return new Node(key, null, null);
-        }
-
-        if (key < node.key) {
-            node.left = insert(node.left, key);
-        } else {
-            node.right = insert(node.right, key);
-        }
-
-        // 리프에서 추가되었으므로 높이 다시 계산
-        node.height = Math.max(height(node.left), height(node.right)) + 1;
-
-        int bf = getBalance(node);
-        if (bf > 1 && key < node.left.key) { // ll
-            return rightRotate(node);
-        }
-        if (bf < -1 && key > node.right.key) { // rr
-            return leftRotate(node);
-        }
-        if (bf > 1 && key > node.left.key) { // lr
-            return lrRotate(node);
-        }
-        if (bf < -1 && key < node.right.key) { // rl
-            return rlRotate(node);
-        }
-
-        //회전 안하면 그냥 현재 node 리턴
-        return node;
-    }
-
-    public void levelOrder(Node node) {
-        Queue<Node> queue = new LinkedList();
-        queue.add(node);
+    public void levelOrder(Node cur) {
+        Queue<Node> queue = new LinkedList<>();
+        queue.add(cur);
         while (!queue.isEmpty()) {
-            Node cur = queue.poll();
-
-            System.out.print(cur.key + " ");
-            if (cur.left != null) {
-                queue.offer(cur.left);
+            Node polled = queue.poll();
+            System.out.print(polled.data + " ");
+            if (polled.left != null) {
+                queue.add(polled.left);
             }
-
-            if (cur.right != null) {
-                queue.offer(cur.right);
+            if (polled.right != null) {
+                queue.add(polled.right);
             }
         }
         System.out.println();

@@ -2,66 +2,68 @@ package _Theory.Chapter3_NonLinear._04_AVL트리.src;// AVL 트리 - 삭제
 
 class AVLTree2 extends AVLTree {
 
-    public void delete(int key) {
-        this.head = delete(this.head, key);
+
+    public void delete(int data) {
+        this.head = delete(data, this.head);
     }
 
-    public Node delete(Node node, int key) { //TODO blog작성
-        if (node == null) {
-            return null;
+    public Node delete(int data, Node cur) {
+        if (cur == null) {
+            return new Node(data, null, null);
         }
 
-        if (key < node.key) {
-            node.left = delete(node.left, key);
-        } else if (key > node.key) {
-            node.right = delete(node.right, key);
-        } else { //key == node.key
-            if (node.left == null) { // 자식이 없거나 하나
-                return node.right; // nullable
-            } else if (node.right == null) { // 자식이 없거나 하나
-                return node.left; // nullable
-            } else { // 자식이 둘
-                Node changeNodeParent = node;
-                Node changeNode = node.left;
+        if (data < cur.data) {
+            cur.left = delete(data, cur.left);
+        } else if (data > cur.data) {
+            cur.right = delete(data, cur.right);
+        } else {
+            Node target = cur;
+            if (target.left == null) {
+                if (target == this.head) {
+                    this.head = target.right;
+                }
+                return target.right;
+            } else if (target.right == null) {
+                if (target == this.head) {
+                    this.head = target.left;
+                }
+                return target.left;
+            } else {
+                Node changeTarget = target.left;
+                Node changeTargetParent = target;
 
-                // changeNode == 삭제할 노드의 자식 중 작은 것 중에 가장 큰 것.
-                while (changeNode.right != null) {
-                    changeNodeParent = changeNode;
-                    changeNode = changeNode.right;
+                while (changeTarget.right != null) {
+                    changeTargetParent = changeTarget;
+                    changeTarget = changeTarget.right;
                 }
 
-                if (changeNodeParent == node) { //while문 안 탄 경우
-                    changeNodeParent.left = changeNode.left;
+                target.data = changeTarget.data;
+                if (changeTargetParent == target) {
+                    changeTargetParent.left = changeTarget.left;
                 } else {
-                    changeNodeParent.right = changeNode.left;
+                    changeTargetParent.right = changeTarget.left;
                 }
-                node.key = changeNode.key;
-                return node;
             }
         }
 
-        node.height = Math.max(height(node.left), height(node.right)) + 1;
-        //삭제 되고 나서 balance 조절
-        int bf = getBalance(node);
+        cur.height = Math.max(getHeight(cur.left), getHeight(cur.right)) + 1;
 
-        // ll => insert와 다르게 data로 bf 판단하는것 아님! -> balance 결과로
-        if (bf > 1 && getBalance(node.left) > 0) {
-            return rightRotate(node);
+        int bf = getBalance(cur);
+        if (bf > 1 && getBalance(cur.left) > 0) { // ll -> 여기는 밸런스 1 이상이 아니라 0 이상임 주의
+            return rightRotate(cur);
         }
-        // rr
-        if (bf < -1 && getBalance(node.right) < 0) {
-            return leftRotate(node);
+        if (bf < -1 && getBalance(cur.right) < 0) { // rr -> 여기는 밸런스 1 이상이 아니라 0 이상임 주의
+            return leftRotate(cur);
         }
-        //lr
-        if (bf > 1 && getBalance(node.left) < 0) {
-            return lrRotate(node);
-        }
-        // rl
-        if (bf < -1 && getBalance(node.right) > 0) {
-            return rlRotate(node);
+        if (bf < 1 && getBalance(cur.left) < 0) {
+            return leftRightRotate(cur);
         }
 
-        return node;
+        if (bf < -1 && getBalance(cur.right) > 0) {
+            return rightLeftRotate(cur);
+        }
+
+        return cur;
     }
 }
 
