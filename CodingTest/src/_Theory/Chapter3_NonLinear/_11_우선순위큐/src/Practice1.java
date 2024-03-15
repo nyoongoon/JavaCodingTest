@@ -21,7 +21,8 @@ class Person implements Comparable<Person> {
         // 오름차순
         // o는 this의 이전 인덱스로 생각하기 !
         // 오름차순 -> this가 더 크므로 this - o는 양수 !
-        return this.age - o.age >= 0 ? 1 : -1;
+//        return this.age - o.age >= 0 ? 1 : -1;
+        return this.age - o.age; // 오름차순 == this - other
     }
 }
 
