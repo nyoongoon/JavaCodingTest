@@ -28,11 +28,8 @@ public class Practice3 {
             numberQueue.add(i);
         }
 
-
         ArrayList<Integer> result = new ArrayList<>();
         LinkedList<Customer> customerList = new LinkedList<>();
-
-
         for (int i = 0; i < customers.length; i++) {
             customerList.add(new Customer(customers[i][0], customers[i][1]));
         }
@@ -40,24 +37,19 @@ public class Practice3 {
         int nowTime = 0;
         PriorityQueue<Customer> queue = new PriorityQueue<>();
         enter(queue, customerList.poll(), nowTime, numberQueue.poll());
-//        queue.add(customerList.poll());
 
         while (!queue.isEmpty()) {
             if (queue.size() < k && !customerList.isEmpty()) {
-                System.out.println("customerList.size() == " + customerList.size());
                 addAll(queue, customerList, numberQueue, k, nowTime);
             }
 
             Customer endCustomer = exit(queue, numberQueue, result);
-            System.out.println("endCustomer == " + endCustomer.order); //
             //동시 나가는 경우
-            while (!queue.isEmpty() && queue.peek().time == endCustomer.time) { // todo 여기서 다 동시에 빠져나가고 있음;
-
-                System.out.println("동시");
+            while (!queue.isEmpty() && queue.peek().time == endCustomer.time) {
                 endCustomer = exit(queue, numberQueue, result);
             }
+
             nowTime = endCustomer.time;
-            System.out.println("nowTime == " + nowTime);
         }
 
         return result;
