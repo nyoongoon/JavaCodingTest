@@ -2,7 +2,7 @@ package _Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src;
 
 import java.util.PriorityQueue;
 
-public class Practice1 {
+public class Practice1 { //TODO 틀린듯...? 원
     static class Friend{
         int idx;
         int arrived;
