@@ -1,44 +1,36 @@
 package _Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src;
 
+import java.util.Arrays;
 import java.util.PriorityQueue;
 
-public class Practice1 { //TODO 틀린듯...? 원
-    static class Friend{
-        int idx;
-        int arrived;
-        int departed;
-        public Friend(int idx, int arrived, int departed) {
-            this.idx = idx;
-            this.arrived = arrived;
-            this.departed = departed;
-        }
-    }
+public class Practice1 {
     public static int solution(int[][] times, int targetFriend) {
-        // targetFriend의 도착시간을 기준으로.. 우선순위 큐에 넣기
-        // if 기준시간 이전에 떠나는 친구는 큐에 안넣기
-        //
-        PriorityQueue<Friend> queue = new PriorityQueue<>((x, y) -> x.arrived - y.arrived);
-        int targetArrivedTime = times[targetFriend][0];
+        // TODO 다시풀기
+        int targetArrivedTIme = times[targetFriend][0];
+
+        PriorityQueue<Integer> chairs = new PriorityQueue<>();
         for (int i = 0; i < times.length; i++) {
-            if (times[i][1] < targetArrivedTime){
-                continue;
-            }
-            Friend friend = new Friend(i, times[i][0], times[i][1]);
-            queue.add(friend);
-//            System.out.println("add");
+            chairs.add(i);
         }
 
-        int order = 0;
-        while(!queue.isEmpty()){
-            Friend found = queue.poll();
-//            System.out.println("found.idx == " + found.idx);
-            if(found.idx == targetFriend){
-                return order;
+        Arrays.sort(times, (x, y) -> x[0] - y[0]);
+
+        PriorityQueue<int[]> friends = new PriorityQueue<>((x, y) -> x[0] - y[0]);
+        for (int i = 0; i < times.length; i++) {
+            //있으면 먼저 나가야함
+            while (!friends.isEmpty() && friends.peek()[0] <= times[i][0]) {
+                // 나갈시간이 올사람의들어올시간보다 작으면 내보내기
+                chairs.add(friends.poll()[1]);
             }
-            order++;
+
+            // 들어올사람 friends에 넣기
+            if(times[i][0] == targetArrivedTIme){
+                return chairs.peek();
+            }
+            friends.add(new int[]{times[i][1], chairs.poll()});
         }
 
-        return 0;
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -50,6 +42,6 @@ public class Practice1 { //TODO 틀린듯...? 원
         System.out.println(solution(times, 0)); // 2
 
         times = new int[][]{{5, 10}, {1, 2}, {2, 4}, {3, 6}};
-        System.out.println(solution(times, 0)); // 1
+        System.out.println(solution(times, 0)); // 0
     }
 }

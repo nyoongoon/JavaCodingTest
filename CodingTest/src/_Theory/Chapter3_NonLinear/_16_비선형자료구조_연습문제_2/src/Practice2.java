@@ -1,34 +1,32 @@
 package _Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.PriorityQueue;
+import java.util.List;
 
 public class Practice2 {
     public static int[] solution(int[][] intervals, int[] queries) {
-        PriorityQueue<Interval> queue = new PriorityQueue<>((x, y) -> x.range - y.range);
-
-        for (int[] arr : intervals) {
-            queue.add(new Interval(arr[0], arr[1]));
+        List<Integer> results = new ArrayList<>();
+        List<Interval> intervalList = new ArrayList<>();
+        for (int i = 0; i < intervals.length; i++) {
+            intervalList.add(new Interval(intervals[i][0], intervals[i][1]));
         }
+        intervalList.sort((x, y) -> x.interval - y.interval);
 
-        int[] result = new int[queries.length];
         for (int i = 0; i < queries.length; i++) {
-            PriorityQueue<Interval> copy = new PriorityQueue<>(queue);
-            result[i] = getRange(copy, queries[i]);
+            int result = getMinRange(intervalList, queries[i]);
+            results.add(result);
         }
 
-        return result;
+        return results.stream().mapToInt(i -> i).toArray();
     }
 
-    private static int getRange(PriorityQueue<Interval> queue, int query) {
-
-        while (!queue.isEmpty()) {
-            Interval interval = queue.poll();
-            if (interval.start <= query && query <= interval.end) {
-                return interval.range;
+    private static int getMinRange(List<Interval> intervalList, int target) {
+        for (int i = 0; i < intervalList.size(); i++) {
+            if(intervalList.get(i).isContain(target)){
+                return intervalList.get(i).interval;
             }
         }
-
         return -1;
     }
 
@@ -43,15 +41,20 @@ public class Practice2 {
         System.out.println(Arrays.toString(solution(intervals, queries)));
     }
 
-    public static class Interval {
+    static class Interval {
         int start;
         int end;
-        int range;
+        int interval;
 
         public Interval(int start, int end) {
             this.start = start;
             this.end = end;
-            range = end - start + 1;
+            this.interval = end - start + 1;
+        }
+
+        public boolean isContain(int target) {
+            return start <= target && target <= end;
         }
     }
+
 }
