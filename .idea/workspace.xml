@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1_re.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1_ans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/FileUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/PercentOfAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/PercentOfAlphabet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/ScoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/ScoringTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_1_ans.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_1_ans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_2_ans.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_2_ans.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +168,7 @@
       <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice1">
+  <component name="RunManager" selected="Application.Practice1_ans">
     <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice1" />
       <module name="CodingTest" />
@@ -189,12 +182,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_ans" />
+    <configuration name="Practice1_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice1_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -202,8 +195,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_re" />
+    <configuration name="Practice4_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -252,11 +245,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice1_ans" />
         <item itemvalue="Application.Practice1" />
         <item itemvalue="Application.Practice5_ans" />
         <item itemvalue="Application.Practice5_re" />
         <item itemvalue="Application.Practice4_ans" />
-        <item itemvalue="Application.Practice4_re" />
       </list>
     </recent_temporary>
   </component>
@@ -833,7 +826,7 @@
       <workItem from="1713990781876" duration="18000" />
       <workItem from="1714037403145" duration="3472000" />
       <workItem from="1714077298887" duration="19000" />
-      <workItem from="1714123706325" duration="1868000" />
+      <workItem from="1714123706325" duration="5123000" />
     </task>
     <servers />
   </component>
