@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3_my.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1_re.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math/Math_09_2/src/Practice3.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/FileUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/FileUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/PercentOfAlphabet.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/PercentOfAlphabet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/ScoringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/ScoringTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_1_ans.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_1_ans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_2_ans.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/Base_CodingTest/W2/Week2_2_ans.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +31,36 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;tjrwls0826&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nyoongoon/JavaCodingTest.git&quot;,
+    &quot;accountId&quot;: &quot;2a906233-5181-4244-bd94-ce8c9fbcf47b&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/StringBuffer.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/HashMap.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/LinkedList.java" root0="SKIP_INSPECTION" />
+    <setting file="jar:///Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib/src.zip!/java.base/java/util/TreeMap.java" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="LLMProjectSettings">
+    <option name="turned_on" value="false" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
   <component name="ProjectId" id="2AVO0IBKzkJ2D7c9NalNga5CCtO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,54 +68,120 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main (4).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MyQueue_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1 (3).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1_my.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1_re (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice1_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2_my.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice2_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice3 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice3_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice3_ans_그래프문제.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice4.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice4_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice4_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice5.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice5_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice5_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Practice_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter1_Math._06_지수와로그.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice2.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice3.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice5.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice2.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice3.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (2).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice2.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice1.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2.executor&quot;: &quot;Debug&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice3.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.re.Practice2.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._09_최대힙최소힙.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src.Practice4.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3 (1).executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/Basic/Chapter4_Algorithm&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/NonLinearDS_01&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/_09_최대힙최소힙/src/re&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CodingTest/src/Basic/Chapter4_Algorithm" />
-      <recent name="$PROJECT_DIR$/CodingTest/src/Basic/Chapter2_Linear" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_09_최대힙최소힙/src/re" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_07_그래프/src/re" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_04_AVL트리/src/re" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_03_이진탐색트리/src/re" />
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_01_이진트리/src/re" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory" />
+      <recent name="$PROJECT_DIR$/CodingTest" />
       <recent name="$PROJECT_DIR$/CodingTest/src/Base_Algorithm/Chapter1_Math" />
       <recent name="$PROJECT_DIR$/CodingTest/src" />
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src" />
+      <recent name="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src" />
+      <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src" />
+      <recent name="_Theory.Chapter1_Math._04_조합.src" />
+      <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Practice3">
-    <configuration name="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Practice1">
     <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.Practice1" />
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice1" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +189,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.Practice2" />
+    <configuration name="Practice4_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +202,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.Practice3" />
+    <configuration name="Practice4_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_re" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_2.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,12 +215,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice5" />
+    <configuration name="Practice5_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Base_Algorithm.Chapter1_Math.Math_09_1.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice5_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5_re" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,13 +252,21 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice3" />
-        <item itemvalue="Application.Practice2" />
         <item itemvalue="Application.Practice1" />
-        <item itemvalue="Application.Practice5" />
-        <item itemvalue="Application.Base_Algorithm.Chapter1_Math.Math_09_1.src.Practice4" />
+        <item itemvalue="Application.Practice5_ans" />
+        <item itemvalue="Application.Practice5_re" />
+        <item itemvalue="Application.Practice4_ans" />
+        <item itemvalue="Application.Practice4_re" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -344,7 +463,377 @@
       <workItem from="1680779137920" duration="1064000" />
       <workItem from="1680780525444" duration="487000" />
       <workItem from="1680819845079" duration="19000" />
-      <workItem from="1680859578529" duration="964000" />
+      <workItem from="1680859578529" duration="2036000" />
+      <workItem from="1681030009245" duration="116000" />
+      <workItem from="1681902988103" duration="3621000" />
+      <workItem from="1681907553274" duration="660000" />
+      <workItem from="1681983690721" duration="754000" />
+      <workItem from="1681988642377" duration="232000" />
+      <workItem from="1681989300409" duration="8000" />
+      <workItem from="1682069211023" duration="2297000" />
+      <workItem from="1682327564767" duration="980000" />
+      <workItem from="1682329058713" duration="1551000" />
+      <workItem from="1682414403711" duration="2810000" />
+      <workItem from="1682503949381" duration="602000" />
+      <workItem from="1682587361622" duration="303000" />
+      <workItem from="1684142714820" duration="1893000" />
+      <workItem from="1684189927917" duration="40000" />
+      <workItem from="1684229193776" duration="1779000" />
+      <workItem from="1684232256171" duration="18000" />
+      <workItem from="1684747418998" duration="2567000" />
+      <workItem from="1685256193596" duration="765000" />
+      <workItem from="1685258262814" duration="68000" />
+      <workItem from="1685438873408" duration="2165000" />
+      <workItem from="1685529477995" duration="1900000" />
+      <workItem from="1685532079163" duration="456000" />
+      <workItem from="1685611582772" duration="36000" />
+      <workItem from="1685698070964" duration="1573000" />
+      <workItem from="1685957137121" duration="31000" />
+      <workItem from="1686132705391" duration="1627000" />
+      <workItem from="1686216255255" duration="1874000" />
+      <workItem from="1686378350357" duration="358000" />
+      <workItem from="1686391241433" duration="3180000" />
+      <workItem from="1686734631839" duration="2290000" />
+      <workItem from="1686820633276" duration="2843000" />
+      <workItem from="1687049464741" duration="303000" />
+      <workItem from="1687261008121" duration="2578000" />
+      <workItem from="1687339586657" duration="1351000" />
+      <workItem from="1687425977768" duration="2112000" />
+      <workItem from="1689028825603" duration="44000" />
+      <workItem from="1689067698552" duration="165000" />
+      <workItem from="1689114581504" duration="173000" />
+      <workItem from="1689154075260" duration="149000" />
+      <workItem from="1689240439845" duration="1627000" />
+      <workItem from="1689326920411" duration="1653000" />
+      <workItem from="1689541208234" duration="769000" />
+      <workItem from="1689628855538" duration="91000" />
+      <workItem from="1689886790053" duration="931000" />
+      <workItem from="1689931486094" duration="924000" />
+      <workItem from="1690363526576" duration="2597000" />
+      <workItem from="1690367042995" duration="1016000" />
+      <workItem from="1690450133252" duration="2033000" />
+      <workItem from="1690491755363" duration="23000" />
+      <workItem from="1690536460839" duration="2330000" />
+      <workItem from="1690842306368" duration="20000" />
+      <workItem from="1690880875529" duration="3478000" />
+      <workItem from="1690925054412" duration="17000" />
+      <workItem from="1690968418950" duration="1678000" />
+      <workItem from="1691011388700" duration="50000" />
+      <workItem from="1691141281334" duration="2040000" />
+      <workItem from="1691144347885" duration="629000" />
+      <workItem from="1691357088248" duration="8000" />
+      <workItem from="1691400667691" duration="1920000" />
+      <workItem from="1691402969154" duration="40000" />
+      <workItem from="1691443386980" duration="15000" />
+      <workItem from="1691487311901" duration="1843000" />
+      <workItem from="1691529804685" duration="6000" />
+      <workItem from="1692005208520" duration="2151000" />
+      <workItem from="1692134733879" duration="18000" />
+      <workItem from="1692178156698" duration="2298000" />
+      <workItem from="1692181861463" duration="1072000" />
+      <workItem from="1692220968369" duration="15000" />
+      <workItem from="1692264327904" duration="2278000" />
+      <workItem from="1692268393480" duration="975000" />
+      <workItem from="1692307461537" duration="15000" />
+      <workItem from="1692350870865" duration="2329000" />
+      <workItem from="1692417268383" duration="2220000" />
+      <workItem from="1692420714960" duration="1319000" />
+      <workItem from="1692427649738" duration="136000" />
+      <workItem from="1692427981224" duration="81000" />
+      <workItem from="1692428330816" duration="62000" />
+      <workItem from="1692428415781" duration="26000" />
+      <workItem from="1692610198891" duration="380000" />
+      <workItem from="1692653025323" duration="28000" />
+      <workItem from="1692696441538" duration="1278000" />
+      <workItem from="1692700288523" duration="1114000" />
+      <workItem from="1692782896124" duration="2124000" />
+      <workItem from="1692786664622" duration="285000" />
+      <workItem from="1692825769805" duration="46000" />
+      <workItem from="1692869179754" duration="2622000" />
+      <workItem from="1692873101735" duration="1081000" />
+      <workItem from="1692912268512" duration="10000" />
+      <workItem from="1692955659298" duration="2365000" />
+      <workItem from="1693023437597" duration="216000" />
+      <workItem from="1693052052514" duration="261000" />
+      <workItem from="1693214858124" duration="2162000" />
+      <workItem from="1693218714561" duration="787000" />
+      <workItem from="1693257789328" duration="111000" />
+      <workItem from="1693301309849" duration="1179000" />
+      <workItem from="1693344273539" duration="12000" />
+      <workItem from="1693387946565" duration="2265000" />
+      <workItem from="1693391576069" duration="927000" />
+      <workItem from="1693473940416" duration="1600000" />
+      <workItem from="1693477837917" duration="1088000" />
+      <workItem from="1693517167449" duration="9000" />
+      <workItem from="1693819821115" duration="2177000" />
+      <workItem from="1693906328922" duration="1313000" />
+      <workItem from="1693949036073" duration="20000" />
+      <workItem from="1693992059429" duration="3844000" />
+      <workItem from="1694040106165" duration="299000" />
+      <workItem from="1694121908708" duration="51000" />
+      <workItem from="1694164678251" duration="2705000" />
+      <workItem from="1694171649985" duration="2890000" />
+      <workItem from="1694176323366" duration="63000" />
+      <workItem from="1694324864459" duration="149000" />
+      <workItem from="1694330464444" duration="912000" />
+      <workItem from="1694338840574" duration="380000" />
+      <workItem from="1694381108367" duration="6000" />
+      <workItem from="1694510823704" duration="2407000" />
+      <workItem from="1694553962552" duration="21000" />
+      <workItem from="1694597447276" duration="1873000" />
+      <workItem from="1694601178672" duration="897000" />
+      <workItem from="1694640198925" duration="21000" />
+      <workItem from="1694683862165" duration="2184000" />
+      <workItem from="1694687446342" duration="1175000" />
+      <workItem from="1694726768985" duration="11000" />
+      <workItem from="1694770117355" duration="2344000" />
+      <workItem from="1694773988709" duration="4040000" />
+      <workItem from="1694842173054" duration="1763000" />
+      <workItem from="1694928275375" duration="109000" />
+      <workItem from="1695029246969" duration="3343000" />
+      <workItem from="1695072380434" duration="18000" />
+      <workItem from="1695115458082" duration="2487000" />
+      <workItem from="1695119459057" duration="1062000" />
+      <workItem from="1695159111601" duration="23000" />
+      <workItem from="1695201912815" duration="2527000" />
+      <workItem from="1695205893132" duration="930000" />
+      <workItem from="1695242509649" duration="624000" />
+      <workItem from="1695288428781" duration="2739000" />
+      <workItem from="1695328698180" duration="15000" />
+      <workItem from="1695375578758" duration="2394000" />
+      <workItem from="1695542969808" duration="86000" />
+      <workItem from="1695633875179" duration="2770000" />
+      <workItem from="1695674345740" duration="14000" />
+      <workItem from="1696410565375" duration="3630000" />
+      <workItem from="1696451618277" duration="177000" />
+      <workItem from="1696498033831" duration="3479000" />
+      <workItem from="1696537845401" duration="13000" />
+      <workItem from="1696583934280" duration="5371000" />
+      <workItem from="1696883427423" duration="37000" />
+      <workItem from="1696930233487" duration="3563000" />
+      <workItem from="1696970001486" duration="7000" />
+      <workItem from="1697016479621" duration="2337000" />
+      <workItem from="1697020221286" duration="1039000" />
+      <workItem from="1697056729843" duration="61000" />
+      <workItem from="1697103131927" duration="3439000" />
+      <workItem from="1697142661047" duration="20000" />
+      <workItem from="1697189576690" duration="732000" />
+      <workItem from="1697448438165" duration="2540000" />
+      <workItem from="1697488262167" duration="126000" />
+      <workItem from="1697535013064" duration="2840000" />
+      <workItem from="1697574707120" duration="80000" />
+      <workItem from="1697621639555" duration="2892000" />
+      <workItem from="1697661179613" duration="84000" />
+      <workItem from="1697707853089" duration="2657000" />
+      <workItem from="1698093062891" duration="18000" />
+      <workItem from="1698139850645" duration="3276000" />
+      <workItem from="1698179629948" duration="40000" />
+      <workItem from="1698226385988" duration="1946000" />
+      <workItem from="1698228481072" duration="1267000" />
+      <workItem from="1698266037878" duration="16000" />
+      <workItem from="1698312722917" duration="2199000" />
+      <workItem from="1698316327106" duration="1095000" />
+      <workItem from="1698352488894" duration="15000" />
+      <workItem from="1698399390826" duration="2017000" />
+      <workItem from="1698611494099" duration="10000" />
+      <workItem from="1698658279992" duration="3540000" />
+      <workItem from="1698698110999" duration="100000" />
+      <workItem from="1698744635922" duration="2293000" />
+      <workItem from="1698748363438" duration="1016000" />
+      <workItem from="1698784482929" duration="22000" />
+      <workItem from="1698917462535" duration="2196000" />
+      <workItem from="1698921461501" duration="392000" />
+      <workItem from="1698957185605" duration="10000" />
+      <workItem from="1699004196888" duration="982000" />
+      <workItem from="1699007201726" duration="3520000" />
+      <workItem from="1699216767078" duration="27000" />
+      <workItem from="1699263192070" duration="1749000" />
+      <workItem from="1699302783338" duration="36000" />
+      <workItem from="1699349586709" duration="2358000" />
+      <workItem from="1699389195071" duration="40000" />
+      <workItem from="1699436107106" duration="3234000" />
+      <workItem from="1699475609919" duration="32000" />
+      <workItem from="1699522232720" duration="3206000" />
+      <workItem from="1699527479358" duration="415000" />
+      <workItem from="1699562033733" duration="58000" />
+      <workItem from="1699607993805" duration="1448000" />
+      <workItem from="1699609498766" duration="2338000" />
+      <workItem from="1699615127207" duration="72000" />
+      <workItem from="1699821224131" duration="64000" />
+      <workItem from="1699954207675" duration="3457000" />
+      <workItem from="1700040368825" duration="2987000" />
+      <workItem from="1700083416467" duration="369000" />
+      <workItem from="1700127240719" duration="3065000" />
+      <workItem from="1700167521440" duration="496000" />
+      <workItem from="1700213525782" duration="3121000" />
+      <workItem from="1700218176945" duration="32000" />
+      <workItem from="1700434458238" duration="553000" />
+      <workItem from="1700472660704" duration="3319000" />
+      <workItem from="1700512459096" duration="12000" />
+      <workItem from="1700558721280" duration="3225000" />
+      <workItem from="1700645532435" duration="3035000" />
+      <workItem from="1700731618727" duration="1778000" />
+      <workItem from="1701163785439" duration="3411000" />
+      <workItem from="1701205854878" duration="7000" />
+      <workItem from="1701250225561" duration="2607000" />
+      <workItem from="1701290385240" duration="338000" />
+      <workItem from="1701336733133" duration="3167000" />
+      <workItem from="1701376425128" duration="16000" />
+      <workItem from="1701423021933" duration="2432000" />
+      <workItem from="1701577444153" duration="39000" />
+      <workItem from="1701682489754" duration="5497000" />
+      <workItem from="1702414276968" duration="35000" />
+      <workItem from="1702460147388" duration="3176000" />
+      <workItem from="1702499742819" duration="12000" />
+      <workItem from="1702548538849" duration="1777000" />
+      <workItem from="1702551867524" duration="611000" />
+      <workItem from="1702845674685" duration="199000" />
+      <workItem from="1702948938259" duration="993000" />
+      <workItem from="1702961467493" duration="456000" />
+      <workItem from="1703063461331" duration="1722000" />
+      <workItem from="1703114633728" duration="359000" />
+      <workItem from="1703143064712" duration="1335000" />
+      <workItem from="1703154579354" duration="4110000" />
+      <workItem from="1703209822968" duration="101000" />
+      <workItem from="1703221619582" duration="10272000" />
+      <workItem from="1703315210141" duration="26000" />
+      <workItem from="1703582973118" duration="2253000" />
+      <workItem from="1703585250964" duration="1278000" />
+      <workItem from="1703622825097" duration="26000" />
+      <workItem from="1703623164241" duration="247000" />
+      <workItem from="1703669270710" duration="3717000" />
+      <workItem from="1703709431455" duration="65000" />
+      <workItem from="1704187592487" duration="1989000" />
+      <workItem from="1704228218487" duration="17000" />
+      <workItem from="1704274234427" duration="1738000" />
+      <workItem from="1704275991979" duration="1470000" />
+      <workItem from="1704283696748" duration="27000" />
+      <workItem from="1704368150981" duration="4103000" />
+      <workItem from="1704400569154" duration="10000" />
+      <workItem from="1704446982172" duration="5650000" />
+      <workItem from="1704501452897" duration="22000" />
+      <workItem from="1704706224258" duration="2604000" />
+      <workItem from="1704746304235" duration="14000" />
+      <workItem from="1704792577507" duration="9074000" />
+      <workItem from="1704832549916" duration="9000" />
+      <workItem from="1704879199872" duration="3121000" />
+      <workItem from="1704918960556" duration="10000" />
+      <workItem from="1704965429094" duration="5884000" />
+      <workItem from="1705005360734" duration="8000" />
+      <workItem from="1705052033372" duration="5670000" />
+      <workItem from="1705131553899" duration="4264000" />
+      <workItem from="1705311114840" duration="2752000" />
+      <workItem from="1705315108582" duration="573000" />
+      <workItem from="1705351006957" duration="24000" />
+      <workItem from="1705397375770" duration="3112000" />
+      <workItem from="1705406899182" duration="3187000" />
+      <workItem from="1705483993702" duration="2061000" />
+      <workItem from="1705523884627" duration="7000" />
+      <workItem from="1705570056670" duration="3361000" />
+      <workItem from="1705579763281" duration="10000" />
+      <workItem from="1705656707714" duration="1501000" />
+      <workItem from="1705723824594" duration="5534000" />
+      <workItem from="1705808542605" duration="107000" />
+      <workItem from="1705869594429" duration="102000" />
+      <workItem from="1705915950571" duration="2949000" />
+      <workItem from="1705955737046" duration="19000" />
+      <workItem from="1706088605786" duration="2483000" />
+      <workItem from="1706175865847" duration="2300000" />
+      <workItem from="1706185379757" duration="357000" />
+      <workItem from="1706214827943" duration="25000" />
+      <workItem from="1706261521148" duration="2429000" />
+      <workItem from="1706520547759" duration="3539000" />
+      <workItem from="1706560533833" duration="12000" />
+      <workItem from="1706609872060" duration="3524000" />
+      <workItem from="1706647007570" duration="15000" />
+      <workItem from="1706693523997" duration="3327000" />
+      <workItem from="1706703671796" duration="2654000" />
+      <workItem from="1706733210022" duration="470000" />
+      <workItem from="1706779945509" duration="3371000" />
+      <workItem from="1706820403814" duration="413000" />
+      <workItem from="1706935250632" duration="3194000" />
+      <workItem from="1706960305982" duration="9236000" />
+      <workItem from="1707008724205" duration="1405000" />
+      <workItem from="1707079011160" duration="13000" />
+      <workItem from="1707125502848" duration="2204000" />
+      <workItem from="1707165253015" duration="25000" />
+      <workItem from="1707215454506" duration="1275000" />
+      <workItem from="1707816649865" duration="3280000" />
+      <workItem from="1707827136736" duration="796000" />
+      <workItem from="1707856412036" duration="16000" />
+      <workItem from="1707903139976" duration="2836000" />
+      <workItem from="1707916960839" duration="97000" />
+      <workItem from="1707943272518" duration="24000" />
+      <workItem from="1707989347491" duration="3422000" />
+      <workItem from="1708000758581" duration="29000" />
+      <workItem from="1708939730115" duration="708000" />
+      <workItem from="1708940464754" duration="2621000" />
+      <workItem from="1708979608122" duration="179000" />
+      <workItem from="1709026524104" duration="2990000" />
+      <workItem from="1709066028464" duration="64000" />
+      <workItem from="1709115162287" duration="3453000" />
+      <workItem from="1709152370269" duration="16000" />
+      <workItem from="1709544795892" duration="3212000" />
+      <workItem from="1709584437844" duration="15000" />
+      <workItem from="1709631173334" duration="3342000" />
+      <workItem from="1709786515814" duration="4371000" />
+      <workItem from="1709805755222" duration="1709000" />
+      <workItem from="1709961842590" duration="870000" />
+      <workItem from="1710067202102" duration="9335000" />
+      <workItem from="1710121543351" duration="547000" />
+      <workItem from="1710148661479" duration="2333000" />
+      <workItem from="1710152975117" duration="16018000" />
+      <workItem from="1710196148764" duration="6117000" />
+      <workItem from="1710310594059" duration="24289000" />
+      <workItem from="1710382333931" duration="13431000" />
+      <workItem from="1710412201024" duration="16450000" />
+      <workItem from="1710468265182" duration="26796000" />
+      <workItem from="1710564240429" duration="96000" />
+      <workItem from="1711361068455" duration="189000" />
+      <workItem from="1711398783475" duration="40000" />
+      <workItem from="1711445456846" duration="2895000" />
+      <workItem from="1711493306043" duration="59000" />
+      <workItem from="1711531718499" duration="1740000" />
+      <workItem from="1711571641535" duration="36000" />
+      <workItem from="1711963714432" duration="3489000" />
+      <workItem from="1712003572063" duration="27000" />
+      <workItem from="1712050349568" duration="3281000" />
+      <workItem from="1712090008413" duration="27000" />
+      <workItem from="1712136821308" duration="2071000" />
+      <workItem from="1712183870044" duration="239000" />
+      <workItem from="1712222945407" duration="3438000" />
+      <workItem from="1712262752780" duration="21000" />
+      <workItem from="1712654744398" duration="3603000" />
+      <workItem from="1712781158224" duration="30000" />
+      <workItem from="1712838657628" duration="1993000" />
+      <workItem from="1712867568412" duration="88000" />
+      <workItem from="1712916719012" duration="1989000" />
+      <workItem from="1712920694639" duration="837000" />
+      <workItem from="1713130663007" duration="13000" />
+      <workItem from="1713173483074" duration="2659000" />
+      <workItem from="1713213432074" duration="22000" />
+      <workItem from="1713263422042" duration="1162000" />
+      <workItem from="1713299398031" duration="21000" />
+      <workItem from="1713345811764" duration="3421000" />
+      <workItem from="1713385975454" duration="15000" />
+      <workItem from="1713432568566" duration="3074000" />
+      <workItem from="1713472492848" duration="181000" />
+      <workItem from="1713472800354" duration="15000" />
+      <workItem from="1713472823639" duration="5000" />
+      <workItem from="1713474424329" duration="96000" />
+      <workItem from="1713519388037" duration="606000" />
+      <workItem from="1713520554688" duration="2450000" />
+      <workItem from="1713523910686" duration="313000" />
+      <workItem from="1713524232798" duration="59000" />
+      <workItem from="1713524298553" duration="829000" />
+      <workItem from="1713734590499" duration="171000" />
+      <workItem from="1713864363346" duration="3836000" />
+      <workItem from="1713904513439" duration="9000" />
+      <workItem from="1713950940987" duration="3061000" />
+      <workItem from="1713990781876" duration="18000" />
+      <workItem from="1714037403145" duration="3472000" />
+      <workItem from="1714077298887" duration="19000" />
+      <workItem from="1714123706325" duration="1868000" />
     </task>
     <servers />
   </component>
@@ -375,6 +864,56 @@
           <line>78</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/_08_기초수학_연습문제_2/src/Practice2_my.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05_ans.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05_ans.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter1_Math/기초수학_코딩테스트/Math_TEST_01_05_ans.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/Base_Algorithm/FileUtils.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_15_비선형자료구조_연습문제_1/src/Practice3.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_16_비선형자료구조_연습문제_2/src/Practice1_ans.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="4" />
@@ -385,5 +924,10 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/JavaCodingTest$Practice1.ic" NAME="Practice1 Coverage Results" MODIFIED="1705315064263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>_Theory.Chapter3_NonLinear._09_최대힙최소힙.src.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,8 +1,10 @@
-package Base_CodingTest;
+package Base_CodingTest.W2;
+
 
 import java.util.Stack;
 
 public class Week2_2_ans {
+
     public static void main(String[] args) {
         int[] a = {8, 2, 6, 3, 4, 1, 5, 7, 2, 8};
         int[] b = {2, 0, 0, 6, 3, 4, 5, 3, 6, 7}; //[1, 0, 2, 6, 9, 7, 6, 1, 0, 9, 5]
