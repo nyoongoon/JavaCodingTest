@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice1_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice2_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice2_re.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +169,7 @@
       <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice1_ans">
+  <component name="RunManager" selected="Application.Practice2_ans">
     <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice1" />
       <module name="CodingTest" />
@@ -195,12 +196,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice4_ans" />
+    <configuration name="Practice2_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice2_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice2_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice2_re" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,19 +224,6 @@
     </configuration>
     <configuration name="Practice5_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5_ans" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice5_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5_re" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -245,11 +246,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice2_ans" />
+        <item itemvalue="Application.Practice2_re" />
         <item itemvalue="Application.Practice1_ans" />
         <item itemvalue="Application.Practice1" />
         <item itemvalue="Application.Practice5_ans" />
-        <item itemvalue="Application.Practice5_re" />
-        <item itemvalue="Application.Practice4_ans" />
       </list>
     </recent_temporary>
   </component>
@@ -826,7 +827,12 @@
       <workItem from="1713990781876" duration="18000" />
       <workItem from="1714037403145" duration="3472000" />
       <workItem from="1714077298887" duration="19000" />
-      <workItem from="1714123706325" duration="5123000" />
+      <workItem from="1714123706325" duration="5212000" />
+      <workItem from="1714192813027" duration="6292000" />
+      <workItem from="1714339439091" duration="25000" />
+      <workItem from="1714382853559" duration="3278000" />
+      <workItem from="1714423071479" duration="29000" />
+      <workItem from="1714469189736" duration="2465000" />
     </task>
     <servers />
   </component>
