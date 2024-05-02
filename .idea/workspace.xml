@@ -5,10 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice4_re.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice5_ans.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_17_비선형자료구조_연습문제_3/src/Practice5_re.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_2/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_2/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_3/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_02_3/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_03/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_03/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_03/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_03/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_04/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_05_이진탐색/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_04/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_05_이진탐색/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_05/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_05/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_05/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_05/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_05/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_06/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_07_투포인터/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_07/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_07/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_07/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_07/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_08/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_09_그리디/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_08/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_09_그리디/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_09/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_10_그리디_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_09/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_10_그리디_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_09/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_10_그리디_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_09/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_10_그리디_연습문제/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_09/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_10_그리디_연습문제/src/Practice5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +165,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/NonLinearDS_01",
-    "last_opened_file_path": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/_09_최대힙최소힙/src/re",
+    "last_opened_file_path": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -152,11 +180,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_09_최대힙최소힙/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_07_그래프/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_04_AVL트리/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_03_이진탐색트리/src/re" />
-      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_01_이진트리/src/re" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory" />
@@ -842,7 +870,7 @@
       <workItem from="1714595882708" duration="68000" />
       <workItem from="1714596220852" duration="8000" />
       <workItem from="1714642036783" duration="2204000" />
-      <workItem from="1714645828200" duration="309000" />
+      <workItem from="1714645828200" duration="905000" />
     </task>
     <servers />
   </component>
