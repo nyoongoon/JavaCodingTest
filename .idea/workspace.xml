@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/Main_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main3_re.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/img/img_8.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +54,6 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="LLMProjectSettings">
-    <option name="turned_on" value="false" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -67,6 +73,10 @@
     &quot;Application.Main (3).executor&quot;: &quot;Run&quot;,
     &quot;Application.Main (4).executor&quot;: &quot;Run&quot;,
     &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main3_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main_ans.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main_re.executor&quot;: &quot;Run&quot;,
     &quot;Application.MyQueue_re.executor&quot;: &quot;Run&quot;,
     &quot;Application.Practice1 (1).executor&quot;: &quot;Run&quot;,
@@ -128,6 +138,9 @@
     &quot;Application._Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5.executor&quot;: &quot;Run&quot;,
     &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3 (1).executor&quot;: &quot;Run&quot;,
     &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main_ans.executor&quot;: &quot;Run&quot;,
+    &quot;Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
@@ -164,20 +177,20 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src" />
+      <recent name="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src" />
       <recent name="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src" />
       <recent name="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src" />
       <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src" />
-      <recent name="_Theory.Chapter1_Math._04_조합.src" />
-      <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제.src" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.Main" />
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -185,12 +198,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice4_re" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -198,12 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice5_re (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice5_re" />
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main3" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,25 +224,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice5_re (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice5_re" />
+    <configuration name="Main3_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main3_re" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Practice5_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice5_re" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -246,13 +246,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Practice5_re (2)" />
-        <item itemvalue="Application.Practice5_re (1)" />
-        <item itemvalue="Application.Practice5_re" />
-        <item itemvalue="Application.Practice4_re" />
+        <item itemvalue="Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" />
+        <item itemvalue="Application.Main3_re" />
+        <item itemvalue="Application.Main3" />
+        <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -842,7 +855,22 @@
       <workItem from="1714642036783" duration="2204000" />
       <workItem from="1714645828200" duration="971000" />
       <workItem from="1714682260324" duration="35000" />
-      <workItem from="1714728355100" duration="2541000" />
+      <workItem from="1714728355100" duration="2987000" />
+      <workItem from="1715030639762" duration="51000" />
+      <workItem from="1715073754286" duration="2748000" />
+      <workItem from="1715114108006" duration="21000" />
+      <workItem from="1715160610009" duration="2788000" />
+      <workItem from="1715200369769" duration="20000" />
+      <workItem from="1715250633392" duration="1111000" />
+      <workItem from="1715287126931" duration="12000" />
+      <workItem from="1715333356201" duration="2650000" />
+      <workItem from="1715592701136" duration="2796000" />
+      <workItem from="1715852347327" duration="814000" />
+      <workItem from="1715853219606" duration="1734000" />
+      <workItem from="1715891865562" duration="143000" />
+      <workItem from="1715938307093" duration="1348000" />
+      <workItem from="1715939988468" duration="453000" />
+      <workItem from="1715940457551" duration="410000" />
     </task>
     <servers />
   </component>
