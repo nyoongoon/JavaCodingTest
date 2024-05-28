@@ -5,13 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/re/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re/Main3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re/Main3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re/Main3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,13 +182,65 @@
       <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main2">
+  <component name="RunManager" selected="Application.Practice2">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.re.Main" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.re.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.Practice1" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.Practice2" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,65 +257,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.Main" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main2" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice2" />
+        <item itemvalue="Application.Practice1" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main3" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.Main" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main2" />
       </list>
     </recent_temporary>
   </component>
@@ -876,7 +875,9 @@
       <workItem from="1716370465981" duration="3214000" />
       <workItem from="1716409997239" duration="5000" />
       <workItem from="1716802222459" duration="2262000" />
-      <workItem from="1716805864264" duration="811000" />
+      <workItem from="1716805864264" duration="1100000" />
+      <workItem from="1716841954537" duration="81000" />
+      <workItem from="1716888459257" duration="3579000" />
     </task>
     <servers />
   </component>

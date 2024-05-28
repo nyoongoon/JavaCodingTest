@@ -11,9 +11,11 @@ package _Theory.Chapter4_Algorithm._04_정렬_연습문제.src;// Practice2
 
 import java.util.ArrayList;
 
-public class Practice2 {
+public class Practice2 { // todo 계수정렬..
     public static ArrayList<ArrayList<String>> solution(String[] strs) {
-
+        int[] countArr = new int['z' - 'A' + 1]; // char 좀 더 계산해서 'A'가 0인덱스로 표현되게 하기..
+        System.out.println('A' - 0);
+        System.out.println('z' - 0);
         return null;
     }
 

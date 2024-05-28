@@ -12,18 +12,36 @@ import java.util.Arrays;
 public class Practice1 {
     // 계수 정렬
     public static void solution(int[] arr) {
+        int max = Arrays.stream(arr).max().getAsInt();
+        int[] countArr = new int[max + 1];
+        for (int number : arr) {
+            countArr[number]++;
+        }
+        arr = new int[arr.length];
 
+        int idx = 0;
+        for (int i = 0; i < countArr.length; i++) {
+            while (countArr[i] > 0) {
+                arr[idx++] = i;
+                countArr[i]--;
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
         // Test code
         int[] arr = {2, 0, 2, 1, 1, 0};
         solution(arr);
-        System.out.println(Arrays.toString(arr));
-        System.out.println();
+//        System.out.println(Arrays.toString(arr));
+//        System.out.println();
 
         arr = new int[]{2, 0, 1};
         solution(arr);
-        System.out.println(Arrays.toString(arr));
+//        System.out.println(Arrays.toString(arr));
     }
 }
