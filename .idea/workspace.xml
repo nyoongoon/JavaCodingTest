@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/ans/Practice3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_04_정렬_연습문제/src/Practice4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,105 +56,106 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main (3).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main (4).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MyQueue_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1 (3).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1_my.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1_re (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice1_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2_my.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice2_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice3 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice3_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice3_ans_그래프문제.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice3_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice4.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice4_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice4_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice5.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice5_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice5_re (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice5_re (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice5_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Practice_re.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter1_Math._06_지수와로그.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice2.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice3.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice5.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice2.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice3.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (2).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice2.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice1.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2.executor&quot;: &quot;Debug&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice3.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._07_그래프.src.re.Practice2.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._09_최대힙최소힙.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src.Practice4.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3 (1).executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main_ans.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main2.executor&quot;: &quot;Run&quot;,
-    &quot;Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/NonLinearDS_01&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "Application.Main (1).executor": "Run",
+    "Application.Main (2).executor": "Run",
+    "Application.Main (3).executor": "Run",
+    "Application.Main (4).executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main2.executor": "Run",
+    "Application.Main3.executor": "Run",
+    "Application.Main3_re.executor": "Run",
+    "Application.Main_ans.executor": "Run",
+    "Application.Main_re.executor": "Run",
+    "Application.MyQueue_re.executor": "Run",
+    "Application.Practice1 (1).executor": "Run",
+    "Application.Practice1 (2).executor": "Run",
+    "Application.Practice1 (3).executor": "Run",
+    "Application.Practice1.executor": "Run",
+    "Application.Practice1_ans.executor": "Run",
+    "Application.Practice1_my.executor": "Run",
+    "Application.Practice1_re (1).executor": "Run",
+    "Application.Practice1_re.executor": "Run",
+    "Application.Practice2 (1).executor": "Run",
+    "Application.Practice2 (2).executor": "Run",
+    "Application.Practice2.executor": "Run",
+    "Application.Practice2_ans.executor": "Run",
+    "Application.Practice2_my.executor": "Run",
+    "Application.Practice2_re.executor": "Run",
+    "Application.Practice3 (1).executor": "Run",
+    "Application.Practice3.executor": "Run",
+    "Application.Practice3_ans.executor": "Run",
+    "Application.Practice3_ans_그래프문제.executor": "Run",
+    "Application.Practice3_re.executor": "Run",
+    "Application.Practice4.executor": "Run",
+    "Application.Practice4_ans.executor": "Run",
+    "Application.Practice4_re.executor": "Run",
+    "Application.Practice5.executor": "Run",
+    "Application.Practice5_ans.executor": "Run",
+    "Application.Practice5_re (1).executor": "Run",
+    "Application.Practice5_re (2).executor": "Run",
+    "Application.Practice5_re.executor": "Run",
+    "Application.Practice_re.executor": "Run",
+    "Application._Theory.Chapter1_Math._06_지수와로그.src.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice2.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice3.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear.NonLinearDS_13_2.src.Practice5.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice2.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._01_이진트리.src.Practice3.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1 (2).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._03_이진탐색트리.src.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1 (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._04_AVL트리.src.Practice2.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1 (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._04_AVL트리.src.re.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice1.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2 (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice2.executor": "Debug",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.Practice3.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._07_그래프.src.re.Practice2.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._09_최대힙최소힙.src.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._13_트라이.src.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._13_트라이.src.ans.Main.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src.Practice4.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src.Practice5.executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3 (1).executor": "Run",
+    "Application._Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src.Practice3.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src.re.Main.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.Main_ans.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src.re.Main.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main2.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.Main3.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/NonLinearDS_01",
+    "last_opened_file_path": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re" />
@@ -173,27 +172,14 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans" />
       <recent name="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src" />
       <recent name="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src" />
       <recent name="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src" />
       <recent name="_Theory.Chapter3_NonLinear._16_비선형자료구조_연습문제_2.src" />
-      <recent name="_Theory.Chapter3_NonLinear._15_비선형자료구조_연습문제_1.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice4">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.re.Main" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._03_기수_계수_셸_정렬.src.re.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3">
     <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.Practice1" />
       <module name="CodingTest" />
@@ -255,13 +241,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3" />
         <item itemvalue="Application.Practice4" />
         <item itemvalue="Application.Practice3" />
         <item itemvalue="Application.Practice2" />
         <item itemvalue="Application.Practice1" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -879,6 +878,7 @@
       <workItem from="1716928991465" duration="10000" />
       <workItem from="1716974763107" duration="3683000" />
       <workItem from="1717014904821" duration="28000" />
+      <workItem from="1717061304576" duration="1555000" />
     </task>
     <servers />
   </component>
