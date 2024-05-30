@@ -10,17 +10,46 @@ package _Theory.Chapter4_Algorithm._04_정렬_연습문제.src;// Practice2
 
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Practice2 { // todo 계수정렬..
     public static ArrayList<ArrayList<String>> solution(String[] strs) {
-        int[] countArr = new int['z' - 'A' + 1]; // char 좀 더 계산해서 'A'가 0인덱스로 표현되게 하기..
-        System.out.println('A' - 0);
-        System.out.println('z' - 0);
-        return null;
+        Map<String, ArrayList<String>> map = new HashMap<>();
+
+        for (String str : strs) {
+            String value = str;
+            char[] ordered = str.toCharArray();
+            sort(ordered);
+
+            String key = String.valueOf(ordered);
+            ArrayList<String> list = map.getOrDefault(key, new ArrayList<>());
+            list.add(value);
+            map.put(key, list);
+        }
+
+        ArrayList<ArrayList<String>> result = new ArrayList<>();
+
+        for (Map.Entry<String, ArrayList<String>> entry : map.entrySet()) {
+            result.add(entry.getValue());
+        }
+
+        return result;
     }
 
     public static void sort(char[] arr) {
+        int[] intArr = new int['z' - 'A' + 1];
+        for (int i = 0; i < arr.length; i++) {
+            intArr[arr[i] - 'A']++;
+        }
 
+        int idx = 0;
+        for (int i = 0; i < intArr.length; i++) {
+            while (intArr[i] > 0) {
+                arr[idx++] = (char) (i + 'A');
+                intArr[i]--;
+            }
+        }
     }
 
     public static void main(String[] args) {
