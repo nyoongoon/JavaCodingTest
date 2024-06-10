@@ -12,36 +12,34 @@ package _Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src;// Practice
 // target: 13
 // 출력: false
 
-public class Practice3 {
+public class Practice3_ans {
     public static boolean solution(int[][] matrix, int target) {
-        int[] arr = new int[matrix.length * matrix[0].length];
-        int idx = 0;
-
-        for (int i = 0; i < matrix.length; i++) {
-            for (int j = 0; j < matrix[i].length; j++) {
-                arr[idx++] = matrix[i][j];
-            }
-        }
-
-        int result = binarySearch(arr, target, 0, arr.length - 1);
+        int rows = matrix.length;
+        int cols = matrix[0].length;
+        int result = binarySearch(matrix, target, 0, rows * cols);
 
 
         return result == -1 ? false : true;
     }
 
-    public static int binarySearch(int[] arr, int target, int left, int right) {
+    public static int binarySearch(int[][] matrix, int target, int left, int right) {
         if (left > right) {
             return -1;
         }
-
+        int cols = matrix[0].length;
         int mid = (left + right) / 2;
-
-        if (arr[mid] == target) {
-            return mid;
-        } else if (arr[mid] < target) {
-            return binarySearch(arr, target, mid + 1, right);
-        } else { // arr[mid] > target
-            return binarySearch(arr, target, left, mid - 1);
+        /**
+         * 2차원 배열을 1차원 배열의 인덱스로 처리하는 방법
+         * -> 1차원 배열의 마지막 인덱스 = matrix.length * matrix[0].length
+         * -> 2차원 배열의 row = 1차원 배열의 인덱스 / matrix[0].length의 길이 (몫)
+         * -> 2차원 배열의 col = 1차원 배열의 인덱스 % matrix[0].length의 길이 (나머지)
+         */
+        if (matrix[mid / cols][mid % cols] == target) {
+            return target;
+        } else if (target < matrix[mid / cols][mid % cols]) {
+            return binarySearch(matrix, target, left, mid - 1);
+        } else { // matrix[mid / cols][mid % cols] < target
+            return binarySearch(matrix, target, mid + 1, right);
         }
     }
 

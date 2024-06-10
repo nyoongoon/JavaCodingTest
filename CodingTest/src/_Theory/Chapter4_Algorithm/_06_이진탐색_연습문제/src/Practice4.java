@@ -14,9 +14,13 @@ package _Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src;// Practice
 // 출력: 6
 
 
-public class Practice4 {
+public class Practice4 { // todo 문제를 모르겠음..
     public static int solution(int[] weights, int days) {
+        quickSort(weights, 0, weights.length - 1);
+        int sum = 0;
+        for (int i = 0; i < days; i++) {
 
+        }
         return 0;
     }
 
@@ -27,5 +31,40 @@ public class Practice4 {
 
         weights = new int[]{3, 2, 2, 4, 1, 4};
         System.out.println(solution(weights, 3));   // 6
+    }
+
+    public static int partition(int[] arr, int left, int right) {
+        int pivot = left;
+        int lo = left;
+        int hi = right;
+
+        while (lo < hi) {
+            if (arr[pivot] < arr[hi] && lo < hi) {// arr[hi]가 arr[pivot]보다 작거나 같은 것 찾기
+                hi--;
+            } else if (arr[pivot] >= arr[lo] && lo < hi) {
+                lo++;
+            } else {
+                swap(arr, lo, hi);
+            }
+        }
+
+        swap(arr, lo, pivot);
+        return pivot;
+    }
+
+    public static void swap(int[] arr, int a, int b) {
+        int tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
+    }
+
+    public static void quickSort(int[] arr, int left, int right) {
+        if (left > right) {
+            return;
+        }
+
+        int pivot = partition(arr, left, right);
+        quickSort(arr, left, pivot - 1);
+        quickSort(arr, pivot + 1, right);
     }
 }

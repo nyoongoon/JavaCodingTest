@@ -14,12 +14,26 @@ package _Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src;// Practice
 
 public class Practice1 {
     public static int solution(int[] arr, int target) {
+        return binarySearch(arr, target, 0, arr.length);
+    }
 
-        return 0;
+    public static int binarySearch(int[] arr, int target, int left, int right) {
+        if (left > right) {
+            //항상 left가 대상인 이유 -> 재귀 끝나는 순간 -> right, left가 되고 사이에 값이 들어가야하므로 left자리가 대상값의 위치가 된다!
+            return (left * -1) - 1;
+        }
+
+        int mid = (left + right) / 2;
+        if (arr[mid] == target) {
+            return mid;
+        } else if (arr[mid] < target) {
+            return binarySearch(arr, target, mid + 1, right);
+        } else { // target < arr[mid]
+            return binarySearch(arr, target, left, mid - 1);
+        }
     }
 
     public static void main(String[] args) {
-        // Test code
         int[] arr = {1, 2, 5, 10, 20, 30, 40, 50, 60};
         System.out.println(solution(arr, 30));  // 5
         System.out.println(solution(arr, 3));   // -3

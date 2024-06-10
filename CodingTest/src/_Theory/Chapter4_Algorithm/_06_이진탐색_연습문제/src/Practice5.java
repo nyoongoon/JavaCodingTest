@@ -15,9 +15,23 @@ package _Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src;// Practice
 
 
 public class Practice5 {
-    public static int solution(int[] nums, int m) {
 
-        return 0;
+    //todo 배열 m으로 나눌 수 있다...
+    public static int solution(int[] nums, int m) {
+        int maxLen = nums.length / m;
+        int result = 0;
+        int subSum = 0;
+        for (int i = 0; i < maxLen; i++) {
+            subSum += nums[i];
+        }
+
+        for (int i = maxLen; i < nums.length; i++) {
+            int windowSum = -nums[i - maxLen] + nums[i];
+            result = Math.max(subSum, subSum + windowSum);
+            subSum += windowSum;
+        }
+
+        return result;
     }
 
     public static void main(String[] args) {
@@ -25,10 +39,10 @@ public class Practice5 {
         int[] nums = {7, 2, 5, 10, 8};
         System.out.println(solution(nums, 2));  // 18
 
-        nums = new int[] {1, 2, 3, 4, 5};
+        nums = new int[]{1, 2, 3, 4, 5};
         System.out.println(solution(nums, 2));  // 9
 
-        nums = new int[] {1, 4, 4};
+        nums = new int[]{1, 4, 4};
         System.out.println(solution(nums, 3));  // 4
     }
 }
