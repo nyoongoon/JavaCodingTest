@@ -12,12 +12,32 @@ package _Theory.Chapter4_Algorithm._08_투포인터_연습문제.src;// Practice
 // nums2: 9, 4, 9, 8, 4
 // 출력: 4, 9 (or 9, 4)
 
-import java.util.Arrays;
+import java.util.*;
 
 public class Practice2 {
     public static int[] solution(int[] nums1, int[] nums2) {
+        List<Integer> list = new ArrayList<>();
+        Set<Integer> set = new HashSet<>();
+        int[] longger;
+        int[] shortter;
+        if(nums1.length > nums2.length){
+            longger = nums1;
+            shortter = nums2;
+        }else{
+            shortter = nums1;
+            longger = nums2;
+        }
+        for(int n : longger){
+            set.add(n);
+        }
 
-        return null;
+        for(int n : shortter){
+            if(set.contains(n)){
+                list.add(n);
+            }
+        }
+
+        return list.stream().mapToInt(Integer::intValue).toArray();
     }
 
     public static void main(String[] args) {

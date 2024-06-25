@@ -5,9 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice4_ans.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice1_ans.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_06_이진탐색_연습문제/src/Practice5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_07_투포인터/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_07_투포인터/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_08_투포인터_연습문제/src/Practice4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,20 +180,20 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src" />
       <recent name="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src" />
       <recent name="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans" />
       <recent name="_Theory.Chapter4_Algorithm._02_합병_힙_퀵_정렬.src" />
       <recent name="_Theory.Chapter4_Algorithm._01_버블_삽입_선택_정렬.src" />
-      <recent name="_Theory.Chapter3_NonLinear._17_비선형자료구조_연습문제_3.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice4_ans">
-    <configuration name="Practice2_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.Practice2_ans" />
+  <component name="RunManager" selected="Application.Practice1_ans">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._07_투포인터.src.Main" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._07_투포인터.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice3_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.Practice3_ans" />
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.Practice1" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.Practice4" />
+    <configuration name="Practice1_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.Practice1_ans" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -221,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4_ans" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.Practice4_ans" />
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.Practice2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,12 +240,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.Practice5" />
+    <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.Practice3" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._08_투포인터_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -258,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice4_ans" />
-        <item itemvalue="Application.Practice4" />
-        <item itemvalue="Application.Practice3_ans" />
-        <item itemvalue="Application.Practice2_ans" />
-        <item itemvalue="Application.Practice5" />
+        <item itemvalue="Application.Practice1_ans" />
+        <item itemvalue="Application.Practice3" />
+        <item itemvalue="Application.Practice2" />
+        <item itemvalue="Application.Practice1" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -893,7 +899,18 @@
       <workItem from="1718051584316" duration="8000" />
       <workItem from="1718097937636" duration="3173000" />
       <workItem from="1718138462494" duration="35000" />
-      <workItem from="1718184819269" duration="2719000" />
+      <workItem from="1718184819269" duration="3354000" />
+      <workItem from="1718231802970" duration="13000" />
+      <workItem from="1718273283334" duration="3553000" />
+      <workItem from="1718310920987" duration="1550000" />
+      <workItem from="1718357340381" duration="3132000" />
+      <workItem from="1718571699338" duration="24000" />
+      <workItem from="1718789113957" duration="3775000" />
+      <workItem from="1718829315537" duration="26000" />
+      <workItem from="1718962040836" duration="3030000" />
+      <workItem from="1719221426625" duration="2933000" />
+      <workItem from="1719261321101" duration="222000" />
+      <workItem from="1719306863941" duration="289000" />
     </task>
     <servers />
   </component>

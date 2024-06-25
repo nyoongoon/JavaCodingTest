@@ -11,10 +11,56 @@ package _Theory.Chapter4_Algorithm._08_투포인터_연습문제.src;// Practice
 // 입력 s: "aaabbaa"
 // 출력: (없음)
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+/**
+ * 리스트로 변환해서 풀었는데 투포인터이므로 배열 자체에서 투포인터로 푸는게 더 좋은 풀이 방법일듯..
+ */
 public class Practice1 {
     public static String solution(String s) {
+        //예외처리
+        if (s == null || s.length() == 0) {
+            return null;
+        }
 
-        return null;
+        List<Character> list = new ArrayList<>();
+        for (int i = 0; i < s.length(); i++) {
+            list.add(s.charAt(i));
+        }
+
+        int startIdx = 0;
+        int endIdx = list.size() - 1;
+        while (!list.isEmpty()) {
+            int size = list.size();
+            if (list.get(0) == list.get(size - 1)) {
+                removeCascadeFront(list);
+
+                if (!list.isEmpty()) {
+                    removeCascadeRear(list);
+                }
+            } else {
+                break;
+            }
+        }
+
+
+        return Arrays.toString(list.toArray());
+    }
+
+    private static void removeCascadeFront(List<Character> list) {
+        Character removed = list.remove(0);
+        while (!list.isEmpty() && removed == list.get(0)) {
+            removed = list.remove(0);
+        }
+    }
+
+    private static void removeCascadeRear(List<Character> list) {
+        Character removed = list.remove(list.size() - 1);
+        while (!list.isEmpty() && removed == list.get(list.size() - 1)) {
+            removed = list.remove(list.size() - 1);
+        }
     }
 
     public static void main(String[] args) {
