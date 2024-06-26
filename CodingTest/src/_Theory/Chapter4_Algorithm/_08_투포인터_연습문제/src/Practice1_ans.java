@@ -13,6 +13,28 @@ package _Theory.Chapter4_Algorithm._08_투포인터_연습문제.src;// Practice
 
 public class Practice1_ans {
     public static String solution(String s) {
+        if (s == null || s.length() == 0) {
+            return null;
+        }
+
+        int p1 = 0;
+        int p2 = s.length() - 1;
+
+        while (p1 < p2 && s.charAt(p1) == s.charAt(p2)) {
+            char c = s.charAt(p2);
+
+            while (p1 <= p2 && s.charAt(p1) == c) {
+                p1++;
+            }
+            while (p1 <= p2 && s.charAt(p2) == c) {
+                p2--;
+            }
+        }
+
+        return s.substring(p1, p2 + 1);
+    }
+
+    public static String solution_my(String s) {
         char[] charArray = s.toCharArray();
         int startIdx = 0;
         int rearIdx = charArray.length - 1;
