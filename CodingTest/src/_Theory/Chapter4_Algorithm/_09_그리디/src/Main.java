@@ -2,6 +2,7 @@ package _Theory.Chapter4_Algorithm._09_그리디.src;// 알고리즘 - 그리디
 // Activity Selection Problem
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
 class Activity {
     String name;
@@ -17,8 +18,18 @@ class Activity {
 
 public class Main {
     public static void selectActivity(ArrayList<Activity> list) {
+        ArrayList<String> result = new ArrayList<>();
         // 종료시간 기준 오름차순 정렬
+        list.sort(Comparator.comparingInt(x -> x.end));
+        int curTime = 0;
+        for(Activity activity : list){
+            if(curTime <= activity.start){
+                curTime = activity.end;
+                result.add(activity.name);
+            }
+        }
 
+        result.stream().forEach(System.out::println);
     }
 
     public static void main(String[] args) {
