@@ -13,32 +13,11 @@ package _Theory.Chapter4_Algorithm._08_투포인터_연습문제.src;// Practice
 
 public class Practice3_ans {
     public static String solution(String s) {
-
-
         s = removeWhiteSpace(s);
-
         String reversed = reverseString(s.toCharArray(), 0, s.length() - 1);
-
         String result = reverseWords(reversed);
 
         return result;
-    }
-
-    private static String reverseWords(String reversed) {
-        char[] chars = reversed.toCharArray();
-        int p1 = 0;
-        int p2 = 0;
-
-        while (p2 < chars.length) {
-
-            while (p2 < chars.length && chars[p2] != ' ') { //p2가 공백을 만나면 멈춤
-                p2++;
-            }
-            reverseString(chars, p1, p2 - 1);
-            p2++;
-            p1 = p2;
-        }
-        return String.valueOf(chars);
     }
 
     private static String removeWhiteSpace(String s) {
@@ -46,6 +25,9 @@ public class Practice3_ans {
         int p1 = 0;
         int p2 = 0;
 
+        /**
+         * 문자열 trim하는 테크닉 기억하기..
+         */
         while (p2 < chars.length) {
             while (p2 < chars.length && chars[p2] == ' ') {
                 p2++;
@@ -65,16 +47,7 @@ public class Practice3_ans {
         return String.valueOf(chars).substring(0, p1);
     }
 
-    public static void main(String[] args) {
-        // Test code
-        System.out.println(solution("the sky is blue"));
-        System.out.println(solution("  hello      java    "));
-
-    }
-
     private static String reverseString(char[] chars, int p1, int p2) {
-//        System.out.println("chars[p1] == " + chars[p1]);
-//        System.out.println("chars[p2] == " + chars[p2]);
         while (p1 < p2) {
             char tmp = chars[p1];
             chars[p1] = chars[p2];
@@ -84,5 +57,29 @@ public class Practice3_ans {
             p2--;
         }
         return String.valueOf(chars);
+    }
+
+    private static String reverseWords(String reversed) {
+        char[] chars = reversed.toCharArray();
+        int p1 = 0;
+        int p2 = 0;
+
+        while (p2 < chars.length) {
+
+            while (p2 < chars.length && chars[p2] != ' ') { //p2가 공백을 만나면 멈춤
+                p2++;
+            }
+            reverseString(chars, p1, p2 - 1);
+            p2++;
+            p1 = p2;
+        }
+        return String.valueOf(chars);
+    }
+
+    public static void main(String[] args) {
+        // Test code
+        System.out.println(solution("the sky is blue"));
+        System.out.println(solution("  hello      java    "));
+
     }
 }
