@@ -18,8 +18,19 @@ package _Theory.Chapter4_Algorithm._10_그리디_연습문제.src;// Practice
 
 public class Practice4 {
     public static int solution(int[] gas, int[] cost) {
+        int totalGas = 0;
+        int resultIdx = -1;
 
-        return 0;
+        for (int i = 0; i < gas.length; i++) {
+            int curGas = gas[i] - cost[i];
+            totalGas += curGas;
+
+            if (curGas < 0) {
+                resultIdx = i + 1;
+            }
+        }
+
+        return totalGas >= 0 ? resultIdx : -1;
     }
 
     public static void main(String[] args) {

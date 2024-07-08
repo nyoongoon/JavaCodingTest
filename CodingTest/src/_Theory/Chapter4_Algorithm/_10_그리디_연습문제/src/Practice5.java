@@ -11,8 +11,32 @@ package _Theory.Chapter4_Algorithm._10_그리디_연습문제.src;// Practice
 
 public class Practice5 {
     public static int solution(int num) {
+        char[] chars = String.valueOf(num).toCharArray();
+        int max = Integer.MIN_VALUE;
+        int[] maxArr = new int[chars.length];
+        for (int i = chars.length - 1; i >= 0; i--) {
+            max = Math.max(max, chars[i] - '0');
+            maxArr[i] = max;
+        }
 
-        return 0;
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] - '0' < maxArr[i]) {
+                // 원본 idx 찾기
+                for (int j = maxArr.length - 1; j >= 0; j--) {
+                    if (maxArr[i] == maxArr[j]) {
+                        swap(chars, i, j);
+                        return Integer.parseInt(String.valueOf(chars));
+                    }
+                }
+            }
+        }
+        return  num;
+    }
+
+    private static void swap(char[] chars, int originIdx, int targetIdx) {
+        char tmp = chars[originIdx];
+        chars[originIdx] = chars[targetIdx];
+        chars[targetIdx] = tmp;
     }
 
     public static void main(String[] args) {

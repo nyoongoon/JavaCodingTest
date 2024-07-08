@@ -15,17 +15,29 @@ package _Theory.Chapter4_Algorithm._10_그리디_연습문제.src;// Practice
 // 출력: 4
 
 /**
- * 틀.. --> 연산이 빨라지는 규칙을 파악해야함.
+ * 짝수가 4의 배수일 때 최적 .. -> 똑같은거 아닌가? 3 제외하면..
  */
-public class Practice3 {
+public class Practice3_ans {
     public static int solution(int n) {
+        if (n == 0 || n == 2) {
+            return 1;
+        }
+        if (n == 1) {
+            return 0;
+        }
+
         int cnt = 0;
-        int result = n;
-        while (result != 1) {
-            if (result % 2 != 0) { //홀
-                result -= 1;
-            } else { // 짝
-                result /= 2;
+        while (n != 1) {
+            if (n == 3) {
+                return cnt += 2;
+            }
+
+            if (n % 2 == 0) {
+                n /= 2;
+            } else if ((n + 1) % 4 == 0) {
+                n += 1;
+            } else if ((n - 1) % 4 == 0) {
+                n -= 1;
             }
             cnt++;
         }

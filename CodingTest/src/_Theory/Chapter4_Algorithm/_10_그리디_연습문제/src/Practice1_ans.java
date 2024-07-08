@@ -14,27 +14,21 @@ package _Theory.Chapter4_Algorithm._10_그리디_연습문제.src;// Practice
 // nums: 3, 2, 1, 0, 4
 // 출력: false
 
-public class Practice1 {
+public class Practice1_ans {
     public static boolean solution(int[] nums) {
-        return jump(nums, 0);
-    }
-
-    private static boolean jump(int[] nums, int idx) {
-        if (nums.length <= idx) {
-            return false;
-        }
-        if (nums.length - 1 == idx) {
-            return true;
-        }
-
-        for (int i = idx + nums[idx]; i > idx; i--) {
-            if (jump(nums, i)) {
+        int pos = 0; // 갈 수 있는 최대 위치
+        for (int i = 0; i < nums.length; i++) {
+            if (pos < i) {
+                return false;
+            } else if (pos >= nums.length - 1) {
                 return true;
             }
-        }
 
+            pos = Math.max(pos, i + nums[i]);
+        }
         return false;
     }
+
 
     public static void main(String[] args) {
         // Test code
