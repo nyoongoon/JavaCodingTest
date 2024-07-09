@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_11.src;// Practice2
+package _Theory.Chapter4_Algorithm._12_분할정복_연습문제.src;// Practice2
 // 2차원 정수형 배열 lists 가 주어졌다.
 // lists[i] 에는 각 링크드 리스트의 원소 정보가 들어 있고,
 // 원소들은 오름차순 정렬된 상태이다.
