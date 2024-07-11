@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_13.src;// Practice
+package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src;// Practice
 // 배낭에 물품을 담으려고 한다.
 // 배낭에는 k 무게 만큼의 물품을 담을 수 있다.
 // n 개의 물품이 주어지고 이 물품의 무게와 가치 정보가 items 2차원 배열에 주어졌을 때,

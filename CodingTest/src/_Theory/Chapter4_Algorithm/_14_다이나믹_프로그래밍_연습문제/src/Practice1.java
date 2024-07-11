@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_13.src;// Practice
+package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src;// Practice
 // 정수 n 이 주어졌을 때 아래의 연산을 통해 1로 만들려고 한다.
     // 2로 나누어 떨어지면 2로 나누기
     // 3으로 나누어 떨어지면 3으로 나누기

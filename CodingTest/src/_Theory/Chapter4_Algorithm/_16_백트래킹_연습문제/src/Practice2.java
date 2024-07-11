@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_15.src;// Practice2
+package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice2
 // 숫자 7193 은 7193 도 소수이고,
 // 719, 71, 7 도 각각 소수이다.
 // n 이 주어졌을 때, n 자리 수 중에 위와 같은 소수를 찾는 프로그램을 작성하세요.

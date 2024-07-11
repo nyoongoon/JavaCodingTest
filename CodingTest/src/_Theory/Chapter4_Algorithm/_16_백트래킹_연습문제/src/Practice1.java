@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_15.src;// Practice1
+package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice1
 // 정수형 n과 m이 주어졌을 때,
 // 1 부터 n 까지의 정수 중에서 중복 없이 m 개를 고른 수열을 출력하는 프로그램을 작성하세요.
 

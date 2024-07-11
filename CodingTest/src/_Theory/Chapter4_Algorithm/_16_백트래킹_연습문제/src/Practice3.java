@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_15.src;// Practice3
+package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice3
 // sols 배열에 5지 선다 문제의 정답들이 적혀있다.
 // 3번 연속 해서 같은 정답이 있는 경우가 없다는 것을 알아낸 후,
 // 문제를 찍어서 푼다고 할 때, 5점 이상을 받을 경우의 수를 출력하세요.

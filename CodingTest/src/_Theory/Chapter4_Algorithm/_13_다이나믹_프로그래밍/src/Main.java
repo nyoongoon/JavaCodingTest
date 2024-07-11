@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_12.src;// 알고리즘 - 다이나믹 프로그래밍
+package _Theory.Chapter4_Algorithm._13_다이나믹_프로그래밍.src;// 알고리즘 - 다이나믹 프로그래밍
 
 public class Main {
     public static int fib(int n) {

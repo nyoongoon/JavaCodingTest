@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_13.src;// Practice
+package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src;// Practice
 // 수열 arr 이 주어졌을 때,
 // 부분 수열 중 증가하는 부분이 가장 긴 길이를 출력하는 프로그램을 작성하세요.
 

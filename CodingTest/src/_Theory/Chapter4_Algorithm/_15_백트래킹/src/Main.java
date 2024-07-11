@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_14.src;// 알고리즘 - 백트래킹
+package _Theory.Chapter4_Algorithm._15_백트래킹.src;// 알고리즘 - 백트래킹
 
 public class Main {
 

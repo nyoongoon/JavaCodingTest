@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_15.src;// Practice4
+package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice4
 // 2차원 배열 board 가 주어졌다.
 // 해당 배열 데이터에는 'o', '#', '.' 의 정보가 기입되어 있다.
 // 'o': 동전을 의미
