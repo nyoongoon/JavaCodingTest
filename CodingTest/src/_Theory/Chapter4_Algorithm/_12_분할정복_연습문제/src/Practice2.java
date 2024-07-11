@@ -25,9 +25,58 @@ public class Practice2 {
             return null;
         }
 
-        return null;
+        return mergeSort(lists, 0, lists.length - 1);
     }
 
+    public static Node mergeSort(Node[] list, int left, int right) {
+        if (left == right) {
+            return list[left];
+        }
+
+        int m = (left + right) / 2;
+        Node leftFirst = mergeSort(list, left, m);
+        Node rightFirst = mergeSort(list, m + 1, right);
+
+        return merge(leftFirst, rightFirst);
+    }
+
+    private static Node merge(Node leftNode, Node rightNode) {
+        Node head = null;
+
+        if (leftNode.val > rightNode.val) {
+            head = rightNode;
+            rightNode = rightNode.next;
+        } else {
+            head = leftNode;
+            leftNode = leftNode.next;
+        }
+
+        Node cur = head;
+        while (leftNode != null && rightNode != null) {
+            if (leftNode.val > rightNode.val) {
+                cur.next = rightNode;
+                rightNode = rightNode.next;
+            } else {
+                cur.next = leftNode;
+                leftNode = leftNode.next;
+            }
+            cur = cur.next;
+        }
+
+        while (leftNode != null) {
+            cur.next = leftNode;
+            cur = cur.next;
+            leftNode = leftNode.next;
+        }
+
+        while (rightNode != null) {
+            cur.next = rightNode;
+            cur = cur.next;
+            rightNode = rightNode.next;
+        }
+
+        return head;
+    }
 
 
     // 문제에 주어진 2차원 배열을 링크드 리스트로 구성
