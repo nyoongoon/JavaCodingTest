@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm._12_분할정복_연습문제.src;// Practice2
+package _Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans;// Practice2
 // 2차원 정수형 배열 lists 가 주어졌다.
 // lists[i] 에는 각 링크드 리스트의 원소 정보가 들어 있고,
 // 원소들은 오름차순 정렬된 상태이다.
@@ -28,21 +28,20 @@ public class Practice2 {
         return mergeSort(lists, 0, lists.length - 1);
     }
 
-    public static Node mergeSort(Node[] list, int left, int right) {
+    private static Node mergeSort(Node[] lists, int left, int right) {
         if (left == right) {
-            return list[left];
+            return lists[left];
         }
 
         int m = (left + right) / 2;
-        Node leftFirst = mergeSort(list, left, m);
-        Node rightFirst = mergeSort(list, m + 1, right);
+        Node leftNode = mergeSort(lists, left, m);
+        Node rightNode = mergeSort(lists, m + 1, right);
 
-        return merge(leftFirst, rightFirst);
+        return merge(leftNode, rightNode);
     }
 
     private static Node merge(Node leftNode, Node rightNode) {
-        Node head = null;
-
+        Node head;
         if (leftNode.val > rightNode.val) {
             head = rightNode;
             rightNode = rightNode.next;
@@ -52,6 +51,7 @@ public class Practice2 {
         }
 
         Node cur = head;
+
         while (leftNode != null && rightNode != null) {
             if (leftNode.val > rightNode.val) {
                 cur.next = rightNode;
@@ -63,16 +63,12 @@ public class Practice2 {
             cur = cur.next;
         }
 
-        while (leftNode != null) {
-            cur.next = leftNode; // 이부분 필요없음!
-            cur = cur.next;
-            leftNode = leftNode.next;
+        if (leftNode != null) {
+            cur.next = leftNode; //이후 정렬되어 있음 주의
         }
 
-        while (rightNode != null) {
-            cur.next = rightNode;
-            cur = cur.next;
-            rightNode = rightNode.next;
+        if (rightNode != null) {
+            cur.next = rightNode; //이후 정렬되어 있음 주의
         }
 
         return head;

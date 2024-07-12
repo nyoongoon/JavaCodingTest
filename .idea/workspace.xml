@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/ans/Practice1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/ans/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/Practice2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +139,7 @@
     "Application._Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice3.executor": "Run",
     "Application._Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans.Practice4.executor": "Run",
     "Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice1.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice2.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -144,7 +147,7 @@
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter3_NonLinear/NonLinearDS_01",
-    "last_opened_file_path": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re",
+    "last_opened_file_path": "/Users/seokbinyoon/Desktop/STUDY/JavaCodingTest/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/ans",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -159,11 +162,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/ans" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_03_기수_계수_셸_정렬/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_02_합병_힙_퀵_정렬/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_01_버블_삽입_선택_정렬/src/re" />
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory" />
-      <recent name="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter3_NonLinear/_09_최대힙최소힙/src/re" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CodingTest/src/_Theory" />
@@ -180,7 +183,7 @@
       <recent name="_Theory.Chapter4_Algorithm._04_정렬_연습문제.src.ans" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice1">
+  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice2">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._11_분할정복.src.Main" />
       <module name="CodingTest" />
@@ -220,19 +223,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._10_그리디_연습문제.src.Practice5" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._10_그리디_연습문제.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Java-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -255,13 +245,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice2" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice2" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._12_분할정복_연습문제.src.ans.Practice1" />
         <item itemvalue="Application.Practice2" />
         <item itemvalue="Application.Practice1" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Practice5" />
       </list>
     </recent_temporary>
   </component>
@@ -924,7 +927,9 @@
       <workItem from="1720470932437" duration="9000" />
       <workItem from="1720517317252" duration="3038000" />
       <workItem from="1720557497278" duration="32000" />
-      <workItem from="1720690217300" duration="3054000" />
+      <workItem from="1720690217300" duration="3503000" />
+      <workItem from="1720729994217" duration="26000" />
+      <workItem from="1720775910576" duration="832000" />
     </task>
     <servers />
   </component>
