@@ -11,10 +11,40 @@ package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제
 // 출력: 14
 
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Practice3 {
 
     public static int solution(int[][] items, int n, int k) {
-        return 0;
+        if (k < 0) {
+            throw new IllegalArgumentException();
+        }
+        if (k == 0) {
+            return 0;
+        }
+
+        Map<Integer, Integer> map = new HashMap<>();
+
+        for (int i = 0; i < items.length; i++) {
+            map.put(items[i][0], items[i][1]);
+        }
+
+        if(k == 1){
+            return map.getOrDefault(k, 0);
+        }
+
+        int[] dp = new int[k + 1];
+
+
+        for (int i = 2; i <= k; i++) {
+            dp[i] = map.getOrDefault(i, 0);
+            for (int j = i - 1; j >= i / 2; j--) {
+                dp[i] = Math.max(dp[i], dp[j] + dp[i - j]);
+            }
+        }
+
+        return dp[k];
     }
 
     public static void main(String[] args) {

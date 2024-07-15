@@ -1,8 +1,8 @@
 package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src;// Practice
 // 정수 n 이 주어졌을 때 아래의 연산을 통해 1로 만들려고 한다.
-    // 2로 나누어 떨어지면 2로 나누기
-    // 3으로 나누어 떨어지면 3으로 나누기
-    // 1 빼기
+// 2로 나누어 떨어지면 2로 나누기
+// 3으로 나누어 떨어지면 3으로 나누기
+// 1 빼기
 // 위의 연산을 통해 1로 만들 때 필요한 최소한의 연산 횟수를 출력하는 프로그램을 작성하세요.
 
 // 입출력 예시
@@ -14,9 +14,29 @@ package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제
 
 public class Practice1 {
     public static int solution(int n) {
+        int[] dp = new int[n + 1];
+        if (n <= 0) {
+            throw new IllegalArgumentException();
+        }
+        for (int i = 0; i <= n; i++) {
+            dp[i] = Integer.MAX_VALUE;
+        }
 
-        return 0;
+        dp[1] = 0;
+        dp[2] = 1;
+        for (int i = 3; i <= n; i++) {
+            if (i % 2 == 0) {
+                dp[i] = dp[i / 2] + 1;
+            } else if (i % 3 == 0) {
+                dp[i] = dp[i / 3] + 1;
+            }
+
+            dp[i] = Math.min(dp[i], dp[i - 1] + 1);
+        }
+
+        return dp[n];
     }
+
 
     public static void main(String[] args) {
         // Test code
