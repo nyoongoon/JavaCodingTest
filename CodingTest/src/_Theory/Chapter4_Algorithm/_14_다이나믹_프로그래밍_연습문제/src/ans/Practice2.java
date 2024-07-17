@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src;// Practice
+package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans;// Practice
 // 수열 arr 이 주어졌을 때,
 // 부분 수열 중 증가하는 부분이 가장 긴 길이를 출력하는 프로그램을 작성하세요.
 
@@ -11,27 +11,17 @@ package _Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제
  */
 public class Practice2 {
     public static int solution(int[] arr) {
-        if (arr == null || arr.length <= 0) {
-            return 0;
-        } else if (arr.length == 1) {
-            return 1;
-        }
-
-
+        int n = arr.length;
+        int[] dp = new int[n];
         int max = Integer.MIN_VALUE;
-        int[] dp = new int[arr.length];
+
         for (int i = 0; i < arr.length; i++) {
-            if (i == 0) {
-                dp[i] = 1;
-                continue;
-            }
-            int beforeMaxIdx = 0;
+            dp[i] = 1;
             for (int j = 0; j < i; j++) {
-                if (arr[j] <= arr[i]) {
-                    beforeMaxIdx = arr[beforeMaxIdx] > arr[j] ? beforeMaxIdx : j;
+                if (arr[j] < arr[i]) {
+                    dp[i] = Math.max(dp[i], dp[j] + 1);
                 }
             }
-            dp[i] = dp[beforeMaxIdx] + 1;
             max = Math.max(max, dp[i]);
         }
 
