@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/ans/Practice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/ans/Practice3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_14_다이나믹_프로그래밍_연습문제/src/Practice3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,6 +144,7 @@
     "Application._Theory.Chapter4_Algorithm._13_다이나믹_프로그래밍.src.Main.executor": "Run",
     "Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.Practice1.executor": "Run",
     "Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice2.executor": "Run",
+    "Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice3.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -187,7 +188,7 @@
       <recent name="_Theory.Chapter4_Algorithm._06_이진탐색_연습문제.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice2">
+  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice3">
     <configuration name="LogestPalindromicSubstring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="LeetCode.투포인터.LogestPalindromicSubstring" />
       <module name="LeetCode" />
@@ -236,19 +237,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.Practice1" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice2" />
       <module name="CodingTest" />
@@ -262,13 +250,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice3" />
+        <item itemvalue="Application.Practice3" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.ans.Practice2" />
         <item itemvalue="Application.Practice2" />
         <item itemvalue="Application.LogestPalindromicSubstring" />
-        <item itemvalue="Application.Practice3" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._14_다이나믹_프로그래밍_연습문제.src.Practice1" />
       </list>
     </recent_temporary>
   </component>
@@ -940,7 +941,9 @@
       <workItem from="1721075717383" duration="6000" />
       <workItem from="1721121663706" duration="3676000" />
       <workItem from="1721162145125" duration="5000" />
-      <workItem from="1721208478279" duration="715000" />
+      <workItem from="1721208478279" duration="2640000" />
+      <workItem from="1721248494504" duration="19000" />
+      <workItem from="1721295139283" duration="2817000" />
     </task>
     <servers />
   </component>
