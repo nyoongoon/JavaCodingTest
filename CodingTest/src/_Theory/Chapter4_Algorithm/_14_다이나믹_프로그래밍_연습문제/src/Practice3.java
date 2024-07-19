@@ -16,8 +16,22 @@ import java.util.Arrays;
 public class Practice3 {
 
     public static int solution(int[][] items, int n, int k) {
+        Arrays.sort(items, (x, y) -> x[0] - y[0]);
 
+        int[][] dp = new int[n + 1][k + 1];
 
+        //dp[0]은 0 채우기
+        for (int i = 0; i < n; i++) {
+            for (int j = 1; j <= k; j++) { //j는 무게
+                if (items[i][0] > j) { //가방에 안 담길 땐 이전 무게의 dp 가져오기
+                    dp[i + 1][j] = dp[i][j];
+                } else {
+                    dp[i + 1][j] = Math.max(dp[i][j], items[i][1] + dp[i + 1][j - items[i][0]]);
+                }
+            }
+        }
+
+        return dp[n][k];
     }
 
     public static void main(String[] args) {
