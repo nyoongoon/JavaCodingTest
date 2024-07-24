@@ -15,27 +15,27 @@ public class Main {
             System.out.println();
             return cnt;
         }
-
-        for (int i = 0; i < n; i++) { // 한 row에 모든 열을 둬 보는 건지???? -> 백트랙킹이라 안하는거 아닌지?
+        // 한 row에 모든 열을 둬 보는 건지???? -> 백트랙킹이라 안하는거 아닌지 -> 그게 아니라 첫번째row에 퀸이 어디어디 들어갈 수 있는지 각 상황을 보는 것..
+        for (int i = 0; i < n; i++) {
             board[row] = i; // 퀸을 row행에 i열에 두는 경우..
 
             //promising
-            if (isPromising(row)) {
-                nQueen(row + 1); // 현재 row가 불가능하면 row row+1도 불가능하다?
+            if (isPromising(row)) { // 현재 둘 수 있는지 판단
+                nQueen(row + 1); // 현재 row에 퀸을 두고 row + 1 자리 검증 시도
             }
         }
 
         return cnt;
     }
 
-    private static boolean isPromising(int row) {
-        for (int i = 0; i < row; i++) {
+    private static boolean isPromising(int row) { // 현재 퀸을 놓기로한 자리(row)에 놓을 수 있는지 검증..
+        for (int i = 0; i < row; i++) { // 왜 row 까지 인지 -> 기존에 퀸을 놓은 자리(i)와 현재 놓을 자리(row)를 비교하는 것
             // 이곳이 가지치기..
             /**
              * 대각선 구하는 공식 암기 -> abs(행-행) = abs(열-열)
              */
-            if (board[row] == board[i] || // 같은 row인지 판단
-                    row - i == Math.abs(board[row] - board[i])) { // 대각선 판단.. abs(행-행) == abs(열-열)
+            if (board[i] == board[row] || // 같은 열이 있는지 판단 (값이 열) board[i]가 기존에 놓았던 퀸
+                    Math.abs(i - row) == Math.abs(board[i] - board[row])) { // 대각선 판단.. abs(행-행) == abs(열-열)
                 return false;
             }
         }
