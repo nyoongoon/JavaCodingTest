@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice2
+package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.ans;// Practice2
 // 숫자 7193 은 7193 도 소수이고,
 // 719, 71, 7 도 각각 소수이다.
 // n 이 주어졌을 때, n 자리 수 중에 위와 같은 소수를 찾는 프로그램을 작성하세요.
@@ -16,10 +16,9 @@ public class Practice2 {
     public static ArrayList<Integer> solution(int n) {
         result = new ArrayList<>();
 
-        int[] primes = {2, 3, 5, 7}; // 1의 자리 소수
-
-        for (int i = 0; i < primes.length; i++) {
-            backtracking(primes[i], n, 1);
+        int[] primes = {2, 3, 5, 7};
+        for (int prime : primes) {
+            backtracking(prime, n, 1);
         }
 
         return result;
@@ -32,24 +31,25 @@ public class Practice2 {
         }
 
         for (int i = 0; i < 10; i++) {
-            if (i == 2 || i == 5) { //소수에 대한 프루닝..
-                continue;
-            }
             int target = prime * 10 + i;
-            if (isPrime(target)) { //소수인지 프루닝..
+
+            if (isPrime(target)) {
+                // 프루닝
                 backtracking(target, n, cnt + 1);
             }
         }
     }
 
-    private static boolean isPrime(int target) {
-        for (int i = 2; i <= Math.sqrt(target); i++) {
-            if (target % i == 0) {
+    private static boolean isPrime(int prime) {
+        for (int i = 2; i <= Math.sqrt(prime); i++) {
+            if (prime % i == 0) {
+//                System.out.println("prime == " + prime + ", i == " + i);
                 return false;
             }
         }
         return true;
     }
+
 
     public static void main(String[] args) {
         // Test code

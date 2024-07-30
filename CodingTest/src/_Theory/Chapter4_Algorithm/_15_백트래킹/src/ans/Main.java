@@ -9,13 +9,18 @@ public class Main {
     public static int nQueen(int row) {
         if (row == n) {
             cnt++;
-            return cnt;
+
+            for (int i = 0; i < n; i++) {
+                System.out.print(board[i] + " ");
+            }
+            System.out.println();
+            return -1; // 여기서 return은 재귀 종료용
         }
 
         for (int i = 0; i < n; i++) {
-            board[row] = i; //row행 i열에 퀸 두기
+            board[row] = i;
 
-            if (isPromising(row)) {
+            if (promising(row)) {
                 nQueen(row + 1);
             }
         }
@@ -23,20 +28,20 @@ public class Main {
         return cnt;
     }
 
-    // 현재 row에 둔 퀸이 이전에 둔 퀸들과 충돌하지 않는지 검증
-    private static boolean isPromising(int row) {
+    public static void main(String[] args) {
+        // Test code
+        System.out.println("경우의 수: " + nQueen(0));  // 2
+    }
+
+    private static boolean promising(int row) {
         for (int i = 0; i < row; i++) {
-            if (board[i] == board[row] || //다른행에 열이 같은 경우
-                    Math.abs(i - row) == Math.abs(board[i] - board[row])) { // 다른행이 대각선에 위치한 경우
+            if (board[i] == board[row] ||
+                    Math.abs(i - row) == Math.abs(board[i] - board[row])
+            ) {
                 return false;
             }
         }
 
         return true;
-    }
-
-    public static void main(String[] args) {
-        // Test code
-        System.out.println("경우의 수: " + nQueen(0));  // 2
     }
 }

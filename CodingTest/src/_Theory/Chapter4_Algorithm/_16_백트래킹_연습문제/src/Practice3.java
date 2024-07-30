@@ -12,13 +12,16 @@ package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice
 
 public class Practice3 {
     final static int numOfProblems = 10;
+    static int result;
 
     public static void solution(int[] sols) {
+        result = 0;
         if (sols == null || sols.length != numOfProblems) {
             return;
         }
 
-
+        backtracking(sols, 0, 0, 0, false);
+        System.out.println(result);
     }
 
     public static void main(String[] args) {
@@ -26,7 +29,34 @@ public class Practice3 {
         int[] sols = {1, 2, 3, 4, 5, 1, 2, 3, 4, 5};
         solution(sols);
 
-        sols = new int[] {1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
+        sols = new int[]{1, 1, 2, 2, 3, 3, 4, 4, 5, 5};
         solution(sols);
+    }
+
+    public static void backtracking(int[] sols, int answerCnt, int idx, int lastNum, boolean wasDuplicated) {
+        if (numOfProblems - (idx) + answerCnt < 5) {
+            return;
+        }
+
+        if (idx == sols.length) {
+            if (answerCnt >= 5) {
+                result++;
+            }
+            return;
+        }
+
+        for (int i = 1; i <= 5; i++) {
+            if (wasDuplicated && lastNum == i) {
+                continue;
+            }
+
+            int curNum = i;
+            boolean isDuplicated = lastNum == i ? true : false;
+            if (sols[idx] == i) {
+                backtracking(sols, answerCnt + 1, idx + 1, curNum, isDuplicated);
+            } else {
+                backtracking(sols, answerCnt, idx + 1, curNum, isDuplicated);
+            }
+        }
     }
 }
