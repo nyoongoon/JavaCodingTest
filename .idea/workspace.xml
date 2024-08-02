@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/ans/Practice1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/ans/Practice2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_15_백트래킹/src/ans/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_15_백트래킹/src/ans/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_16_백트래킹_연습문제/src/Practice4.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -197,20 +191,7 @@
       <recent name="_Theory.Chapter4_Algorithm._10_그리디_연습문제.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice3">
-    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.Practice1" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Practice4">
     <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.Practice2" />
       <module name="CodingTest" />
@@ -226,6 +207,19 @@
     </configuration>
     <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.Practice3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Practice4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.Practice4" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -274,11 +268,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice4" />
         <item itemvalue="Application.Practice3" />
         <item itemvalue="Application.Practice2" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.ans.Practice2" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.ans.Practice1" />
-        <item itemvalue="Application.Practice1" />
       </list>
     </recent_temporary>
   </component>
@@ -964,7 +958,11 @@
       <workItem from="1722199793794" duration="11000" />
       <workItem from="1722245230927" duration="1648000" />
       <workItem from="1722285321215" duration="6000" />
-      <workItem from="1722331716192" duration="3030000" />
+      <workItem from="1722331716192" duration="3052000" />
+      <workItem from="1722458537742" duration="43000" />
+      <workItem from="1722504902365" duration="2063000" />
+      <workItem from="1722544841242" duration="8000" />
+      <workItem from="1722589787833" duration="1915000" />
     </task>
     <servers />
   </component>

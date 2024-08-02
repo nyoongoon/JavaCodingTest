@@ -18,33 +18,71 @@ package _Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src;// Practice
 // 결과: 4
 
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Practice4 {
     final static int[][] dirs = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
+    static int min;
 
     public static void solution(char[][] board) {
-        if (board == null || board.length == 0 || board[0].length == 0) {
+        min = Integer.MAX_VALUE;
+        List<Coin> coins = new ArrayList<>();
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[i].length; j++) {
+                if (board[i][j] == 'o') {
+                    Coin coin = new Coin(i, j);
+                    coins.add(coin);
+                }
+            }
+        }
+
+        Coin coin1 = coins.get(0);
+        Coin coin2 = coins.get(1);
+
+        backtracking(board, coin1.row, coin1.col, coin2.row, coin2.col, 0);
+
+        System.out.println(min == Integer.MAX_VALUE ? -1 : min);
+    }
+
+    public static void backtracking(char[][] board, int row1, int col1, int row2, int col2, int moveCnt) {
+        if (moveCnt >= 10) {
             return;
         }
 
-        backtracking(board);
-    }
-
-    public static void backtracking(char[][] board, int row, int col, int moveCnt) {
-        if (moveCnt >= 10) {
-            return; //최소 이동 횟수 구해야 하므로 어딘가에서 min() 해야함..
-        }
-
         for (int i = 0; i < dirs.length; i++) {
-            int nextRow = row + dirs[i][0];
-            int nextCol = col + dirs[i][1];
-            if (canMove()) {
-                backtracking(board, nextRow, nextCol, moveCnt + 1);
-            }else{
-                //todo 이곳에서 최소 이동횟수 체크
+            int cntOfCrossed = 0;
+            int nextRow1 = row1 + dirs[i][0];
+            int nextCol1 = col1 + dirs[i][1];
+            int nextRow2 = row2 + dirs[i][0];
+            int nextCol2 = col2 + dirs[i][1];
+
+            // 범위 넘어가면 카운트
+            if (0 > nextRow1 || nextRow1 >= board.length || 0 > nextCol1 || nextCol1 >= board[0].length) {
+                cntOfCrossed++;
+            }
+            if (0 > nextRow2 || nextRow2 >= board.length || 0 > nextCol2 || nextCol2 >= board[0].length) {
+                cntOfCrossed++;
+            }
+
+
+            if (cntOfCrossed > 1) {
+                continue;
+            } else if (cntOfCrossed == 0) {
+                if (board[nextRow1][nextCol1] == '#') {
+                    nextRow1 = row1;
+                    nextCol1 = col1;
+                }
+                if (board[nextRow2][nextCol2] == '#') {
+                    nextRow2 = row2;
+                    nextCol2 = col2;
+                }
+                backtracking(board, nextRow1, nextCol1, nextRow2, nextCol2, moveCnt + 1);
+            } else {
+                min = Math.min(min, moveCnt + 1);
             }
         }
     }
-
 
     public static void main(String[] args) {
         // Test code
@@ -56,5 +94,15 @@ public class Practice4 {
 
         board = new char[][]{{'#', '#', '#'}, {'.', 'o', '.'}, {'#', '#', '#'}, {'.', 'o', '.'}, {'#', '#', '#'}};
         solution(board);
+    }
+
+    public static class Coin {
+        int row;
+        int col;
+
+        public Coin(int row, int col) {
+            this.row = row;
+            this.col = col;
+        }
     }
 }
