@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_17.src;// Practice3
+package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice3
 // n 개의 도시와, 한 도시에서 출발하여 다른 도시에 도착하는 m 개의 버스가 있다.
 // 각 버스는 한 번 사용할 때 필요한 비용이 있다.
 // 모든 도시의 쌍 (A, B) 에 대해서 도시 A 에서 B 로 가는데 필요한 비용의 최솟값을 구하는 프로그램을 작성하시오.

@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_17.src;// Practice1
+package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice1
 // 2차원 배열 data 에 그래프 데이터가 주어졌다.
 // 무방향이고 간선에 가중치 값이 있는 그래프이다.
 // 1번 정점에서 N 번 정점으로 최단 경로로 이동하려고 하는데,

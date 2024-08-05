@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_17.src;// Practice2
+package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice2
 // N 개의 우주가 있고, N 개의 우주 사이에 M 개의 포탈과 W 개의 웜홀이 있다.
 // 각 포탈에는 시간 비용이 있고, 포탈을 통해 우주를 이동했을 때 시간이 흘러 있다.
 // 웜홀에도 시간 비용이 있는데, 웜홀을 통해 우주를 이동하는 경우는 시간이 거꾸로 흘러 있다.

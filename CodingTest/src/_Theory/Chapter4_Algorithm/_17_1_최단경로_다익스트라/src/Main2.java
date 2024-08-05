@@ -1,8 +1,7 @@
-package _Theory.Chapter4_Algorithm.Algorithm_16_1.src;// 알고리즘 - 최단 경로 알고리즘
-// 다익스트라 기본 구현
+package _Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src;// 다익스트라 우선순위 큐 사용
 
 
-public class Main {
+public class Main2 {
 
     public static void dijkstra(int v, int[][] data, int start) {
 
