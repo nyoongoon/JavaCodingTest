@@ -6,14 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_16_1/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_16_1/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_16_2/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_2_최단경로_벨만포드/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_16_3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_3_최단경로_플로이드워셜/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_17/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_17/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/Algorithm_17/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -971,7 +964,9 @@
       <workItem from="1722544841242" duration="8000" />
       <workItem from="1722589787833" duration="5599000" />
       <workItem from="1722673075189" duration="70000" />
-      <workItem from="1722850235951" duration="1184000" />
+      <workItem from="1722850235951" duration="3156000" />
+      <workItem from="1722890107545" duration="28000" />
+      <workItem from="1722936761530" duration="731000" />
     </task>
     <servers />
   </component>
@@ -988,6 +983,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="K" />
+    <option name="LAST_COMMIT_MESSAGE" value="K" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

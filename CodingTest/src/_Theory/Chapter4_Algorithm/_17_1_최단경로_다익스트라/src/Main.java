@@ -5,58 +5,56 @@ package _Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src;// 알
 import java.util.ArrayList;
 
 public class Main {
-
     public static void dijkstra(int v, int[][] data, int start) {
-        //그래프 만들기
         ArrayList<ArrayList<Node>> graph = new ArrayList<>();
         for (int i = 0; i < v + 1; i++) {
             graph.add(new ArrayList<>());
         }
         for (int i = 0; i < data.length; i++) {
-            int nodeIdx = data[i][0];
             Node node = new Node(data[i][1], data[i][2]);
-            graph.get(nodeIdx).add(node);
+            graph.get(data[i][0]).add(node);
         }
 
-        //방문 배열 생성
         boolean[] visited = new boolean[v + 1];
-        //가중치 dp배열 생성
         int[] dp = new int[v + 1];
-        for (int i = 0; i < v + 1; i++) {
+        for (int i = 0; i < dp.length; i++) {
             dp[i] = Integer.MAX_VALUE;
         }
 
-        // 시작 지점의 가중치 값은 0
         dp[start] = 0;
 
-        for (int i = 0; i < v; i++) { //노드 개수 만큼 반복한다
-            int curIdx = 0;
+        for (int i = 0; i < v; i++) {
             int minValue = Integer.MAX_VALUE;
-
-            for (int j = 1; j < v + 1; j++) { //방문 안한 곳 중 최소 가중치값 노드 위치 찾기
+            int curIdx = start;
+            for (int j = 1; j < v + 1; j++) {
                 if (!visited[j] && minValue > dp[j]) {
                     minValue = dp[j];
                     curIdx = j;
                 }
             }
 
-            visited[curIdx] = true; //방문처리
+            if (minValue == Integer.MAX_VALUE) {
+                break;
+            }
 
-            for (Node node : graph.get(curIdx)) { //방문한 노드의 인접노드들 순회하며 dp값 업데이트 -> min(인접노드의 dp값, 현재노드의 가중치값 + 현재노드와 인접노드와의 가중치값)
+            visited[curIdx] = true;
+
+            for (Node node : graph.get(curIdx)) {
                 if (dp[node.nextNode] > dp[curIdx] + node.weight) {
                     dp[node.nextNode] = dp[curIdx] + node.weight;
                 }
             }
         }
 
-        for (int i = 1; i < dp.length; i++) {
-            if (dp[i] == Integer.MAX_VALUE) {
+
+        for (int j = 1; j < dp.length; j++) {
+            if (dp[j] == Integer.MAX_VALUE) {
                 System.out.print("INF ");
             } else {
-                System.out.print(dp[i] + " ");
+                System.out.print(dp[j] + " ");
             }
-
         }
+        System.out.println();
     }
 
     public static void main(String[] args) {
