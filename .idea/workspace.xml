@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_1_최단경로_다익스트라/src/Main2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -967,7 +966,9 @@
       <workItem from="1722673075189" duration="70000" />
       <workItem from="1722850235951" duration="3156000" />
       <workItem from="1722890107545" duration="28000" />
-      <workItem from="1722936761530" duration="1914000" />
+      <workItem from="1722936761530" duration="2451000" />
+      <workItem from="1722976525927" duration="10000" />
+      <workItem from="1723022812176" duration="885000" />
     </task>
     <servers />
   </component>

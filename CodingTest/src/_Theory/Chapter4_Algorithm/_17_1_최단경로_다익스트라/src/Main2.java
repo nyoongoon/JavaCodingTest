@@ -6,7 +6,6 @@ import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class Main2 {
-
     public static void dijkstra(int v, int[][] data, int start) {
         ArrayList<ArrayList<Node>> graph = new ArrayList<>();
         for (int i = 0; i < v + 1; i++) {
@@ -21,22 +20,23 @@ public class Main2 {
         for (int i = 0; i < dp.length; i++) {
             dp[i] = Integer.MAX_VALUE;
         }
+
         dp[start] = 0;
 
-        PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparing(node -> node.weight));
-        pq.add(new Node(start, 0)); //시작 위치 큐에 가중치값 0으로 넣기
+        PriorityQueue<Node> pq = new PriorityQueue<>(Comparator.comparing(e -> e.weight));
+        pq.add(new Node(start, 0));
 
         while (!pq.isEmpty()) {
             Node curNode = pq.poll();
-            // 없어도 되지 않을까 했는데 필요함! 인접노드라서 큐에 들어갔지만, 최소 가중치 노드 먼저 처리하면서 해당 위치의 노드가 더 작은 가중치로 업데이트 되고 큐에 추가될 수 있음!
             if (dp[curNode.nextNode] < curNode.weight) {
                 continue;
             }
 
-            for (Node node : graph.get(curNode.nextNode)) {
+            ArrayList<Node> nodes = graph.get(curNode.nextNode);
+            for (Node node : nodes) {
                 if (dp[node.nextNode] > curNode.weight + node.weight) {
                     dp[node.nextNode] = curNode.weight + node.weight;
-                    pq.add(new Node(node.nextNode, dp[node.nextNode]));
+                    pq.add(node);
                 }
             }
         }
