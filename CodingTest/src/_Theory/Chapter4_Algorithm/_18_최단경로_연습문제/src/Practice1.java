@@ -10,16 +10,15 @@ package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice
 // 출력: 7
 
 
+import java.util.ArrayList;
+import java.util.PriorityQueue;
+
 public class Practice1 {
 
     public static int solution(int[][] data, int v, int via1, int via2, int start, int n) {
 
-        return 0;
     }
 
-    public static int dijkstra(int v, int start, int end) {
-        return 0;
-    }
 
     public static void main(String[] args) {
         // Test code

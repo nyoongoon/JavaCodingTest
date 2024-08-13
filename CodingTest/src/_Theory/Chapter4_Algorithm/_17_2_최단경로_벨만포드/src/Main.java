@@ -3,10 +3,11 @@ package _Theory.Chapter4_Algorithm._17_2_최단경로_벨만포드.src;// 알고
 
 public class Main {
     public static void bellmanFord(int v, int e, int[][] data, int start) {
-        Edge[] edges = new Edge[e + 1];
+        Edge[] edges = new Edge[e];
         for (int i = 0; i < data.length; i++) {
             edges[i] = new Edge(data[i][0], data[i][1], data[i][2]);
         }
+
         int[] dist = new int[v + 1];
         for (int i = 0; i < dist.length; i++) {
             dist[i] = Integer.MAX_VALUE;
@@ -14,22 +15,28 @@ public class Main {
 
         dist[start] = 0;
 
-        boolean isMinus = false;
-        for (int i = 0; i < v + 1; i++) { // v + 1번 돌리기
+        for (int i = 0; i < v + 1; i++) {
             for (int j = 0; j < edges.length; j++) {
                 Edge curEdge = edges[j];
-                if (dist[curEdge.to] == Integer.MAX_VALUE) {
+                if (dist[curEdge.from] == Integer.MAX_VALUE) {
                     continue;
                 }
-                if (dist[curEdge.from] > dist[curEdge.to] + curEdge.weight) {
-                    dist[curEdge.from] = dist[curEdge.to] + curEdge.weight;
-                    if (i == v) {
-                        isMinus = true;
-                    }
+
+                if (dist[curEdge.to] > dist[curEdge.from] + curEdge.weight) {
+                    dist[curEdge.to] = dist[curEdge.from] + curEdge.weight;
                 }
             }
         }
 
+
+        for (int i = 0; i < dist.length; i++) {
+            if(dist[i] == Integer.MAX_VALUE){
+                System.out.print("INF ");
+            }else{
+                System.out.print(dist[i] + " ");
+            }
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
