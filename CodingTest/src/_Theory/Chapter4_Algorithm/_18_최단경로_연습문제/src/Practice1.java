@@ -11,12 +11,26 @@ package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice
 
 
 import java.util.ArrayList;
-import java.util.PriorityQueue;
 
 public class Practice1 {
 
+    /**
+     * start -> via1 & via1 -> via2 & via2 -> n
+     * start -> via2 & via2 -> via1 & via1 -> n
+     * -> 다익스트라 세 번 씩 두 상황을 비교
+     */
     public static int solution(int[][] data, int v, int via1, int via2, int start, int n) {
+        int result1 = 0;
+        result1 += dijkstra(data, start, via1);
+        result1 += dijkstra(data, via1, via2);
+        result1 += dijkstra(data, via2, n);
 
+        int result2 = 0;
+        result2 += dijkstra(data, start, via1);
+        result2 += dijkstra(data, via1, via2);
+        result2 += dijkstra(data, via2, n);
+
+        return Math.min(result1, result2);
     }
 
 
@@ -29,5 +43,60 @@ public class Practice1 {
         int start = 1;
         int n = 4;
         System.out.println(solution(data, v, via1, via2, start, n));
+    }
+
+    public static int dijkstra(int[][] data, int start, int end) {
+        ArrayList<ArrayList<Node>> graph = new ArrayList<>();
+        for (int i = 0; i < data.length + 1; i++) {
+            graph.add(new ArrayList<>());
+        }
+
+        for (int i = 0; i <data.length; i++) {
+            Node node = new Node(data[i][1], data[i][2]);
+            graph.get(data[i][0]).add(node);
+        }
+
+        boolean[] visited = new boolean[data.length + 1];
+        int[] dist = new int[data.length + 1];
+        for (int i = 0; i < dist.length; i++) {
+            dist[i] = Integer.MAX_VALUE;
+        }
+        dist[start] = 0;
+        // loop 마다 방문하지 않은 최소 거리 노드로 초기화
+        Node curNode;
+        for (int i = 0; i < data.length; i++) {
+
+            int minValue = Integer.MAX_VALUE;
+            int minIdx = -1;
+            for (int j = 1; j < dist.length; j++) {
+                if(!visited[j] && minValue > dist[j]){
+                    minValue = dist[j];
+                    minIdx = j;
+                }
+            }
+
+            if(minValue == Integer.MAX_VALUE){
+                break; //
+            }
+            visited[minIdx] = true;
+
+            ArrayList<Node> nodes = graph.get(minIdx);
+            for(Node node : nodes){
+                if(dist[node.to] > dist[minIdx] + node.weight){
+                    dist[node.to] = dist[minIdx] + node.weight;
+                }
+            }
+        }
+
+        return dist[end];
+    }
+
+    public static class Node{
+        int to;
+        int weight;
+        public Node(int to, int weight){
+            this.to = to;
+            this.weight = weight;
+        }
     }
 }

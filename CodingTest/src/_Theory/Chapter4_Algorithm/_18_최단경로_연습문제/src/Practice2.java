@@ -17,29 +17,45 @@ package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice
 
 
 public class Practice2 {
-    static class Edge {
-        int from;
-        int to;
-        int weight;
 
-        public Edge(int from, int to, int weight) {
-            this.from = from;
-            this.to = to;
-            this.weight = weight;
-        }
-    }
-
-    final static int INF = 1000000000;
-    static Edge[] edge;
-    static int[] dist;
+    private static int INF = 100000000;
 
     public static void solution(int n, int m, int w, int[][] portal, int[][] wormhole) {
+        Edge[] edges = new Edge[m + w];
+        for (int i = 0; i < portal.length; i++) {
+            Edge edge = new Edge(portal[i][0], portal[i][1], portal[i][2]);
+            edges[i] = edge;
+        }
+        for (int i = 0; i < wormhole.length; i++) {
+            Edge edge = new Edge(wormhole[i][0], wormhole[i][1], -wormhole[i][2]);
+            edges[portal.length + i] = edge;
+        }
 
-    }
+        int[] dist = new int[n + 1];
+        for (int i = 0; i < dist.length; i++) {
+            dist[i] = INF;
+        }
 
-    public static boolean bellmanFord(int v, int e) {
+        dist[0] = 0;
 
-        return false;
+        boolean isMinus = false;
+        for (int i = 0; i < edges.length + 1; i++) {
+            for (int j = 0; j < edges.length; j++) {
+                Edge curEdge = edges[j];
+                if (curEdge.from == INF) {
+                    continue;
+                }
+
+                if (dist[curEdge.to] > curEdge.weight + dist[curEdge.from]) {
+                    dist[curEdge.to] = curEdge.weight + dist[curEdge.from];
+                    if(i == edges.length){
+                        isMinus = true;
+                    }
+                }
+            }
+        }
+
+        System.out.println(isMinus);
     }
 
     public static void main(String[] args) {
@@ -55,8 +71,20 @@ public class Practice2 {
         n = 3;
         m = 2;
         w = 1;
-        portal = new int[][] {{1, 2, 3}, {2, 3, 4}};
-        wormhole = new int[][] {{3, 1, 8}};
+        portal = new int[][]{{1, 2, 3}, {2, 3, 4}};
+        wormhole = new int[][]{{3, 1, 8}};
         solution(n, m, w, portal, wormhole);  // true
+    }
+
+    static class Edge {
+        int from;
+        int to;
+        int weight;
+
+        public Edge(int from, int to, int weight) {
+            this.from = from;
+            this.to = to;
+            this.weight = weight;
+        }
     }
 }

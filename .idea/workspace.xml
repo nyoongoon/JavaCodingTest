@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/img/img_10.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/4_알고리즘.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_2_최단경로_벨만포드/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_2_최단경로_벨만포드/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_3_최단경로_플로이드워셜/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_17_3_최단경로_플로이드워셜/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice3.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,13 +196,13 @@
       <recent name="_Theory.Chapter4_Algorithm._10_그리디_연습문제.src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._17_3_최단경로_플로이드워셜.src.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src.Main" />
+  <component name="RunManager" selected="Application.Practice3">
+    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.Practice1" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src.Main2" />
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.Practice2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._17_1_최단경로_다익스트라.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -224,12 +223,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.Practice4" />
+    <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.Practice3" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._16_백트래킹_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._18_최단경로_연습문제.src.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -274,11 +273,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._17_3_최단경로_플로이드워셜.src.Main" />
+        <item itemvalue="Application.Practice3" />
+        <item itemvalue="Application.Practice2" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._17_2_최단경로_벨만포드.src.Main" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Practice4" />
+        <item itemvalue="Application.Practice1" />
+        <item itemvalue="Application._Theory.Chapter4_Algorithm._17_3_최단경로_플로이드워셜.src.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -980,6 +979,15 @@
       <workItem from="1723149327752" duration="10000" />
       <workItem from="1723195831451" duration="2691000" />
       <workItem from="1723408939643" duration="62000" />
+      <workItem from="1723541275876" duration="3121000" />
+      <workItem from="1723581328393" duration="13000" />
+      <workItem from="1724318712185" duration="2615000" />
+      <workItem from="1724358924542" duration="48000" />
+      <workItem from="1724368859514" duration="1567000" />
+      <workItem from="1724831869653" duration="1702000" />
+      <workItem from="1725269182642" duration="3435000" />
+      <workItem from="1725309342647" duration="254000" />
+      <workItem from="1725442208007" duration="2590000" />
     </task>
     <servers />
   </component>
@@ -1068,6 +1076,11 @@
           <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_12_분할정복_연습문제/src/Practice2.java</url>
           <line>39</line>
           <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_18_최단경로_연습문제/src/Practice1.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />

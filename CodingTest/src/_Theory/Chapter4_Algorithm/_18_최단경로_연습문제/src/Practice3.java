@@ -18,11 +18,49 @@ package _Theory.Chapter4_Algorithm._18_최단경로_연습문제.src;// Practice
 
 public class Practice3 {
 
-    static int[][] dist;
     static final int INF = 1000000000;
+    static int[][] dist;
 
     public static void solution(int city, int bus, int[][] busInfo) {
+        dist = new int[city + 1][city + 1];
+        for (int i = 0; i < dist.length; i++) {
+            for (int j = 0; j < dist[i].length; j++) {
+                if (i == j) {
+                    dist[i][j] = 0;
+                } else {
+                    dist[i][j] = INF;
+                }
 
+            }
+        }
+
+        for (int i = 0; i < busInfo.length; i++) {
+            int to = busInfo[i][0];
+            int from = busInfo[i][1];
+            int weight = busInfo[i][2];
+            dist[to][from] = Math.min(weight, dist[to][from]);
+        }
+
+        for (int k = 1; k < city + 1; k++) {
+            for (int i = 1; i < city + 1; i++) {
+                for (int j = 1; j < city + 1; j++) {
+                    if (dist[i][k] != INF && dist[k][j] != INF) {
+                        dist[i][j] = Math.min(dist[i][j], dist[i][k] + dist[k][j]);
+                    }
+                }
+            }
+        }
+
+        for (int i = 0; i < dist.length; i++) {
+            for (int j = 0; j < dist[i].length; j++) {
+                if (dist[i][j] == INF) {
+                    System.out.print(0 + " ");
+                } else {
+                    System.out.print(dist[i][j] + " ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     public static void floydWarshall(int v) {
