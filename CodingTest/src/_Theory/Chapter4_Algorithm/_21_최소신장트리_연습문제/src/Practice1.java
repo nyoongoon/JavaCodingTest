@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_19.src;// Practice1
+package _Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src;// Practice1
 // 2250년, 인류는 지구 뿐 아니라 여러 행성을 다니며 살고 있다.
 // 이 행성 간을 빨리 오가기 위해 새롭게 터널을 구축하려 한다.
 

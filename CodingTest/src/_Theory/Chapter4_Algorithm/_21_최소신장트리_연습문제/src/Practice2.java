@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_19.src;// Practice2
+package _Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src;// Practice2
 // V 개의 건물과 E 개의 도로로 구성된 도시가 있다.
 // 도로는 양방향이고 연결된 도로는 유지하는데 비용이 든다.
 

@@ -1,6 +1,6 @@
-package _Theory.Chapter4_Algorithm.Algorithm_18.src;// 프림 알고리즘
+package _Theory.Chapter4_Algorithm._20_최소신장트리_프림.src;
 
-
+// 프림 알고리즘
 public class Main2 {
 
     public static int prim(int[][] data, int v, int e) {
