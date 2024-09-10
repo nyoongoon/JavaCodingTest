@@ -9,15 +9,18 @@ public class Main {
     public static int example(int[][] data, int v, int e) {
         int weightSum = 0;
         parents = new int[v + 1];
-        for (int i = 0; i < parents.length; i++) {
+        for (int i = 0; i < v + 1; i++) {
             parents[i] = i;
         }
 
         Arrays.sort(data, (x, y) -> x[2] - y[2]);
 
         for (int i = 0; i < data.length; i++) {
-            if (find(data[i][0]) != find(data[i][1])) {
+
+            if(find(data[i][0]) != find(data[i][1])){
+                // 같지 않아야 사이클 아님
                 union(data[i][0], data[i][1]);
+
                 weightSum += data[i][2];
             }
         }
@@ -25,19 +28,19 @@ public class Main {
         return weightSum;
     }
 
-    public static void union(int a, int b) {
-        int resultA = find(a);
-        int resultB = find(b);
-
-        parents[resultA] = resultB;
-    }
-
-    public static int find(int target) {
-        if (target == parents[target]) {
+    public static int find(int target){
+        if(target == parents[target]){
             return target;
         }
 
         return parents[target] = find(parents[target]);
+    }
+
+    public static void union(int a, int b){
+        int resultA = find(a);
+        int resultB = find(b);
+
+        parents[resultA] = resultB;
     }
 
 
