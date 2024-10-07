@@ -18,10 +18,44 @@ package _Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src;// Pr
 // 출력: 8
 
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
 public class Practice2 {
 
     public static void solution(int v, int e, int[][] data) {
+        List<Edge>[] graph = new List[v + 1];
+        for (int i = 0; i < v + 1; i++) {
+            graph[i] = new ArrayList<>();
+        }
+        for (int i = 0; i < data.length; i++) {
+            graph[data[i][0]].add(new Edge(data[i][1], data[i][2]));
+            graph[data[i][1]].add(new Edge(data[i][0], data[i][2]));
+        }
 
+        boolean[] visited = new boolean[v + 1];
+        PriorityQueue<Edge> pq = new PriorityQueue<>((x, y) -> x.weight - y.weight);
+        pq.add(new Edge(1, 0));
+        int weightSum = 0;
+        int maxWeight = Integer.MIN_VALUE;
+
+        while(!pq.isEmpty()){
+            Edge poll = pq.poll();
+            if(visited[poll.to]){
+                continue;
+            }
+            visited[poll.to] = true;
+            weightSum += poll.weight;
+            maxWeight = Math.max(maxWeight, poll.weight);
+
+            List<Edge> edges = graph[poll.to];
+            for (Edge edge : edges) {
+                pq.add(edge);
+            }
+        }
+
+        System.out.println(weightSum - maxWeight);
     }
 
     public static void main(String[] args) {
@@ -32,5 +66,15 @@ public class Practice2 {
                 {3, 2, 1}, {3, 4, 4}, {4, 5, 3}, {5, 1, 5},
                 {6, 4, 1}, {6, 5, 3}, {6, 7, 4}, {7, 3, 6}};
         solution(v, e, data);
+    }
+
+    public static class Edge {
+        int to;
+        int weight;
+
+        public Edge(int to, int weight) {
+            this.to = to;
+            this.weight = weight;
+        }
     }
 }

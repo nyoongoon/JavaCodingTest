@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_20_1.src;
+package _Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src;
 
 public class Practice2 {
     public static int solution(int n, int[] plates, int types, int coupon) {

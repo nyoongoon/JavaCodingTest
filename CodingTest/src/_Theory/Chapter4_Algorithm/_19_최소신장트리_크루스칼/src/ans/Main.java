@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm._19_최소신장트리_프루스칼.src.ans;// 알고리즘 - 최소 신장 트리
+package _Theory.Chapter4_Algorithm._19_최소신장트리_크루스칼.src.ans;// 알고리즘 - 최소 신장 트리
 
 import java.util.Arrays;
 

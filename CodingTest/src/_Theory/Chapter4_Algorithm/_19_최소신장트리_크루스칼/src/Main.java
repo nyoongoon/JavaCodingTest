@@ -1,8 +1,8 @@
-package _Theory.Chapter4_Algorithm._19_최소신장트리_프루스칼.src;// 알고리즘 - 최소 신장 트리
+package _Theory.Chapter4_Algorithm._19_최소신장트리_크루스칼.src;// 알고리즘 - 최소 신장 트리
 
 import java.util.Arrays;
 
-// 크루스칼 알고리즘
+// 크루스칼 알고리즘 - 간선 중심의 알고리즘
 public class Main {
     static int parents[];
 

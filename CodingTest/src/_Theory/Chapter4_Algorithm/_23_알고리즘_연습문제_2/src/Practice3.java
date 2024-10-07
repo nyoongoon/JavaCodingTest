@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_20_2.src;
+package _Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.src;
 
 public class Practice3 {
     public static int solution(int[] weights) {

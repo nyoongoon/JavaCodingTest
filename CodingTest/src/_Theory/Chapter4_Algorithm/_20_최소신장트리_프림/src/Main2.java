@@ -11,7 +11,7 @@ import java.util.PriorityQueue;
 /**
  * 기존 답안이나, 잘못 설명된 것이 많은 것 같아서 의아한 점은 주석으로 남김
  */
-// 프림 알고리즘
+// 프림 알고리즘 - 노드 중심의 알고리즘
 public class Main2 {
 
     public static int prim(int[][] data, int v, int e) {

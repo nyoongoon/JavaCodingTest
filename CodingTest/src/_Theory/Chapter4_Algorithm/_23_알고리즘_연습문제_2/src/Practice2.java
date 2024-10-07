@@ -1,4 +1,4 @@
-package _Theory.Chapter4_Algorithm.Algorithm_20_2.src;
+package _Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.src;
 
 public class Practice2 {
     public static void solution(int n) {
