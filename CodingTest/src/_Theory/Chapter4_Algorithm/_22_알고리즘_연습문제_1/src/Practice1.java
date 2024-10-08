@@ -1,14 +1,15 @@
 package _Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src;
 
+
+// n 명의 환자가 대기
+
+import java.util.Arrays;
+
 public class Practice1 {
     public static int solution(int n, int[] times) {
-        if (times == null || times.length == 0) {
-            return -1;
-        }
-
-
-        return 0;
+       return -1;
     }
+
 
     public static void main(String[] args) {
         // Test code
