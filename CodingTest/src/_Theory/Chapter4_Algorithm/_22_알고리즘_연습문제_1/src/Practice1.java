@@ -1,7 +1,6 @@
 package _Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src;
 
 
-// n 명의 환자가 대기
 
 import java.util.Arrays;
 

@@ -3,6 +3,9 @@ package _Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 좋지 않은 풀이...
+ */
 public class Practice2 {
     public static int solution(int n, int[] plates, int types, int coupon) {
         if (plates == null || plates.length == 0) {
