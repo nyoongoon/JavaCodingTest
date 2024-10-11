@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice2_re.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice1.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice2.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,8 +201,8 @@
     </key>
   </component>
   <component name="RunManager" selected="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2">
-    <configuration name="Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.Practice1" />
+    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.Practice2" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -215,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.Practice2" />
+    <configuration name="Practice2_re" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2_re" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.*" />
+          <option name="PATTERN" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -279,10 +278,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2" />
+        <item itemvalue="Application.Practice2_re" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice2" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice1" />
         <item itemvalue="Application.Practice2" />
-        <item itemvalue="Application.Practice1" />
       </list>
     </recent_temporary>
   </component>
@@ -1027,7 +1026,9 @@
       <workItem from="1728540108690" duration="19000" />
       <workItem from="1728555926650" duration="113000" />
       <workItem from="1728556049088" duration="1253000" />
-      <workItem from="1728557560330" duration="340000" />
+      <workItem from="1728557560330" duration="958000" />
+      <workItem from="1728596918826" duration="14000" />
+      <workItem from="1728641884652" duration="552000" />
     </task>
     <servers />
   </component>
