@@ -27,6 +27,7 @@ public class Practice3 {
         while (idx < items.length) {
             //현재 위치의 전기제품이 꽂혀있지 않은 경우
             if (!used[items[idx]]) {
+                // 현재 꽂혀있지 않는 것중에 뒤에 나오는 값 리스트
                 ArrayList<Integer> list = new ArrayList<>();
                 // 현재 꽂혀 있는 것 중에 나중에 다시 나오는 것은 빼지 않기
                 for (int i = idx; i < items.length; i++) {
