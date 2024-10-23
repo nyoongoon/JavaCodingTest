@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice5_my.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice4.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice5.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +97,7 @@
     "Application.Practice4_re.executor": "Run",
     "Application.Practice5.executor": "Run",
     "Application.Practice5_ans.executor": "Run",
+    "Application.Practice5_my.executor": "Run",
     "Application.Practice5_re (1).executor": "Run",
     "Application.Practice5_re (2).executor": "Run",
     "Application.Practice5_re.executor": "Run",
@@ -201,7 +202,7 @@
       <recent name="_Theory.Chapter4_Algorithm._20_최소신장트리_프림" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice4">
+  <component name="RunManager" selected="Application.Practice5_my">
     <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice3" />
       <module name="CodingTest" />
@@ -228,17 +229,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="Java-11" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Array.N11_ClassMonitor" />
-      <module name="CodingTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice1" />
+    <configuration name="Practice5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice5" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -250,8 +242,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2" />
+    <configuration name="Practice5_my" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice5_my" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -259,6 +251,15 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="Java-11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Array.N11_ClassMonitor" />
+      <module name="CodingTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -278,11 +279,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Practice5_my" />
+        <item itemvalue="Application.Practice5" />
         <item itemvalue="Application.Practice4" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice4" />
         <item itemvalue="Application.Practice3" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice1" />
-        <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice2" />
       </list>
     </recent_temporary>
   </component>
@@ -1039,7 +1040,10 @@
       <workItem from="1729160158203" duration="2447000" />
       <workItem from="1729205666823" duration="10000" />
       <workItem from="1729222904038" duration="2133000" />
-      <workItem from="1729507805907" duration="1848000" />
+      <workItem from="1729507805907" duration="2375000" />
+      <workItem from="1729547855133" duration="21000" />
+      <workItem from="1729594048434" duration="2569000" />
+      <workItem from="1729673288007" duration="1526000" />
     </task>
     <servers />
   </component>
