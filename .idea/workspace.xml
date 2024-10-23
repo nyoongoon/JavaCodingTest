@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/ans/Practice5_my.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice5.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_Theory/Chapter4_Algorithm/_22_알고리즘_연습문제_1/src/Practice5.java" afterDir="false" />
     </list>
@@ -202,7 +201,7 @@
       <recent name="_Theory.Chapter4_Algorithm._20_최소신장트리_프림" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice5_my">
+  <component name="RunManager" selected="Application.Practice5">
     <configuration name="Practice3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.Practice3" />
       <module name="CodingTest" />
@@ -279,8 +278,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Practice5_my" />
         <item itemvalue="Application.Practice5" />
+        <item itemvalue="Application.Practice5_my" />
         <item itemvalue="Application.Practice4" />
         <item itemvalue="Application._Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans.Practice4" />
         <item itemvalue="Application.Practice3" />
@@ -1043,7 +1042,7 @@
       <workItem from="1729507805907" duration="2375000" />
       <workItem from="1729547855133" duration="21000" />
       <workItem from="1729594048434" duration="2569000" />
-      <workItem from="1729673288007" duration="1526000" />
+      <workItem from="1729673288007" duration="2672000" />
     </task>
     <servers />
   </component>
