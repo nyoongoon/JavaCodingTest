@@ -1,5 +1,6 @@
 package _2_Java_Algo_Interview._1_문자열;
 
+// 팰린드롬은 슬라이딩윈도우로 양끝에서 비교
 /**
  * 자바에서 제공하는 메서드 기억하기
  * Charater.toLowerCase(); //소문자로 변환

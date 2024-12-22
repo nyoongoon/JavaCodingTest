@@ -1,8 +1,8 @@
 package _2_Java_Algo_Interview._1_문자열;
 
 import java.util.*;
-// str.split(regex, limit) 기억하기 !
-// list.toArray(new String[0]); // List -> Array 변환 기억하기 !
+// 1. str.split(regex, limit) 기억하기 !
+// 2. list.toArray(new String[0]); // List -> Array 변환 기억하기 !
 /**
  * str.split(String regex, int limit); -> 이 메서드 암기
  * <p>
@@ -42,8 +42,8 @@ public class _3_로그파일_재정렬_책풀이 {
 
         strList.sort(
                 (x, y) -> {
-                    String[] xStrs = x.split(" ", 2);
-                    String[] yStrs = y.split(" ", 2);
+                    String[] xStrs = x.split(" ", 2); // limit 주의
+                    String[] yStrs = y.split(" ", 2); // limit 주의
 
                     int compare = xStrs[1].compareTo(yStrs[1]);
                     if(compare == 0){
