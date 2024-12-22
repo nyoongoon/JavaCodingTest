@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_1_Two_Weeks_Algo/_5_모이기.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_1_유효한_팰린드롬_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_1_유효한_팰린드롬_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_책풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +105,7 @@
     "Application._1_Password.executor": "Run",
     "Application._1_유효한_팰린드롬_책풀이.executor": "Run",
     "Application._2_Candy.executor": "Run",
+    "Application._3_로그파일_재정렬_내풀이.executor": "Run",
     "Application._3_연립방정식.executor": "Run",
     "Application._4_숫자야구.executor": "Run",
     "Application._Theory.Chapter1_Math._06_지수와로그.src.Main.executor": "Run",
@@ -210,7 +210,7 @@
       <recent name="_Theory.Chapter4_Algorithm._19_최소신장트리_프루스칼.src.ans" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._1_유효한_팰린드롬_책풀이">
+  <component name="RunManager" selected="Application._3_로그파일_재정렬_내풀이">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_1_Two_Weeks_Algo.Main" />
       <module name="CodingTest" />
@@ -246,8 +246,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_2_Candy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Two_Weeks_Algo._2_Candy" />
+    <configuration name="_3_연립방정식" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_1_Two_Weeks_Algo._3_연립방정식" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -259,12 +259,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_3_연립방정식" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_1_Two_Weeks_Algo._3_연립방정식" />
+    <configuration name="_3_로그파일_재정렬_내풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2_Java_Algo_Interview._1_문자열._3_로그파일_재정렬_내풀이" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="_1_Two_Weeks_Algo.*" />
+          <option name="PATTERN" value="_2_Java_Algo_Interview._1_문자열.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -287,11 +287,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._3_로그파일_재정렬_내풀이" />
         <item itemvalue="Application._1_유효한_팰린드롬_책풀이" />
         <item itemvalue="Application._4_숫자야구" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application._3_연립방정식" />
-        <item itemvalue="Application._2_Candy" />
       </list>
     </recent_temporary>
   </component>
@@ -1081,7 +1081,7 @@
       <workItem from="1734579171656" duration="360000" />
       <workItem from="1734670858506" duration="839000" />
       <workItem from="1734753572383" duration="221000" />
-      <workItem from="1734830871673" duration="659000" />
+      <workItem from="1734830871673" duration="2206000" />
     </task>
     <servers />
   </component>
