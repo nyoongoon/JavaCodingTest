@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_내풀이_2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_1_두_수의_합.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_1_두_수의_합_키_조회.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +105,9 @@
     &quot;Application.Practice5_re (2).executor&quot;: &quot;Run&quot;,
     &quot;Application.Practice5_re.executor&quot;: &quot;Run&quot;,
     &quot;Application.Practice_re.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
     &quot;Application._1_Password.executor&quot;: &quot;Run&quot;,
     &quot;Application._1_유효한_팰린드롬_책풀이.executor&quot;: &quot;Run&quot;,
     &quot;Application._2_Candy.executor&quot;: &quot;Run&quot;,
@@ -185,7 +190,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Global Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
@@ -208,14 +213,14 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_2_Java_Algo_Interview._2_배열" />
       <recent name="_Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.ans" />
       <recent name="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans" />
       <recent name="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.ans" />
       <recent name="_Theory.Chapter4_Algorithm._20_최소신장트리_프림.src.ans" />
-      <recent name="_Theory.Chapter4_Algorithm._19_최소신장트리_프루스칼.src.ans" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Practice2_my">
+  <component name="RunManager" selected="Application.Test2">
     <configuration name="Practice2_my" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_0_Theory.Chapter1_Math._03_순열.src.Practice2_my" />
       <module name="CodingTest" />
@@ -229,50 +234,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test2" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test3" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="Java-11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Array.N11_ClassMonitor" />
       <module name="CodingTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_3_로그파일_재정렬_내풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_Java_Algo_Interview._1_문자열._3_로그파일_재정렬_내풀이" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2_Java_Algo_Interview._1_문자열.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_4_가장_흔한_단어_책풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_Java_Algo_Interview._1_문자열._4_가장_흔한_단어_책풀이" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2_Java_Algo_Interview._1_문자열.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="_5_그룹_애너그램_내풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2_Java_Algo_Interview._1_문자열._5_그룹_애너그램_내풀이" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="_2_Java_Algo_Interview._1_문자열.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -305,11 +310,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test1" />
+        <item itemvalue="Application.Test3" />
         <item itemvalue="Application.Practice2_my" />
         <item itemvalue="Application._6_가장_긴_팰린드롬_부분_문자열_내풀이" />
-        <item itemvalue="Application._5_그룹_애너그램_내풀이" />
-        <item itemvalue="Application._4_가장_흔한_단어_책풀이" />
-        <item itemvalue="Application._3_로그파일_재정렬_내풀이" />
       </list>
     </recent_temporary>
   </component>
@@ -1107,7 +1112,9 @@
       <workItem from="1735002845080" duration="37000" />
       <workItem from="1735007492619" duration="1163000" />
       <workItem from="1735209524842" duration="3117000" />
-      <workItem from="1735563425492" duration="250000" />
+      <workItem from="1735563425492" duration="296000" />
+      <workItem from="1735707533228" duration="7511000" />
+      <workItem from="1735767146634" duration="1301000" />
     </task>
     <servers />
   </component>
