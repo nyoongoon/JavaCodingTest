@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/test/Test3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_6_가장_긴_팰린드롬_부분_문자열_책풀이.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_1_두_수의_합.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_1_두_수의_합_키_조회.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_2_빗물_트래핑_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_2_빗물_트래핑_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1114,7 +1110,8 @@
       <workItem from="1735209524842" duration="3117000" />
       <workItem from="1735563425492" duration="296000" />
       <workItem from="1735707533228" duration="7511000" />
-      <workItem from="1735767146634" duration="1301000" />
+      <workItem from="1735767146634" duration="1777000" />
+      <workItem from="1735857287353" duration="238000" />
     </task>
     <servers />
   </component>
