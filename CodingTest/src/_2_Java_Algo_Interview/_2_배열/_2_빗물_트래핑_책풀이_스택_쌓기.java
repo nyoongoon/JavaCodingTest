@@ -1,5 +1,8 @@
 package _2_Java_Algo_Interview._2_배열;
 
+import java.util.ArrayDeque;
+import java.util.Deque;
+
 /**
  * 어려운 문제 <- 스택으로 풀면 더 어려움
  */
@@ -9,24 +12,22 @@ public class _2_빗물_트래핑_책풀이_스택_쌓기 {
     }
 
     public static int trap(int[] height) {
-        int leftIdx = 0;
-        int rightIdx = height.length - 1;
-
-        int leftMax = 0;
-        int rightMax = 0;
-
+        Deque<Integer> stack = new ArrayDeque<>();
         int result = 0;
-        while (leftIdx < rightIdx) {
-            leftMax = Math.max(leftMax, height[leftIdx]);
-            rightMax = Math.max(rightMax, height[rightIdx]);
+        for (int i = 0; i < height.length; i++) {
 
-            if (leftMax <= rightMax) {
-                result += leftMax - height[leftIdx];
-                leftIdx++;
-            } else {
-                result += rightMax - height[rightIdx];
-                rightIdx--;
+            while (!stack.isEmpty() && height[stack.peek()] < height[i]) {
+                int top = stack.pop();
+                if (stack.isEmpty()) {
+                    break;
+                }
+                int distance = i - stack.peek() - 1;
+
+                int waters = Math.min(height[stack.peek()], height[i]) - height[top];
+                result += distance * waters;
             }
+
+            stack.push(i);
         }
 
         return result;
