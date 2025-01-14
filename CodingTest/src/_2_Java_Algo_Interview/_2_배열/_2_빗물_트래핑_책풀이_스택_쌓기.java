@@ -5,6 +5,8 @@ import java.util.Deque;
 
 /**
  * 어려운 문제 <- 스택으로 풀면 더 어려움
+ * 현재가 peek() 보다 높으면 뽑아서 계산하기..
+ * 현재가 같거나 낮으면 계속 스택 쌓기..
  */
 public class _2_빗물_트래핑_책풀이_스택_쌓기 {
     public static void main(String[] args) {

@@ -22,10 +22,12 @@ import java.util.*;
  */
 public class _3_로그파일_재정렬_책풀이 {
     public static void main(String[] args) {
+        String target = "1-2-3--5-6---";
+        System.out.println(Arrays.toString(target.split("-", -1)));
         //["dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"]
-        String[] strs = {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"};
-        String[] results = reorderLogFiles(strs);
-        System.out.println(Arrays.toString(results));
+//        String[] strs = {"dig1 8 1 5 1","let1 art can","dig2 3 6","let2 own kit dig","let3 art zero"};
+//        String[] results = reorderLogFiles(strs);
+//        System.out.println(Arrays.toString(results));
     }
 
     public static String[] reorderLogFiles(String[] logs) {
