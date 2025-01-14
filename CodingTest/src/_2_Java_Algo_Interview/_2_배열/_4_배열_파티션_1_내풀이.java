@@ -7,7 +7,7 @@ public class _4_배열_파티션_1_내풀이 {
         arrayPairSum(new int[]{1, 3, 4, 2}); //4
     }
     public static int arrayPairSum(int[] nums) {
-        Arrays.sort(nums);
+        Arrays.sort(nums); //정렬 떄문에 느린듯
         int result = 0;
         for(int i = nums.length - 1; i>=0; i-=2){
             int min = Math.min(nums[i-1], nums[i]);
