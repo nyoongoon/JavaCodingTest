@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_2_빗물_트래핑_내풀이_다시풀기_스택_쌓기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_4_배열_파티션_1_책풀이_짝수번째값계산.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_5_배열_자신을_제외한_배열의_곱_내풀이_다시풀기.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_5_배열_자신을_제외한_배열의_곱_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_6_주식을_사고팔기_가장_좋은_시점_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_6_주식을_사고팔기_가장_좋은_시점_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_책풀이.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_2_빗물_트래핑_책풀이_스택_쌓기.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_2_빗물_트래핑_책풀이_스택_쌓기.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_3_세_수의_합_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_3_세_수의_합_책풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1186,7 +1188,11 @@
       <workItem from="1736671886633" duration="1058000" />
       <workItem from="1736718609489" duration="595000" />
       <workItem from="1736806256415" duration="333000" />
-      <workItem from="1736890935322" duration="530000" />
+      <workItem from="1736890935322" duration="1109000" />
+      <workItem from="1736976358218" duration="1322000" />
+      <workItem from="1737063347893" duration="1142000" />
+      <workItem from="1737323873682" duration="1022000" />
+      <workItem from="1737412538936" duration="196000" />
     </task>
     <servers />
   </component>
