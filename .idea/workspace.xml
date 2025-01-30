@@ -5,12 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_4_배열_파티션_1_책풀이_짝수번째값계산.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_5_배열_자신을_제외한_배열의_곱_내풀이_다시풀기.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_5_배열_자신을_제외한_배열의_곱_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_6_주식을_사고팔기_가장_좋은_시점_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_2_배열/_6_주식을_사고팔기_가장_좋은_시점_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_내풀이_러너.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_데크.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_러너.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_스택.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_2_두_정렬리스트의_병합_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_2_두_정렬리스트의_병합_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_책풀이_반복문.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_책풀이_재귀.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -217,11 +220,11 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_2_Java_Algo_Interview._3_연결리스트" />
       <recent name="_2_Java_Algo_Interview._2_배열" />
       <recent name="_Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.ans" />
       <recent name="_Theory.Chapter4_Algorithm._22_알고리즘_연습문제_1.src.ans" />
       <recent name="_Theory.Chapter4_Algorithm._21_최소신장트리_연습문제.src.ans" />
-      <recent name="_Theory.Chapter4_Algorithm._20_최소신장트리_프림.src.ans" />
     </key>
   </component>
   <component name="RunManager" selected="Application._3_로그파일_재정렬_책풀이">
@@ -1192,7 +1195,11 @@
       <workItem from="1736976358218" duration="1322000" />
       <workItem from="1737063347893" duration="1142000" />
       <workItem from="1737323873682" duration="1022000" />
-      <workItem from="1737412538936" duration="196000" />
+      <workItem from="1737412538936" duration="224000" />
+      <workItem from="1737415507623" duration="340000" />
+      <workItem from="1737494946811" duration="3699000" />
+      <workItem from="1737668664458" duration="793000" />
+      <workItem from="1737670844847" duration="1681000" />
     </task>
     <servers />
   </component>
