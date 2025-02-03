@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_자료형_반환.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_전가산기.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_5_페어의_노드스왑_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_5_페어의_노드스왑_내풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_5_페어의_노드스왑_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_5_페어의_노드스왑_책풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1196,6 +1194,7 @@
       <workItem from="1737670844847" duration="1681000" />
       <workItem from="1738272409872" duration="2324000" />
       <workItem from="1738531794507" duration="2607000" />
+      <workItem from="1738617840908" duration="2007000" />
     </task>
     <servers />
   </component>
