@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_내풀이_러너.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_데크.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_러너.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_1_팰린드롬_연결리스트_책풀이_스택.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_2_두_정렬리스트의_병합_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_2_두_정렬리스트의_병합_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_책풀이_반복문.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_3_역순_연결리스트_책풀이_재귀.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_자료형_반환.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_전가산기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1200,6 +1194,8 @@
       <workItem from="1737494946811" duration="3699000" />
       <workItem from="1737668664458" duration="793000" />
       <workItem from="1737670844847" duration="1681000" />
+      <workItem from="1738272409872" duration="2324000" />
+      <workItem from="1738531794507" duration="2607000" />
     </task>
     <servers />
   </component>
