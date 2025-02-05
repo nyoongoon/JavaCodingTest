@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_6_홀짝_연결리스트_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_6_홀짝_연결리스트_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_7_역순_연결리스트_2_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_7_역순_연결리스트_2_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_1_교점에_별_만들기_내풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_1_교점에_별_만들기_책풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_자료형_반환.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_연결리스트/_4_두_수의_덧셈_책풀이_자료형_반환.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1203,7 +1196,8 @@
       <workItem from="1738531794507" duration="2607000" />
       <workItem from="1738617840908" duration="4717000" />
       <workItem from="1738704272895" duration="2766000" />
-      <workItem from="1738754621974" duration="97000" />
+      <workItem from="1738754621974" duration="344000" />
+      <workItem from="1738790811426" duration="727000" />
     </task>
     <servers />
   </component>
