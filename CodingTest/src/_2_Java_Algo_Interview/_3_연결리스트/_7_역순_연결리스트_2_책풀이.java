@@ -1,5 +1,12 @@
 package _2_Java_Algo_Interview._3_연결리스트;
 
+/**
+ * root 더미 노드 만드는 스킬 기억하기!
+ * start를 root로 두고 left - 1번 이동하면 start는 항상 뒤집기 시작 전 노드를 가리킴.
+ * 이후 root.next를 반환하면, 첫 번째 노드가 바뀌더라도 정상적으로 처리됨.
+ *
+ * 로직 - start, end를 정하고 end 다음 노드를 'start앞으로 껴넣는것을 반복'하면서 뒤집는 개념
+ */
 public class _7_역순_연결리스트_2_책풀이 {
     public static void main(String[] args) {
 
