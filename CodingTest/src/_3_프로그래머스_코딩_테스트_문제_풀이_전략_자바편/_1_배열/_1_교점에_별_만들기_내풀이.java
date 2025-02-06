@@ -1,9 +1,6 @@
 package _3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 // 1. line을 n^2 비교? -> 1000의 n^2은 시간복잡도 가능 (10000부터 안됨)
 // 2. 어떻게 그리지? 상하좌우 최대값?
@@ -11,8 +8,8 @@ import java.util.Set;
 // x최대 - x최소 & y최대 -y최소
 // 동등 비교 쉽게 어떻게 하지?  -> * 그릴때
 // 일단 가로 길이 너무 긴 것 같음 현재
-// * 엣지케이스만 비교 더 해보면 풀린 듯!
-public class _1_교점에_별_만들기_내풀이 {
+// --> 틀린 주된 이유, 숫자형에 대해 미숙 long, double ..
+public class _1_교점에_별_만들기_내풀이 { // 틀림
     public static void main(String[] args) {
         int[] arr1 = {1, 0};
         int[] arr2 = {1, 0};
@@ -25,55 +22,34 @@ public class _1_교점에_별_만들기_내풀이 {
 //        Solution s = new Solution();
 //        s.solution(line);
     }
-    static class Solution {
-        class Coordinate {
-            int x;
-            int y;
-            Coordinate(int x, int y){
-                this.x = x;
-                this.y = y;
-            }
-            @Override
-            public boolean equals(Object o){
-                Coordinate other = (Coordinate) o;
-                if(this.x == other.x && this.y == other.y){
-                    return true;
-                }else{
-                    return false;
-                }
-            }
-            @Override
-            public int hashCode(){
-                return 1;
-            }
-        }
-        int maxX = Integer.MIN_VALUE;
-        int maxY = Integer.MIN_VALUE;
-        int minX = Integer.MAX_VALUE;
-        int minY = Integer.MAX_VALUE;
+
+    class Solution {
+        long maxX = Long.MIN_VALUE;
+        long maxY = Long.MIN_VALUE;
+        long minX = Long.MAX_VALUE;
+        long minY = Long.MAX_VALUE;
         Set<Coordinate> set = new HashSet<>();
 
         public String[] solution(int[][] line) {
+
             List<String> list = new ArrayList<>();
 
             putXy(line);
 
 
-            for(int i = maxY; i>=minY; i--){
+            for (long i = maxY; i >= minY; i--) {
 
                 StringBuilder sb = new StringBuilder();
-                // sb.append("\"");
 
-                for(int j = minX; j<=maxX; j++){
+                for (long j = minX; j <= maxX; j++) {
                     // System.out.println("x, y == " + j + "," + i);
                     Coordinate co = new Coordinate(j, i);
-                    if(set.contains(co)){
+                    if (set.contains(co)) {
                         sb.append("*");
-                    }else{
+                    } else {
                         sb.append(".");
                     }
                 }
-                // sb.append("\"");
                 list.add(sb.toString());
             }
 
@@ -84,10 +60,10 @@ public class _1_교점에_별_만들기_내풀이 {
             return list.toArray(new String[0]);
         }
 
-        public void putXy(int[][] line){
-            for(int i = 0; i< line.length; i++){
-                for(int j = 0; j<line.length; j++){
-                    if(i == j ){
+        public void putXy(int[][] line) {
+            for (int i = 0; i < line.length; i++) {
+                for (int j = 0; j < line.length; j++) {
+                    if (i == j) {
                         continue;
                     }
                     int a = line[i][0];
@@ -98,37 +74,68 @@ public class _1_교점에_별_만들기_내풀이 {
                     int f = line[j][2];
 
 
-                    if(a*d-d*c == 0){
-                        continue;
-                    }
+                    // if(a*d-d*c == 0){
+                    // continue;
+                    // }
 
 
+                    // long 분모 = a*d - b*c;
+                    // long 분자X = b*f - e*d;
+                    // long 분자Y = e*c - a*f;
 
-                    int 분모 = a*d - b*c;
-                    int 분자X = b*f - e*d;
-                    int 분자Y = e*c - a*f;
+                    // if (분모 == 0) continue; // 0으로 나누는 경우 방지
 
-                    if (분모 == 0) continue; // 0으로 나누는 경우 방지
+                    // if (분자X % 분모 != 0) continue; // X가 정수가 되는지 확인
+                    // if (분자Y % 분모 != 0) continue; // Y가 정수가 되는지 확인
 
-                    if (분자X % 분모 != 0) continue; // X가 정수가 되는지 확인
-                    if (분자Y % 분모 != 0) continue; // Y가 정수가 되는지 확인
 
-                    int x = 분자X / 분모;
-                    int y = 분자Y / 분모;
-                    // int x = (int) doubleX;
+                    //여기가 일차로 틀림!
+                    long denominator = (long) a * d - (long) b * c;
+                    if (denominator == 0) continue;
+                    //여기서 이차로 틀림 (각각을 형변환 후 계산)
+                    long numeratorX = (long) b * f - (long) e * d;
+                    long numeratorY = (long) e * c - (long) a * f;
+
+                    if (numeratorX % denominator != 0 || numeratorY % denominator != 0) continue;
+
+                    long x = numeratorX / denominator;
+                    long y = numeratorY / denominator;
+
                     maxX = Math.max(maxX, x);
                     minX = Math.min(minX, x);
-
-                    // int y = (int) doubleY;
-
-                    // System.out.println("x, y == " + x + ", " + y);
                     maxY = Math.max(maxY, y);
                     minY = Math.min(minY, y);
-                    Coordinate co = new Coordinate(x, y);
-                    set.add(co);
+
+                    set.add(new Coordinate(x, y));
+
                 }
             }
 
+        }
+
+        class Coordinate {
+            long x;
+            long y;
+
+            Coordinate(long x, long y) {
+                this.x = x;
+                this.y = y;
+            }
+
+            @Override
+            public boolean equals(Object o) {
+                Coordinate other = (Coordinate) o;
+                if (this.x == other.x && this.y == other.y) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            @Override
+            public int hashCode() {
+                return Objects.hash(x, y);
+            }
         }
 
     }
