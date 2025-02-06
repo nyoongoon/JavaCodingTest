@@ -1,7 +1,7 @@
 package _2_Java_Algo_Interview._3_연결리스트;
 
 /**
- * root 더미 노드 만드는 스킬 기억하기!
+ * root 더미 노드 만드는 스킬 기억하기! -> start가 null 인 상황을 없애서 깔끔
  * start를 root로 두고 left - 1번 이동하면 start는 항상 뒤집기 시작 전 노드를 가리킴.
  * 이후 root.next를 반환하면, 첫 번째 노드가 바뀌더라도 정상적으로 처리됨.
  *
