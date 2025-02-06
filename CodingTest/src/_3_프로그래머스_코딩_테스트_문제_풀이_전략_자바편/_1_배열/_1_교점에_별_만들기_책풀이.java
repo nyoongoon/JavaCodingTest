@@ -85,6 +85,10 @@ public class _1_교점에_별_만들기_책풀이 {
             for(char[] row : arr){
                 Arrays.fill(row, '.');
             }
+
+            /**
+             * 이제 잘 이해가 안가네 .. 가독성 좋은 코드로 좀 바꾸기..
+             */
             for(Point p : points){
                 arr[(int) (maxPoint.y - p.y)][(int) (p.x - minPoint.x)] = '*';
             }

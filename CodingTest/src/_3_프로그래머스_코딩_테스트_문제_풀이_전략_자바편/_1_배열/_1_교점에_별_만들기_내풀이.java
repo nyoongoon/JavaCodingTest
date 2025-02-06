@@ -9,6 +9,10 @@ import java.util.*;
 // 동등 비교 쉽게 어떻게 하지?  -> * 그릴때
 // 일단 가로 길이 너무 긴 것 같음 현재
 // --> 틀린 주된 이유, 숫자형에 대해 미숙 long, double ..
+
+/**
+ * numerator % denominator != 0 --> 정수 판단
+ */
 public class _1_교점에_별_만들기_내풀이 { // 틀림
     public static void main(String[] args) {
         int[] arr1 = {1, 0};
