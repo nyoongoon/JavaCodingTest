@@ -2,7 +2,7 @@ package _2_Java_Algo_Interview._3_연결리스트;
 
 public class _7_역순_연결리스트_2_내풀이 {
     public static void main(String[] args) {
-
+        reverseBetween(null, 0, 0);
     }
     public static ListNode reverseBetween(ListNode head, int left, int right) {
         if(head == null){
@@ -29,25 +29,9 @@ public class _7_역순_연결리스트_2_내풀이 {
             curNode = curNode.next;
         }
 
-        // if(beforeLeft == null){
-        //     System.out.println("beforeLeft == " + null);
-        // }else{
-        //     System.out.println("beforeLeft == " + beforeLeft.val);
-        // }
-
-
-        // System.out.println("leftNode == " + leftNode.val);
-        // System.out.println("rightNode == " + rightNode.val);
-        // if(afterRight == null){
-        //     System.out.println("afterRight == " + null);
-        // }else{
-        //     System.out.println("afterRight == " + afterRight.val);
-        // }
-
-
         prevNode = leftNode;
         curNode = leftNode.next;
-        while(curNode != null && curNode != rightNode){
+        while(curNode != null && curNode != afterRight){
             ListNode nextNode = curNode.next;
             curNode.next = prevNode;
             prevNode = curNode;
@@ -55,7 +39,7 @@ public class _7_역순_연결리스트_2_내풀이 {
         }
 
         if(beforeLeft == null){
-            head = leftNode;
+            head = rightNode;
         }else{
             beforeLeft.next = rightNode;
         }
@@ -64,6 +48,7 @@ public class _7_역순_연결리스트_2_내풀이 {
 
         return head;
     }
+
     public static class ListNode {
         int val;
         ListNode next;
