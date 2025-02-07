@@ -21,82 +21,99 @@ public class _1_교점에_별_만들기_책풀이 {
 //        Solution s = new Solution();
 //        s.solution(line);
     }
-    public class Solution {
-        private class Point {
-            public final long x, y;
 
-            public Point(long x, long y) {
+
+    class Solution {
+        class Point{
+            long x;
+            long y;
+            Point(long x, long y){
                 this.x = x;
                 this.y = y;
             }
-
         }
-        private Point intersection(long a1, long b1, long c1, long a2, long b2, long c2){
-            double x = (double) (b1 * c2 - b2 * c1) / (a1 * b2 - a2 * b1);
-            double y = (double) (a2 * c1 - a1 * c2) / (a1 * b2 - a2 * b1);
 
-            if(x%1 != 0 || y%1 != 0){
-                return null;
-            }
-            return new Point((long) x, (long) y);
-        }
-        private Point getMininumPoint(List<Point> points){
-            long x = Long.MAX_VALUE;
-            long y = Long.MAX_VALUE;
-            for(Point p : points){
-                if(p.x < x) x = p.x;
-                if(p.y < y) y = p.y;
-            }
 
-            return new Point(x, y);
-        }
-        private Point getMaximumPoint(List<Point> points){
-            long x = Long.MIN_VALUE;
-            long y = Long.MIN_VALUE;
-            for(Point p : points){
-                if(p.x > x) x = p.x;
-                if(p.y > y) y = p.y;
-            }
+        public String[] solution(int[][] line) {
+            List<Point> list = getPoints(line);
 
-            return new Point(x, y);
-        }
-        public String [] solution(int[][]line){
-            List<Point> points = new ArrayList<>();
-            for(int i = 0; i< line.length; i++){
-                for(int j = i+1; j<line.length; j++){
-                    long a1 = line[i][0];
-                    long b1 = line[i][1];
-                    long c1 = line[i][2];
-                    long a2 = line[j][0];
-                    long b2 = line[j][1];
-                    long c2 = line[j][2];
+            Point maxPoint = getMaxPoint(list);
+            Point minPoint = getMinPoint(list);
 
-                    Point intersection = intersection(a1, b1, c1, a2, b2, c2);
-                    if(intersection != null){
-                        points.add(intersection);
-                    }
-                }
-            }
-            Point minPoint = getMininumPoint(points);
-            Point maxPoint = getMaximumPoint(points);
-            int width = (int) (maxPoint.x - minPoint.x + 1);
-            int height = (int) (maxPoint.y - minPoint.y + 1);
-            char[][] arr = new char[height][width];
-            for(char[] row : arr){
+            int hight = (int) (maxPoint.y - minPoint.y) + 1;
+            int width = (int) (maxPoint.x - minPoint.x) + 1;
+
+            // System.out.println("hight == " + hight);
+            // System.out.println("width == " + width);
+
+            char[][] chars = new char[hight][width];
+            for(char[] row : chars){
                 Arrays.fill(row, '.');
             }
 
-            /**
-             * 이제 잘 이해가 안가네 .. 가독성 좋은 코드로 좀 바꾸기..
-             */
-            for(Point p : points){
-                arr[(int) (maxPoint.y - p.y)][(int) (p.x - minPoint.x)] = '*';
+            for(Point p : list){
+                int x = (int) (p.x - minPoint.x); // 이부분 잘 이해 안감!
+                int y = (int) (maxPoint.y - p.y);
+
+                chars[y][x] = '*';
             }
-            String[] result = new String[height];
+
+            String[] result = new String[chars.length];
             for(int i = 0; i<result.length; i++){
-                result[i] = String.valueOf(arr[i]);
+                result[i] = new String(chars[i]); //암기
             }
+
             return result;
+        }
+
+        public Point getMaxPoint(List<Point> list){
+            long maxX = Long.MIN_VALUE;
+            long maxY = Long.MIN_VALUE;
+            for(Point p : list){
+                maxX = Math.max(maxX, p.x);
+                maxY = Math.max(maxY, p.y);
+            }
+            return new Point(maxX, maxY);
+        }
+
+        public Point getMinPoint(List<Point> list){
+            long minX = Long.MAX_VALUE;;
+            long minY = Long.MAX_VALUE;
+            for(Point p : list){
+                minX = Math.min(minX, p.x);
+                minY = Math.min(minY, p.y);
+            }
+            return new Point(minX, minY);
+        }
+
+        public List<Point> getPoints(int[][] line){
+            List<Point> list = new ArrayList<>();
+            for(int i = 0; i<line.length; i++){
+                for(int j = 0; j<line.length; j++){
+                    if(i == j) continue;
+                    int a = line[i][0];
+                    int b = line[i][1];
+                    int e = line[i][2];
+                    int c = line[j][0];
+                    int d = line[j][1];
+                    int f = line[j][2];
+
+                    long denominator = (long) a*d - (long) b*c;
+                    if(denominator == 0){
+                        continue;
+                    }
+                    long numerator1 = (long) b*f - (long) e*d;
+                    long numerator2 = (long) e*c - (long) a*f;
+
+                    if(numerator1 % denominator != 0 || numerator2 % denominator != 0){
+                        continue;
+                    }
+                    long x = numerator1 / denominator;
+                    long y = numerator2 / denominator;
+                    list.add(new Point(x, y));
+                }
+            }
+            return list;
         }
     }
 }
