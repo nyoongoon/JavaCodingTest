@@ -17,7 +17,7 @@ public class _2_중복_문자_제거_책풀이_스택 {
     public String removeDuplicateLetters(String s){
         // 문자 개수를 계산해서 담아둘 변수 선언
         Map<Character, Integer> counter = new HashMap<>();
-        // 이미 처리한 문자 여부 확인하기 위한 변수 선언 todo 왜필요?
+        // 이미 처리한 문자 여부 확인하기 위한 변수 선언 todo 왜필요? -> 성능 떄문에 ? 그런데 성능에 별 도움 안될지도?
         Map<Character, Boolean> seen = new HashMap<>();
         // 문제 풀이에 사용할 스택 선언
         Deque<Character> stack = new ArrayDeque<>();

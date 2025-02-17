@@ -1,6 +1,9 @@
 package _3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열;
 
-public class _2_삼각_달팽이_내풀이 {
+/**
+ * List<Integer> -> int[] 변환 암기 !
+ */
+public class _2_삼각_달팽이_책풀이 {
 
     // down, right, up이 일정함 (0이 아니라면 채워져 있는 것.)
     class Solution {

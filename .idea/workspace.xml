@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_스택.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_재귀.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_스택.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_스택.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,8 +215,8 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="_2_Java_Algo_Interview._4_스택_큐" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
+      <recent name="_2_Java_Algo_Interview._4_스택_큐" />
       <recent name="_2_Java_Algo_Interview._3_연결리스트" />
       <recent name="_2_Java_Algo_Interview._2_배열" />
       <recent name="_Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.ans" />
@@ -1206,7 +1207,7 @@
       <workItem from="1739309849430" duration="3982000" />
       <workItem from="1739395659663" duration="600000" />
       <workItem from="1739441103383" duration="3616000" />
-      <workItem from="1739741192511" duration="1187000" />
+      <workItem from="1739741192511" duration="4368000" />
     </task>
     <servers />
   </component>
