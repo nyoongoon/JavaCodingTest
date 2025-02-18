@@ -9,6 +9,9 @@ import java.util.Map;
  * 스택을 이용한 문자 제거
  *
  * 입력문자열을 문자단위로 처리하면서 스택 변수 stack 에는 앞에서부터 문자를 차례대로 쌓아나가고, seen 변수에는 처리한 걸로 선언하면서 반복함
+ * ArrayDeque 삽입, 삭제 메서드 헷갈리지 않게 주의
+ * -> push, pop -> 스택처럼 FILO // pop == removeLast == pollLast
+ * -> offer, poll -> 큐처럼 뒤로 FIFO //  poll == removeFirst == pollFirst
  */
 public class _2_중복_문자_제거_책풀이_스택 {
     public static void main(String[] args) {

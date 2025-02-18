@@ -5,6 +5,8 @@ import java.util.List;
 
 /**
  * 재귀로 풀었는데.. 스택오버플로우 발생 (케이스 너무 많은듯)
+ *
+ * List<Integer> -> int[] 변환 암기 !
  */
 public class _2_삼각_달팽이_내풀이_반복문 {
 

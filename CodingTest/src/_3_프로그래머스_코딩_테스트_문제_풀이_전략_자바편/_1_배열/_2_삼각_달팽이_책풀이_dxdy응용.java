@@ -3,7 +3,7 @@ package _3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1
 /**
  *
  */
-public class _2_삼각_달팽이_책풀이 {
+public class _2_삼각_달팽이_책풀이_dxdy응용 {
 
     class Solution {
         public int[] solution(int n) {
