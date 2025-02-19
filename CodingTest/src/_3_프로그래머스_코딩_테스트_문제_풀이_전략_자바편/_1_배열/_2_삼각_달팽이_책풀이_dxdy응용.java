@@ -31,7 +31,7 @@ public class _2_삼각_달팽이_책풀이_dxdy응용 {
                 y = ny;
             }
 
-            int[] result = new int[v - 1];
+            int[] result = new int[v -  1];
             int idx = 0;
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j <= i; j++) {
