@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_내풀이_정답_변형.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이_dxdy응용.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_안보고풀기.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_스택.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_스택.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_내풀이_반복문.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_내풀이_반복문.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_재귀.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_2_중복_문자_제거_책풀이_재귀.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이_dxdy응용.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이_dxdy응용.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,8 +215,8 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
       <recent name="_2_Java_Algo_Interview._4_스택_큐" />
+      <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
       <recent name="_2_Java_Algo_Interview._3_연결리스트" />
       <recent name="_2_Java_Algo_Interview._2_배열" />
       <recent name="_Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.ans" />
@@ -1211,7 +1209,7 @@
       <workItem from="1739441103383" duration="3616000" />
       <workItem from="1739741192511" duration="4856000" />
       <workItem from="1739873755268" duration="1796000" />
-      <workItem from="1739913506954" duration="633000" />
+      <workItem from="1739913506954" duration="3999000" />
     </task>
     <servers />
   </component>
