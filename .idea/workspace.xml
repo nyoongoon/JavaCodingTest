@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_3_일일온도_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_4_큐를_이용한_스택구현_책풀이.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_4_스택_큐/_5_스택을_이용한_큐구현.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_3_거리두기_확인하기_내풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이_dxdy응용.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_2_삼각_달팽이_책풀이_dxdy응용.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1211,7 +1208,7 @@
       <workItem from="1739741192511" duration="4856000" />
       <workItem from="1739873755268" duration="1796000" />
       <workItem from="1739913506954" duration="4350000" />
-      <workItem from="1739999757673" duration="1425000" />
+      <workItem from="1739999757673" duration="2882000" />
     </task>
     <servers />
   </component>
