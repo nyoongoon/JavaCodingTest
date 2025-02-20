@@ -1,12 +1,16 @@
 package _2_Java_Algo_Interview._4_스택_큐;
 
+/**
+ * 프론트 비어있는 개념으로 암기했으므로
+ * - 책에 있는 풀이는 기록하지 않음 (다른 방식으로 구현)
+ */
 public class _6_원형큐_디자인_내풀이 {
     public static void main(String[] args) {
 
     }
     class MyCircularQueue {
         int[] cirQue;
-        int front;
+        int front; //프론트는 비어있는 개념
         int rear;
         public MyCircularQueue(int k) {
             cirQue = new int[k + 1];
@@ -18,8 +22,8 @@ public class _6_원형큐_디자인_내풀이 {
             if(isFull()){
                 return false;
             }
+            rear = (rear + 1) % cirQue.length; //front 비어있도록 rear 올린다음에 삽입 주의
             cirQue[rear] = value;
-            rear = (rear + 1) % cirQue.length;
             return true;
         }
 
@@ -35,15 +39,15 @@ public class _6_원형큐_디자인_내풀이 {
             if(isEmpty()){
                 return -1;
             }
-            return cirQue[front];
+            return cirQue[(front + 1) % cirQue.length];
         }
 
         public int Rear() {
             if(isEmpty()){
                 return -1;
             }
-            int rearIdx = (rear - 1 + cirQue.length) % cirQue.length;
-            return cirQue[rearIdx];
+
+            return cirQue[rear];
         }
 
         public boolean isEmpty() {
