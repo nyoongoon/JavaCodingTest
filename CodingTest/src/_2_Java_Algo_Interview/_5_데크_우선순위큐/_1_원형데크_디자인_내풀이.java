@@ -1,6 +1,10 @@
 package _2_Java_Algo_Interview._5_데크_우선순위큐;
 
-public class _1_원형데크_디자인 {
+/**
+ * 내풀이엔 front로 값을 가진 첫번쨰 노드로 관리했지만
+ * 책풀이는 값이 없는 head, tail 노드로 관리함 -> null 예외 케이스가 없어서 구현 더 간단함
+ */
+public class _1_원형데크_디자인_내풀이 {
     public static void main(String[] args) {
 
     }

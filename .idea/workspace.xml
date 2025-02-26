@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_0_데크_우선순위큐_이론.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_1_원형데크_디자인.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_1_원형데크_디자인_책풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_3_거리두기_확인하기_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_1_배열/_3_거리두기_확인하기_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_1_원형데크_디자인.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_1_원형데크_디자인_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,11 +214,11 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_2_Java_Algo_Interview._5_데크_우선순위큐" />
       <recent name="_2_Java_Algo_Interview._4_스택_큐" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
       <recent name="_2_Java_Algo_Interview._3_연결리스트" />
       <recent name="_2_Java_Algo_Interview._2_배열" />
-      <recent name="_Theory.Chapter4_Algorithm._23_알고리즘_연습문제_2.ans" />
     </key>
   </component>
   <component name="RunManager" selected="Application._1_교점에_별_만들기_내풀이">
@@ -1214,6 +1213,7 @@
       <workItem from="1740085999932" duration="5265000" />
       <workItem from="1740359158516" duration="5047000" />
       <workItem from="1740431612087" duration="504000" />
+      <workItem from="1740521833639" duration="1627000" />
     </task>
     <servers />
   </component>
