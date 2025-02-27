@@ -9,7 +9,7 @@ public class _1_원형데크_디자인_책풀이 {
 
     }
     class MyCircularDeque {
-        static class Node {
+        class Node {
             Node left;
             Node right;
             int val;
