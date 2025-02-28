@@ -6,9 +6,8 @@ package _3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1
  * 책에서 정답 배열 크기를 arr[arr1.length][arr2[0].length]로 정함
  * arr1[0].length == arr2.length 행렬 곱셈 가능
  *
- * 책풀이는 바로 정답 배열에 꽂는 느낌..
  */
-public class _4_행렬의_곱셈_책풀이 {
+public class _4_행렬의_곱셈_내풀이 {
     public static void main(String[] args) {
 
     }
@@ -16,10 +15,10 @@ public class _4_행렬의_곱셈_책풀이 {
         public int[][] solution(int[][] arr1, int[][] arr2) {
             int[][] answer = new int[arr1.length][arr2[0].length];
 
-            for(int i = 0; i<answer.length; i++){
-                for(int j = 0; j < answer[i].length; j++){
-                    for(int k = 0; k < arr1[0].length; k++){
-                        answer[i][j] += arr1[i][k] * arr2[k][j];
+            for(int k = 0; k<arr2[0].length; k++){
+                for(int i = 0; i< arr1.length; i++){
+                    for(int j = 0; j < arr1[0].length; j++){
+                        answer[i][k] += arr1[i][j] * arr2[j][k];
                     }
                 }
             }
