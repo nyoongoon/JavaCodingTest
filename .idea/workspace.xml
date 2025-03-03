@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_3_원점에서_가장가까운_k개의_점_책풀이.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_4_더맵게_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1203,7 +1202,7 @@
       <workItem from="1740606936465" duration="2746000" />
       <workItem from="1740691932651" duration="3982000" />
       <workItem from="1741003904750" duration="429000" />
-      <workItem from="1741036522276" duration="935000" />
+      <workItem from="1741036522276" duration="1542000" />
     </task>
     <servers />
   </component>
