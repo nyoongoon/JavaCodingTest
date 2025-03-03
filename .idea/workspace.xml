@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_2_시저_암호_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_3_원점에서_가장가까운_k개의_점_책풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_3_원점에서_가장가까운_k개의_점_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_5_데크_우선순위큐/_3_원점에서_가장가까운_k개의_점_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,9 +214,9 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_2_Java_Algo_Interview._5_데크_우선순위큐" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._2_문자열" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
-      <recent name="_2_Java_Algo_Interview._5_데크_우선순위큐" />
       <recent name="_2_Java_Algo_Interview._4_스택_큐" />
       <recent name="_2_Java_Algo_Interview._3_연결리스트" />
     </key>
@@ -1204,7 +1203,7 @@
       <workItem from="1740606936465" duration="2746000" />
       <workItem from="1740691932651" duration="3982000" />
       <workItem from="1741003904750" duration="429000" />
-      <workItem from="1741036522276" duration="389000" />
+      <workItem from="1741036522276" duration="935000" />
     </task>
     <servers />
   </component>
