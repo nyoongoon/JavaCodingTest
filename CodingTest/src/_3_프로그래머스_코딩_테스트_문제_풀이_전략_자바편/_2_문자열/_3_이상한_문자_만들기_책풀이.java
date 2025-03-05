@@ -10,7 +10,7 @@ public class _3_이상한_문자_만들기_책풀이 {
             char[] chars = s.toCharArray();
             boolean toUpper = true;
             for(int i = 0; i < chars.length; i++){
-                char c = chars[i];
+                char c = c  hars[i];
                 if(Character.isSpaceChar(c)){
                     sb.append(c);
                     toUpper = true;
