@@ -3,6 +3,9 @@ package _2_Java_Algo_Interview._6_해시테이블;
 import java.util.HashSet;
 import java.util.Set;
 
+/**
+ * 맞았으나 성능 매우 느림
+ */
 public class _3_중복문자_없는_가장_긴_부분_문자열_내풀이 {
     class Solution {
         public int lengthOfLongestSubstring(String s) {
