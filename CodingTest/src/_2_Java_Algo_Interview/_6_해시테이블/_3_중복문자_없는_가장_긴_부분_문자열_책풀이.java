@@ -18,17 +18,18 @@ public class _3_중복문자_없는_가장_긴_부분_문자열_책풀이 {
 
             for(char c : s.toCharArray()){
                 //todo left <= used.get(c)을 하는 이유 몰랐음
-                // -> 슬라이딩 윈도우 내부에 있을 경우만 업데이트하지 않으며녀 right 보다 큰 left로 업데이트 되는 경우가 되버림
-                // -> 중복이 나타나더라도 left값이 업데이트 되지 않아야 더 긴 문자열이 되는 경우
-                // -> 내부에 있지 않으면 이미 버린 것
+                // -> 내부에 있지 않으면 이미 버린 것 -> 현재 left보다 뒤의 버린 값으로 가게 되는 경우 있음
                 if(used.containsKey(c) && left <= used.get(c)){
                     left = used.get(c) + 1;
-                }else{
-                    System.out.println("left == " + left);
-                    System.out.println("right == " + right);
-                    maxLength = Math.max(maxLength, right - left + 1);
                 }
+//                else{
+//                    System.out.println("left == " + left);
+//                    System.out.println("right == " + right);
+//                    maxLength = Math.max(maxLength, right - left + 1);
+//                }
+                //책풀이는 위에인데, 논리적인 순서로 아래가 더 이해가 쉽고 성능도 별 차이 없음
                 used.put(c, right);
+                maxLength = Math.max(maxLength, right - left + 1);
                 right++;
             }
             return maxLength;

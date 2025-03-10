@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_책풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_4_상위_k빈도_엘리먼트_내풀이.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_내풀이.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_내풀이_책참고.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_내풀이_책참고.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_내풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_내풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1212,7 +1211,7 @@
       <workItem from="1741209775719" duration="1925000" />
       <workItem from="1741257133434" duration="414000" />
       <workItem from="1741307027637" duration="1217000" />
-      <workItem from="1741554764201" duration="1542000" />
+      <workItem from="1741554764201" duration="4515000" />
     </task>
     <servers />
   </component>
