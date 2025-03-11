@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
-      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_6_해시테이블/_5_완주하지못한선수_내풀이.java" afterDir="false" />
-    </list>
+    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -1211,7 +1209,7 @@
       <workItem from="1741307027637" duration="1217000" />
       <workItem from="1741554764201" duration="5344000" />
       <workItem from="1741694711101" duration="449000" />
-      <workItem from="1741728491156" duration="1380000" />
+      <workItem from="1741728491156" duration="2101000" />
     </task>
     <servers />
   </component>
