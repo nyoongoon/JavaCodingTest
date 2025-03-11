@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * left idx를 건너뛰어서 재할당하는 케이스 때문에 더 효율적
  */
-public class _3_중복문자_없는_가장_긴_부분_문자열_책풀이 {
+public class _3_중복문자_없는_가장_긴_부분_문자열_책풀이 //todo 한 번 다시 풀어보기
     class Solution {
         public int lengthOfLongestSubstring(String s) {
             Map<Character, Integer> used = new HashMap<>();
