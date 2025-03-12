@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K" />
+    <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이_보고_틀리게작성.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이_보고_틀리게작성.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -211,11 +214,11 @@
       <recent name="$PROJECT_DIR$/CodingTest/src/Basic" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="_2_Java_Algo_Interview._1_문자열" />
       <recent name="_2_Java_Algo_Interview._6_해시테이블" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._2_문자열" />
       <recent name="_2_Java_Algo_Interview._5_데크_우선순위큐" />
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
-      <recent name="_2_Java_Algo_Interview._4_스택_큐" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Unnamed">
@@ -1209,7 +1212,8 @@
       <workItem from="1741307027637" duration="1217000" />
       <workItem from="1741554764201" duration="5344000" />
       <workItem from="1741694711101" duration="449000" />
-      <workItem from="1741728491156" duration="2101000" />
+      <workItem from="1741728491156" duration="3272000" />
+      <workItem from="1741774463371" duration="109000" />
     </task>
     <servers />
   </component>
