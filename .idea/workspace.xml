@@ -5,8 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="81710c21-7331-41cd-b27c-18e8043badbd" name="Changes" comment="K">
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_내풀이_다시풀이_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_5_3진법_뒤집기_내풀이.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_4_후기/클래스101/Example.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CodingTest/src/_4_후기/클래스101/Exmple2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이_보고_틀리게작성.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이_보고_틀리게작성.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_3_로그파일_재정렬_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_4_가장_흔한_단어_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_1_문자열/_4_가장_흔한_단어_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_선형자료구조/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_2_Java_Algo_Interview/_3_선형자료구조/_6_해시테이블/_3_중복문자_없는_가장_긴_부분_문자열_책풀이.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이.java" beforeDir="false" afterPath="$PROJECT_DIR$/CodingTest/src/_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편/_2_문자열/_4_문자열_압축_책풀이.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +69,8 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;Application.Example.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Exmple2.executor&quot;: &quot;Run&quot;,
     &quot;Application.LogestPalindromicSubstring.executor&quot;: &quot;Run&quot;,
     &quot;Application.Main (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.Main (2).executor&quot;: &quot;Run&quot;,
@@ -108,6 +117,7 @@
     &quot;Application.Test3.executor&quot;: &quot;Run&quot;,
     &quot;Application._1_Password.executor&quot;: &quot;Run&quot;,
     &quot;Application._1_교점에_별_만들기_내풀이.executor&quot;: &quot;Run&quot;,
+    &quot;Application._1_교점에_별_만들기_책풀이.executor&quot;: &quot;Run&quot;,
     &quot;Application._1_유효한_팰린드롬_책풀이.executor&quot;: &quot;Run&quot;,
     &quot;Application._2_Candy.executor&quot;: &quot;Run&quot;,
     &quot;Application._3_거리두기_확인하기_책풀이.executor&quot;: &quot;Run&quot;,
@@ -221,13 +231,26 @@
       <recent name="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Unnamed">
-    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test1" />
+  <component name="RunManager" selected="Application.Exmple2">
+    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4_후기.클래스101.Example" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="test.*" />
+          <option name="PATTERN" value="_4_후기.클래스101.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Exmple2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_4_후기.클래스101.Exmple2" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_4_후기.클래스101.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -250,32 +273,6 @@
     </configuration>
     <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.Test2" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test2" />
-      <module name="CodingTest" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.Test3" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -307,6 +304,19 @@
     </configuration>
     <configuration name="_1_교점에_별_만들기_내풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열._1_교점에_별_만들기_내풀이" />
+      <module name="CodingTest" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_1_교점에_별_만들기_책풀이" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_3_프로그래머스_코딩_테스트_문제_풀이_전략_자바편._1_배열._1_교점에_별_만들기_책풀이" />
       <module name="CodingTest" />
       <extension name="coverage">
         <pattern>
@@ -359,10 +369,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Exmple2" />
+        <item itemvalue="Application.Example" />
         <item itemvalue="Application._1_교점에_별_만들기_내풀이" />
         <item itemvalue="Application._3_로그파일_재정렬_책풀이" />
-        <item itemvalue="Application.Test2" />
-        <item itemvalue="Application.Test1" />
       </list>
     </recent_temporary>
   </component>
@@ -1213,7 +1223,10 @@
       <workItem from="1741554764201" duration="5344000" />
       <workItem from="1741694711101" duration="449000" />
       <workItem from="1741728491156" duration="3272000" />
-      <workItem from="1741774463371" duration="109000" />
+      <workItem from="1741774463371" duration="1857000" />
+      <workItem from="1741814145422" duration="6467000" />
+      <workItem from="1741954280533" duration="81000" />
+      <workItem from="1742159869593" duration="1544000" />
     </task>
     <servers />
   </component>
